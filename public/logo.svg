@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#001a2e"/>
+      <stop offset="50%" stop-color="#002b49"/>
+      <stop offset="100%" stop-color="#00385e"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Ring / Glow -->
+  <circle cx="100" cy="100" r="94" fill="none" stroke="url(#goldGrad)" stroke-width="3" stroke-dasharray="8 4"/>
+  <circle cx="100" cy="100" r="88" fill="url(#shieldGrad)" stroke="#f59e0b" stroke-width="2"/>
+
+  <!-- Shield Shape -->
+  <path d="M100 24 C132 24, 154 36, 154 68 C154 116, 100 152, 100 152 C100 152, 46 116, 46 68 C46 36, 68 24, 100 24 Z" 
+        fill="#001f35" stroke="url(#goldGrad)" stroke-width="3.5" filter="url(#dropShadow)"/>
+
+  <!-- Inner Shield Divider / Cross -->
+  <path d="M100 26 L100 148" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+  <path d="M50 78 L150 78" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.6"/>
+
+  <!-- Central Torch of Knowledge -->
+  <g transform="translate(100, 62)">
+    <!-- Flame -->
+    <path d="M0 -22 C-6 -12, -8 -4, -3 2 C-2 3, 2 3, 3 2 C8 -4, 6 -12, 0 -22 Z" fill="url(#goldGrad)"/>
+    <path d="M0 -17 C-3 -10, -4 -5, -1 0 C0 1, 1 1, 2 0 C4 -5, 3 -10, 0 -17 Z" fill="#fff" opacity="0.8"/>
+    <!-- Torch Bowl & Handle -->
+    <path d="M-8 0 L8 0 L5 8 L-5 8 Z" fill="#d97706"/>
+    <path d="M-3 8 L3 8 L2 24 L-2 24 Z" fill="url(#goldGrad)"/>
+  </g>
+
+  <!-- Open Book of Learning -->
+  <g transform="translate(100, 108)">
+    <!-- Pages Left -->
+    <path d="M-2 -8 C-12 -12, -22 -10, -28 -6 L-28 10 C-22 6, -12 8, -2 12 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+    <!-- Pages Right -->
+    <path d="M2 -8 C12 -12, 22 -10, 28 -6 L28 10 C22 6, 12 8, 2 12 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="0.8"/>
+    <!-- Spine -->
+    <line x1="0" y1="-8" x2="0" y2="13" stroke="#d97706" stroke-width="2"/>
+    <!-- Page text lines -->
+    <line x1="-22" y1="-2" x2="-8" y2="2" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="-22" y1="3" x2="-8" y2="7" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="8" y1="2" x2="22" y2="-2" stroke="#94a3b8" stroke-width="1"/>
+    <line x1="8" y1="7" x2="22" y2="3" stroke="#94a3b8" stroke-width="1"/>
+  </g>
+
+  <!-- Stars -->
+  <polygon points="68,54 70,59 75,59 71,62 73,67 68,64 64,67 65,62 61,59 66,59" fill="#f59e0b"/>
+  <polygon points="132,54 134,59 139,59 135,62 137,67 132,64 128,67 129,62 125,59 130,59" fill="#f59e0b"/>
+
+  <!-- Banner at Bottom -->
+  <g transform="translate(100, 166)">
+    <path d="M-82 0 C-40 -6, 40 -6, 82 0 L76 16 C38 10, -38 10, -76 16 Z" fill="#f59e0b" stroke="#78350f" stroke-width="1"/>
+    <!-- Left Ribbon Fold -->
+    <polygon points="-82,0 -92,-6 -90,10 -76,16" fill="#b45309"/>
+    <!-- Right Ribbon Fold -->
+    <polygon points="82,0 92,-6 90,10 76,16" fill="#b45309"/>
+    <!-- Motto Text -->
+    <text x="0" y="9" font-family="'Plus Jakarta Sans', sans-serif" font-size="8.5" font-weight="800" fill="#001f35" text-anchor="middle" letter-spacing="1.2">STRIVE &amp; SOAR HIGH</text>
+  </g>
+
+  <!-- Top Text on Shield Ring -->
+  <path id="curveTop" d="M 32 96 A 68 68 0 0 1 168 96" fill="none"/>
+  <text font-family="'Playfair Display', serif" font-size="9" font-weight="700" fill="#fef08a" letter-spacing="2">
+    <textPath href="#curveTop" startOffset="50%" text-anchor="middle">THE OXFORD SCHOOL</textPath>
+  </text>
+</svg>

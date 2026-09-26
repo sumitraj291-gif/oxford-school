@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, Cambria, serif;
+
+  --color-oxford-navy-dark: #001a2e;
+  --color-oxford-navy: #002b49;
+  --color-oxford-navy-light: #003e6b;
+  --color-oxford-blue: #0284c7;
+  --color-oxford-gold: #f59e0b;
+  --color-oxford-gold-light: #fbbf24;
+  --color-oxford-gold-dark: #d97706;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    text-align: left;
+    border: none;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Oxford theme utility classes */
+.bg-oxford-navy {
+  background-color: #002b49;
+}
+
+.bg-oxford-navy-dark {
+  background-color: #001a2e;
+}
+
+.bg-oxford-navy-light {
+  background-color: #003b63;
+}
+
+.text-oxford-navy {
+  color: #002b49;
+}
+
+.text-oxford-gold {
+  color: #f59e0b;
+}
+
+.bg-oxford-gold {
+  background-color: #f59e0b;
+}
+
+.border-oxford-gold {
+  border-color: #f59e0b;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navy-gradient {
+  background: linear-gradient(135deg, #001a2e 0%, #002b49 50%, #003e6b 100%);
+}
+
+/* Dropdown hover bridge to eliminate flicker */
+.nav-dropdown-bridge::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: transparent;
+}
+
+/* 3D Card Flip Utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Elegant Stable Institutional Title (Rock-solid, zero zoom/scale motion, subtle regal ambient warmth) */
+@keyframes royalTitleGlow {
+  0%, 100% {
+    filter: drop-shadow(0 8px 30px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 15px rgba(245, 158, 11, 0.25));
+  }
+  50% {
+    filter: drop-shadow(0 8px 35px rgba(0, 0, 0, 0.95)) drop-shadow(0 0 35px rgba(245, 158, 11, 0.55));
+  }
+}
+
+.hero-cinematic-title {
+  animation: royalTitleGlow 6s ease-in-out infinite;
+  will-change: filter;
+  transform: none !important;
+}
+
+/* Dynamic Smooth Color-Shift for Admission Enquiry Button (Synchronized with Video) */
+@keyframes dynamicSyncShift {
+  0% {
+    background-position: 0% 50%;
+    box-shadow: 0 10px 25px -3px rgba(245, 158, 11, 0.5), 0 0 20px rgba(245, 158, 11, 0.3);
+    border-color: rgba(251, 191, 36, 0.8);
+  }
+  25% {
+    background-position: 50% 100%;
+    box-shadow: 0 10px 25px -3px rgba(2, 132, 199, 0.5), 0 0 20px rgba(2, 132, 199, 0.3);
+    border-color: rgba(56, 189, 248, 0.8);
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow: 0 10px 25px -3px rgba(16, 185, 129, 0.5), 0 0 20px rgba(16, 185, 129, 0.3);
+    border-color: rgba(52, 211, 153, 0.8);
+  }
+  75% {
+    background-position: 50% 0%;
+    box-shadow: 0 10px 25px -3px rgba(139, 92, 246, 0.5), 0 0 20px rgba(139, 92, 246, 0.3);
+    border-color: rgba(167, 139, 250, 0.8);
+  }
+  100% {
+    background-position: 0% 50%;
+    box-shadow: 0 10px 25px -3px rgba(245, 158, 11, 0.5), 0 0 20px rgba(245, 158, 11, 0.3);
+    border-color: rgba(251, 191, 36, 0.8);
+  }
+}
+
+.btn-sync-dynamic {
+  background: linear-gradient(125deg, #d97706, #f59e0b, #0284c7, #0ea5e9, #059669, #10b981, #7c3aed, #d97706) !important;
+  background-size: 400% 400% !important;
+  animation: dynamicSyncShift 8s ease infinite !important;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.btn-sync-dynamic:hover {
+  animation-duration: 4s !important;
+  transform: scale(1.05);
+}
