@@ -91,28 +91,30 @@ export default function Navbar({ onOpenEnquiry }) {
         ? 'shadow-md border-b border-slate-200 py-2'
         : 'border-b border-slate-200/90 py-3'
         }`}>
-        <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 flex items-center justify-between gap-2 lg:gap-4">
+        <div className="w-full px-4 sm:px-6 xl:px-10 flex items-center justify-between gap-2 xl:gap-4">
 
-          {/* Left Anchor: School Crest & Authentic Branding (Corner aligned) */}
-          <Link to="/" className="flex items-center gap-2.5 xl:gap-3 shrink-0 group text-left">
+          {/* Left Anchor: School Crest & Authentic Branding
+              min-w-0 + truncate => lamba text screen se bahar nahi nikalta */}
+          <Link to="/" className="flex items-center gap-2 xl:gap-3 min-w-0 group text-left">
             <div className="w-10 h-10 xl:w-11 xl:h-11 rounded-lg flex items-center justify-center transition-transform group-hover:scale-105 shrink-0">
               <img src="/ox-logo.webp" alt="The Oxford School Logo" className="w-full h-full object-contain" />
             </div>
-            <div className="text-left">
-              <span className="text-[10px] xl:text-[10.5px] uppercase font-bold tracking-wider text-amber-700 block leading-tight">
+            <div className="text-left min-w-0">
+              {/* Ye lambi line sirf sm (640px) aur bade screens pe dikhegi */}
+              <span className="hidden sm:block text-[10px] xl:text-[10.5px] uppercase font-bold tracking-wider text-amber-700 leading-tight">
                 CBSE AFFILIATED (10+2) • ESTD. 2014
               </span>
-              <span className="text-base xl:text-lg font-serif font-extrabold text-[#002b49] tracking-tight group-hover:text-amber-600 transition block leading-tight">
+              <span className="text-sm sm:text-base xl:text-lg font-serif font-extrabold text-[#002b49] tracking-tight group-hover:text-amber-600 transition block leading-tight truncate">
                 THE OXFORD SCHOOL
               </span>
-              <span className="text-[10px] font-medium text-slate-500 block leading-tight mt-0.5">
+              <span className="text-[10px] font-medium text-slate-500 block leading-tight mt-0.5 truncate">
                 Roshnabad, Haridwar
               </span>
             </div>
           </Link>
 
-          {/* Center Navigation Links */}
-          <div className="hidden lg:flex items-center gap-0.5 xl:gap-1.5">
+          {/* Center Navigation Links (xl = 1280px+; usse chhoti screen pe hamburger) */}
+          <div className="hidden xl:flex items-center gap-0.5 xl:gap-1.5">
             {navItems.map((item) => {
               const isActive = location.pathname === item.path;
               const hasSub = item.subItems && item.subItems.length > 0;
@@ -162,7 +164,7 @@ export default function Navbar({ onOpenEnquiry }) {
           </div>
 
           {/* Right Anchor: Action Buttons (Corner aligned) */}
-          <div className="hidden lg:flex items-center gap-2 xl:gap-2.5 shrink-0">
+          <div className="hidden xl:flex items-center gap-2 xl:gap-2.5 shrink-0">
             {/* Edunext Student Login Button */}
             <a
               href={SCHOOL_INFO.studentLoginUrl}
@@ -185,17 +187,17 @@ export default function Navbar({ onOpenEnquiry }) {
             </button>
           </div>
 
-          {/* Mobile Header Controls */}
-          <div className="flex items-center gap-2 lg:hidden">
+          {/* Mobile Header Controls (shrink-0 => hamburger kabhi bahar nahi jayega) */}
+          <div className="flex items-center gap-2 xl:hidden shrink-0">
             <button
               onClick={onOpenEnquiry}
-              className="px-2.5 py-1 text-xs font-bold bg-amber-500 text-slate-950 rounded-lg shadow-sm"
+              className="px-2.5 py-1.5 text-xs font-bold bg-amber-500 text-slate-950 rounded-lg shadow-sm"
             >
               Enquiry
             </button>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-1.5 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none"
+              className="p-2 rounded-lg text-slate-700 hover:bg-slate-100 focus:outline-none"
               aria-label="Toggle Menu"
             >
               {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -204,9 +206,9 @@ export default function Navbar({ onOpenEnquiry }) {
 
         </div>
 
-        {/* Mobile Navigation Drawer */}
+        {/* Mobile Navigation Drawer (dvh => mobile browser bar ke peeche nahi jayega) */}
         {mobileMenuOpen && (
-          <div className="lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 max-h-[80vh] overflow-y-auto shadow-2xl">
+          <div className="xl:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 max-h-[calc(100dvh-4.5rem)] overflow-y-auto shadow-2xl">
             <div className="space-y-1">
               {navItems.map((item) => (
                 <div key={item.name} className="border-b border-slate-100 pb-1">

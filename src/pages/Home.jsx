@@ -16,6 +16,10 @@ export default function Home({ onOpenEnquiry }) {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [flippedCards, setFlippedCards] = useState({});
   const videoRef = useRef(null);
+  const [mobileVideoFailed, setMobileVideoFailed] = useState(false);
+  const [isMobile, setIsMobile] = useState(() =>
+    typeof window !== 'undefined' && window.matchMedia('(max-width: 639px)').matches
+  );
 
   const toggleCardFlip = (idx) => {
     setFlippedCards(prev => ({ ...prev, [idx]: !prev[idx] }));
@@ -65,12 +69,23 @@ export default function Home({ onOpenEnquiry }) {
     }, 1200);
   };
 
-  // Set 1.5x playback speed on video mount (7 min video plays in ~4.5 min)
+  // Screen size badalne par (rotate / resize) mobile ya desktop video choose karo
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.playbackRate = 1.5;
-    }
+    const mq = window.matchMedia('(max-width: 639px)');
+    const onChange = (e) => setIsMobile(e.matches);
+    mq.addEventListener('change', onChange);
+    return () => mq.removeEventListener('change', onChange);
   }, []);
+
+  // Mobile browsers me autoplay ke liye muted DOM property me set honi chahiye
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    v.muted = true;
+    v.playbackRate = isMobile ? 1 : 1.5; // desktop: 1.5x speed, mobile: normal
+    const p = v.play();
+    if (p && p.catch) p.catch(() => {});
+  }, [isMobile, mobileVideoFailed]);
 
   const featuredNews = [
     {
@@ -115,34 +130,37 @@ export default function Home({ onOpenEnquiry }) {
     }
   ];
 
+  const heroVideoSrc = isMobile && !mobileVideoFailed
+    ? '/videos/hero_video_mobile.mp4'
+    : '/videos/hero_video.mp4';
+
   return (
     <div className="w-full text-left">
       
       {/* 1. Cinematic Hero Banner Section (Natural Background Video with Zooming School Title & Bottom Sleek Admission Button) */}
       <section className="relative h-[500px] sm:h-[560px] lg:h-[640px] w-full flex items-center justify-center overflow-hidden bg-black text-center">
         
-        {/* Mobile Poster Fallback to prevent 81MB data transfer on mobile */}
-        <img 
-          src="/images/campus_real_gate.jpg" 
-          alt="The Oxford School Haridwar Campus" 
-          className="sm:hidden absolute inset-0 w-full h-full object-cover object-center filter contrast-[1.04] saturate-[1.06]"
-          loading="eager"
-          decoding="async"
-        />
-
-        {/* Natural Background Video (Throttled for desktop/tablet only, preload="none" on mobile) */}
-        <video 
+        {/* Hero Video: mobile pe chhota video, desktop/tablet pe original HD video. Koi image overlay nahi. */}
+        <video
+          key={heroVideoSrc}
           ref={videoRef}
-          autoPlay 
-          loop 
-          muted 
+          src={heroVideoSrc}
+          autoPlay
+          loop
+          muted
           playsInline
-          preload="none"
-          poster="/images/campus_real_gate.jpg"
-          className="hidden sm:block absolute inset-0 w-full h-full object-cover object-center filter contrast-[1.05] saturate-[1.08] brightness-[0.82]"
-        >
-          <source src="/videos/hero_video.mp4" type="video/mp4" />
-        </video>
+          disablePictureInPicture
+          preload={isMobile ? 'auto' : 'none'}
+          onError={() => {
+            // mobile wali chhoti video na mile to original video chala do
+            if (isMobile && !mobileVideoFailed) setMobileVideoFailed(true);
+          }}
+          onCanPlay={(e) => {
+            const p = e.currentTarget.play();
+            if (p && p.catch) p.catch(() => {});
+          }}
+          className="absolute inset-0 w-full h-full object-cover object-center filter contrast-[1.05] saturate-[1.08] brightness-[0.82]"
+        />
 
         {/* Subtle Cinematic Gradient & Vignette Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/35 to-black/60 pointer-events-none" />
