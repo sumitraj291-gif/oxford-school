@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Send, CheckCircle, GraduationCap, Phone, MapPin, User, Calendar, BookOpen, Sparkles } from 'lucide-react';
+import { X, Send, CheckCircle, GraduationCap, MapPin, User, Sparkles } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 
 export default function AdmissionEnquiryModal({ isOpen, onClose }) {

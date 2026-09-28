@@ -1,14 +1,5 @@
 import { renderPageShell } from './generate-shell.mjs';
-import {
-  SCHOOL_INFO,
-  KEY_METRICS,
-  LEADERSHIP_MESSAGES,
-  BOARD_RESULTS,
-  FACILITIES_DATA,
-  ADMISSION_STEPS,
-  AGE_CRITERIA,
-  CBSE_DISCLOSURE_DOCS
-} from './src/data/schoolData.js';
+import { BOARD_RESULTS } from './src/data/schoolData.js';
 
 // Common Breadcrumb Component Helper
 function renderBreadcrumb(items) {

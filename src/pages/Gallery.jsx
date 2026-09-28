@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
-  Image as ImageIcon, Filter, X, ChevronLeft, ChevronRight, 
-  Calendar, Tag, ZoomIn, Sparkles 
+  Filter, X, ChevronLeft, ChevronRight, 
+  Calendar, ZoomIn, Sparkles 
 } from 'lucide-react';
 import { GALLERY_ITEMS } from '../data/schoolData';
 

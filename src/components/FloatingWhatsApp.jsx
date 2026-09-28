@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageCircle, X, Send, Sparkles } from 'lucide-react';
+import { MessageCircle, X, Send } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 
 export default function FloatingWhatsApp() {
@@ -13,7 +13,7 @@ export default function FloatingWhatsApp() {
       : `Hello The Oxford School, Haridwar! I would like to enquire about Admissions for Academic Session 2025-26.`;
 
     const url = `https://wa.me/${SCHOOL_INFO.whatsappNumber}?text=${encodeURIComponent(queryText)}`;
-    window.open(url, '_blank');
+    window.open(url, '_blank', 'noopener,noreferrer');
     setMessage('');
     setIsOpen(false);
   };

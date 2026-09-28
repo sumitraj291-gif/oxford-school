@@ -56,16 +56,24 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // 3. Modals Management (Enquiry, Video, Document)
+  let lastFocusedTrigger = null;
+
   window.openModal = function(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
+      lastFocusedTrigger = document.activeElement;
       modal.classList.remove('hidden');
       modal.classList.add('is-open');
       document.body.style.overflow = 'hidden';
       
       // Focus first input if present for accessibility
-      const firstInput = modal.querySelector('input:not([type="hidden"]), select, textarea');
-      if (firstInput) firstInput.focus();
+      const firstInput = modal.querySelector('input:not([type="hidden"]), select, textarea, button:not([data-modal-close])');
+      if (firstInput) {
+        firstInput.focus();
+      } else {
+        const closeBtn = modal.querySelector('button');
+        if (closeBtn) closeBtn.focus();
+      }
     }
   };
 
@@ -80,15 +88,44 @@ document.addEventListener('DOMContentLoaded', () => {
       if (video) {
         video.pause();
       }
+      if (lastFocusedTrigger && typeof lastFocusedTrigger.focus === 'function') {
+        lastFocusedTrigger.focus();
+        lastFocusedTrigger = null;
+      }
     }
   };
 
-  // Close modals on Escape key
+  // Keyboard navigation & accessibility (Escape to close, Tab focus trapping)
   document.addEventListener('keydown', (e) => {
+    const openModals = document.querySelectorAll('.modal.is-open, .modal:not(.hidden)');
+    if (openModals.length === 0) return;
+
     if (e.key === 'Escape') {
-      document.querySelectorAll('.modal.is-open, .modal:not(.hidden)').forEach(modal => {
+      openModals.forEach(modal => {
         closeModal(modal.id);
       });
+      return;
+    }
+
+    if (e.key === 'Tab') {
+      const activeModal = openModals[openModals.length - 1];
+      const focusables = activeModal.querySelectorAll('a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])');
+      if (focusables.length === 0) return;
+
+      const firstFocusable = focusables[0];
+      const lastFocusable = focusables[focusables.length - 1];
+
+      if (e.shiftKey) {
+        if (document.activeElement === firstFocusable) {
+          e.preventDefault();
+          lastFocusable.focus();
+        }
+      } else {
+        if (document.activeElement === lastFocusable) {
+          e.preventDefault();
+          firstFocusable.focus();
+        }
+      }
     }
   });
 
@@ -142,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
           origin: { x: 0.75, y: 0.65 },
           colors: ['#f59e0b', '#d97706', '#0284c7', '#ec4899', '#6366f1']
         });
-      } catch (err) {
+      } catch {
         // Fallback gracefully if confetti encounters canvas error
       }
     }

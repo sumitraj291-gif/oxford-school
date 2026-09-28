@@ -20,7 +20,6 @@ import {
   generateCurriculumPage
 } from './generate-subpages.mjs';
 import {
-  SCHOOL_INFO,
   KEY_METRICS,
   getDailyBirthdays,
   LEADERSHIP_MESSAGES,
@@ -42,7 +41,7 @@ function generateHomePage() {
   const featuredNews = [
     {
       id: "news-1",
-      title: "Admissions Open for Academic Session 2025-26 (Playgroup to Class XII)",
+      title: "Admissions Open for Academic Session 2026-27 (Playgroup to Class XII)",
       date: "February 2025",
       category: "Admissions",
       badge: "Active",
@@ -114,7 +113,7 @@ function generateHomePage() {
     <div class="relative z-10 max-w-5xl mx-auto px-4 flex items-center justify-center text-center select-none pointer-events-none">
       <div class="hero-cinematic-title">
         <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-black tracking-tight text-white uppercase drop-shadow-[0_8px_30px_rgba(0,0,0,0.95)] leading-tight">
-          THE OXFORD <span class="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 bg-clip-text text-transparent drop-shadow-[0_4px_20px_rgba(245,158,11,0.5)]">SCHOOL</span>
+          THE OXFORD <span class="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 bg-clip-text text-transparent inline-block">SCHOOL</span>
         </h1>
       </div>
     </div>
@@ -127,7 +126,7 @@ function generateHomePage() {
         class="btn-sync-dynamic pointer-events-auto px-6 py-2.5 sm:px-8 sm:py-3.5 text-white rounded-xl text-xs sm:text-sm font-bold shadow-2xl flex items-center gap-2.5 cursor-pointer border border-white/60 backdrop-blur-md group"
       >
         <i data-lucide="sparkles" class="w-4 h-4 text-white"></i>
-        <span>Admission Enquiry 2025–26</span>
+        <span>Admission Enquiry 2026–27</span>
         <i data-lucide="arrow-right" class="w-4 h-4 text-white group-hover:translate-x-1.5 transition-transform"></i>
       </button>
     </div>
@@ -145,7 +144,7 @@ function generateHomePage() {
             <span>Latest News</span>
           </div>
           <div class="text-xs sm:text-sm text-slate-200 truncate">
-            <span class="text-amber-300 font-semibold">Admissions 2025–26:</span> Registration open for Playgroup to Class XII • CBSE Board Exam Guidelines Released
+            <span class="text-amber-300 font-semibold">Admissions 2026–27:</span> Registration open for Playgroup to Class XII • CBSE Board Exam Guidelines Released
           </div>
         </div>
 
@@ -289,7 +288,7 @@ function generateHomePage() {
                         ${s.class}
                       </div>
                       <div class="text-[11px] text-slate-300 font-medium">
-                        ${s.house} • Roll: ${s.rollNo}
+                        ${s.house}
                       </div>
                     </div>
                   </div>
@@ -681,7 +680,7 @@ function generateHomePage() {
       <!-- Section Heading -->
       <div class="text-center max-w-3xl mx-auto mb-12">
         <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/20 px-3.5 py-1 rounded-full border border-amber-400/30 inline-block mb-3">
-          Admissions Open 2025–26
+          Admissions Open 2026–27
         </span>
         <h2 class="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
           Admission Enquiry &amp; Prospectus Application
@@ -704,7 +703,7 @@ function generateHomePage() {
               </div>
               <div>
                 <h3 class="text-base font-bold text-white">Why Join The Oxford School?</h3>
-                <p class="text-xs text-amber-300">CBSE Affiliation No. 3530462 • Roshnabad</p>
+                <p class="text-xs text-amber-300">CBSE Affiliation No. 3530514 • Roshnabad</p>
               </div>
             </div>
 
@@ -740,15 +739,15 @@ function generateHomePage() {
             </h4>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="phone-call" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>+91 72480 60000, +91 72480 60001</span>
+              <span>+91-7060089183, +91-7060089184</span>
             </div>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="mail" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>theoxfordschool2014@gmail.com</span>
+              <span>theoxfordschoolhwr@gmail.com</span>
             </div>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>Near Collectorate Office, Roshnabad, Haridwar, Uttarakhand – 249403</span>
+              <span>Near Collectorate Office, Roshnabad, Haridwar, Uttarakhand – 249402</span>
             </div>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="clock" class="w-4 h-4 text-amber-400 shrink-0"></i>
@@ -768,7 +767,7 @@ function generateHomePage() {
                   <p class="text-xs text-slate-500 mt-1">Please provide complete information. All starred (*) fields are required.</p>
                 </div>
                 <span class="hidden sm:inline-block px-3 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg border border-amber-300">
-                  Session 2025–26
+                  Session 2026–27
                 </span>
               </div>
             </div>
@@ -833,7 +832,7 @@ function generateHomePage() {
                 </div>
                 <div>
                   <label class="block font-bold text-slate-700 mb-1.5">Academic Session</label>
-                  <input type="text" readonly value="2025–2026 (Upcoming)" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 bg-slate-100 text-slate-600 text-xs font-semibold" />
+                  <input type="text" readonly value="2026–2027 (Upcoming)" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 bg-slate-100 text-slate-600 text-xs font-semibold" />
                 </div>
               </div>
 
@@ -877,13 +876,17 @@ function generateHomePage() {
 
   return renderPageShell({
     title: "The Oxford School, Haridwar | CBSE Affiliated Senior Secondary School Roshnabad",
-    description: "Official website of The Oxford School, Haridwar (CBSE Affiliated No. 3530462). Premier English medium co-ed school in Roshnabad offering holistic academics, robotics lab, smart classes, and 100% board results.",
-    keywords: "The Oxford School Haridwar, CBSE school in Haridwar, Roshnabad school, admissions 2025-26 Haridwar, best school in Haridwar, top CBSE school Uttarakhand",
+    description: "Official website of The Oxford School, Haridwar (CBSE Affiliated No. 3530514). Premier English medium co-ed school in Roshnabad offering holistic academics, robotics lab, smart classes, and 100% board results.",
+    keywords: "The Oxford School Haridwar, CBSE school in Haridwar, Roshnabad school, admissions 2026-27 Haridwar, best school in Haridwar, top CBSE school Uttarakhand",
     canonicalUrl: "index.html",
     activePage: "home",
     content
   });
 }
+
+// ==========================================
+// 2. GENERATE ABOUT.HTML (ABOUT PAGE)
+// ==========================================
 
 // ==========================================
 // 2. GENERATE ABOUT.HTML (ABOUT PAGE)
@@ -1414,7 +1417,7 @@ function generateCbsePage() {
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
             <span class="text-slate-400 block text-[11px]">SCHOOL EMAIL &amp; CONTACT</span>
-            <span class="font-bold text-[#002b49]">theoxfordschool2014@gmail.com | 7248060000</span>
+            <span class="font-bold text-[#002b49]">theoxfordschoolhwr@gmail.com | +91-7060089183, +91-9068885862</span>
           </div>
         </div>
       </div>

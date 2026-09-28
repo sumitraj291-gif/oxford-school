@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
@@ -70,6 +70,39 @@ export default function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/careers" element={<Careers />} />
             <Route path="/contact" element={<Contact />} />
+
+            {/* Direct Section / Subpage Mappings for React Router */}
+            <Route path="/chairman" element={<Navigate to="/about#chairman" replace />} />
+            <Route path="/managing-director" element={<Navigate to="/about#managing-director" replace />} />
+            <Route path="/principal" element={<Navigate to="/about#principal" replace />} />
+            <Route path="/vision-mission" element={<Navigate to="/about#vision" replace />} />
+            <Route path="/houses" element={<Navigate to="/about#houses" replace />} />
+            <Route path="/admission-procedure" element={<Navigate to="/admissions" replace />} />
+            <Route path="/eligibility-criteria" element={<Navigate to="/admissions" replace />} />
+            <Route path="/fee-guidelines" element={<Navigate to="/admissions" replace />} />
+            <Route path="/online-enquiry" element={<Navigate to="/admissions" replace />} />
+            <Route path="/robotics-lab" element={<Navigate to="/facilities" replace />} />
+            <Route path="/science-labs" element={<Navigate to="/facilities" replace />} />
+            <Route path="/computer-lab" element={<Navigate to="/facilities" replace />} />
+            <Route path="/sports-complex" element={<Navigate to="/facilities" replace />} />
+            <Route path="/transport" element={<Navigate to="/facilities" replace />} />
+            <Route path="/results" element={<Navigate to="/cbse-disclosure" replace />} />
+            <Route path="/curriculum" element={<Navigate to="/cbse-disclosure" replace />} />
+            {/* 404 Fallback Route */}
+            <Route path="*" element={
+              <div className="min-h-[60vh] flex flex-col items-center justify-center p-6 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-amber-500/10 text-amber-600 flex items-center justify-center font-bold text-2xl font-serif mb-4">
+                  404
+                </div>
+                <h1 className="text-2xl font-serif font-bold text-[#002b49] mb-2">Page Not Found</h1>
+                <p className="text-sm text-slate-600 max-w-md mb-6">
+                  The page you are looking for doesn't exist or may have been moved. Return to our homepage to explore The Oxford School.
+                </p>
+                <a href="/" className="px-5 py-2.5 bg-[#002b49] hover:bg-[#003b63] text-white rounded-xl text-xs font-bold transition shadow-md">
+                  Return to Homepage
+                </a>
+              </div>
+            } />
           </Routes>
         </main>
 

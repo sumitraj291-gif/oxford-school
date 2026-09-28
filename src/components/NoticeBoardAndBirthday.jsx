@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { 
-  PartyPopper, Sparkles, Calendar, Download, ChevronRight, 
-  FileText, ArrowRight, Award, Play, Eye, UserCheck, 
-  BookOpen, Clock, X, Newspaper, PenTool, ExternalLink
+  PartyPopper, Sparkles, Calendar, ChevronRight, 
+  ArrowRight, Award, Play, UserCheck, 
+  X, Newspaper, PenTool 
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
 import { getDailyBirthdays } from '../data/schoolData';
@@ -224,7 +224,7 @@ Candidates must carry their original admit cards stamped by the Principal. Exter
                           {student.class}
                         </div>
                         <div className="text-[11px] text-slate-300 font-medium">
-                          {student.house} • Roll: {student.rollNo}
+                          {student.house}
                         </div>
                       </div>
                     </div>

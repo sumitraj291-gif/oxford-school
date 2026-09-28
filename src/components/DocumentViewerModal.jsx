@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Download, FileText, CheckCircle2, ShieldCheck, Printer, ExternalLink } from 'lucide-react';
+import { X, Download, FileText, CheckCircle2, ShieldCheck, Printer } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 
 export default function DocumentViewerModal({ doc, isOpen, onClose }) {

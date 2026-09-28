@@ -25,7 +25,7 @@ Options -Indexes
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 
   # Content Security Policy (CSP)
-  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; media-src 'self' blob:; frame-src 'self' https://www.google.com; connect-src 'self';"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https: blob:; media-src 'self' blob:; frame-src 'self' https://www.google.com https://maps.google.com; connect-src 'self';"
 </IfModule>
 
 # 3. Gzip / Deflate Compression for High Performance
@@ -68,5 +68,15 @@ Options -Indexes
   ExpiresByType font/woff "access plus 1 year"
 </IfModule>
 
-# 5. Clean Error Handling (Fallback to index.html for 404)
+# 5. Single Page Application (SPA) Rewrite Rules for Clean URLs
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# 6. Clean Error Handling (Fallback to index.html for 404)
 ErrorDocument 404 /index.html

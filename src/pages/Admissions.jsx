@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { 
-  GraduationCap, Calendar, CheckCircle2, FileText, 
-  HelpCircle, ArrowRight, ShieldCheck, Phone, Send, Sparkles, Clock 
+  GraduationCap, CheckCircle2, FileText, 
+  ShieldCheck, Phone, Send, Sparkles 
 } from 'lucide-react';
 import { SCHOOL_INFO, ADMISSION_STEPS, AGE_CRITERIA } from '../data/schoolData';
 
-export default function Admissions({ onOpenEnquiry }) {
+export default function Admissions({ _onOpenEnquiry }) {
   const [formData, setFormData] = useState({
     studentName: '',
     gender: 'Male',
@@ -33,6 +33,12 @@ export default function Admissions({ onOpenEnquiry }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const cleanPhone = formData.phone.replace(/\D/g, '');
+    if (!/^[6-9]\d{9}$/.test(cleanPhone)) {
+      alert('Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9.');
+      return;
+    }
+
     const generatedRef = 'TOS-ENQ-' + Math.floor(100000 + Math.random() * 900000);
     setRefNumber(generatedRef);
 
@@ -59,7 +65,7 @@ export default function Admissions({ onOpenEnquiry }) {
 _Dispatched via Oxford School Admissions Portal_`;
 
     const whatsappUrl = `https://wa.me/${SCHOOL_INFO.whatsappNumber}?text=${encodeURIComponent(text)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
   };
 

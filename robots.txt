@@ -1,0 +1,8 @@
+# Robots.txt for The Oxford School, Haridwar
+# https://theoxfordschoolharidwar.in
+
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://theoxfordschoolharidwar.in/sitemap.xml

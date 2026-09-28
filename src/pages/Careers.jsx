@@ -1,12 +1,8 @@
 import React, { useState } from 'react';
-import { 
-  Briefcase, Send, CheckCircle2, User, Phone, Mail, 
-  FileText, GraduationCap, MapPin, Sparkles, Clock, ArrowRight 
-} from 'lucide-react';
+import { Briefcase, Send, CheckCircle2, ArrowRight } from 'lucide-react';
 import { SCHOOL_INFO, CAREER_OPENINGS } from '../data/schoolData';
 
 export default function Careers() {
-  const [selectedJob, setSelectedJob] = useState(CAREER_OPENINGS[0].title);
   const [formData, setFormData] = useState({
     fullName: '',
     phone: '',
@@ -28,7 +24,6 @@ export default function Careers() {
   };
 
   const handleApplyClick = (jobTitle) => {
-    setSelectedJob(jobTitle);
     setFormData(prev => ({ ...prev, postApplied: jobTitle }));
     const formElement = document.getElementById('application-form');
     if (formElement) {
@@ -38,6 +33,12 @@ export default function Careers() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const cleanPhone = formData.phone.replace(/\D/g, '');
+    if (cleanPhone.length > 0 && !/^[6-9]\d{9}$/.test(cleanPhone)) {
+      alert('Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9.');
+      return;
+    }
+
     const generatedId = 'TOS-JOB-' + Math.floor(100000 + Math.random() * 900000);
     setAppId(generatedId);
 
@@ -48,7 +49,7 @@ export default function Careers() {
 
 *Candidate Profile:*
 - *Full Name:* ${formData.fullName}
-- *Contact Phone:* ${formData.phone}
+- *Contact Phone:* +91 ${cleanPhone || formData.phone}
 - *Email:* ${formData.email}
 - *Highest Qualification:* ${formData.qualification}
 - *Total Experience:* ${formData.experienceYears} Years
@@ -61,7 +62,7 @@ ${formData.coverNote || 'Looking forward to contributing to The Oxford School.'}
 _Dispatched via Oxford School Careers Portal_`;
 
     const whatsappUrl = `https://wa.me/${SCHOOL_INFO.whatsappNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
   };
 

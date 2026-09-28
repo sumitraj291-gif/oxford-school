@@ -1,15 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { 
-  ArrowRight, ShieldCheck, Sparkles, BookOpen, Microscope, 
-  Cpu, Trophy, Bus, CheckCircle2, Play, 
-  Users, Clock, MapPin, ChevronRight, GraduationCap, Quote,
-  Bell, FileText, Calendar, Newspaper, ExternalLink, Download,
-  RotateCw, X, Send, PhoneCall, Mail
+  ArrowRight, ShieldCheck, Sparkles, CheckCircle2, Play, 
+  Clock, MapPin, ChevronRight, Quote,
+  Bell, Calendar, Newspaper, RotateCw, Send, PhoneCall, Mail
 } from 'lucide-react';
 import { 
-  SCHOOL_INFO, KEY_METRICS, FACILITIES_DATA, 
-  LEADERSHIP_MESSAGES, PARENT_TESTIMONIALS, NOTICES_AND_CIRCULARS 
+  KEY_METRICS, FACILITIES_DATA, 
+  LEADERSHIP_MESSAGES, PARENT_TESTIMONIALS 
 } from '../data/schoolData';
 import NoticeBoardAndBirthday from '../components/NoticeBoardAndBirthday';
 import VideoHighlightModal from '../components/VideoHighlightModal';
@@ -18,6 +16,10 @@ export default function Home({ onOpenEnquiry }) {
   const [selectedVideo, setSelectedVideo] = useState(null);
   const [flippedCards, setFlippedCards] = useState({});
   const videoRef = useRef(null);
+
+  const toggleCardFlip = (idx) => {
+    setFlippedCards(prev => ({ ...prev, [idx]: !prev[idx] }));
+  };
 
   const [enquiryStatus, setEnquiryStatus] = useState({ submitting: false, submitted: false, error: '' });
   const [bottomFormData, setBottomFormData] = useState({
@@ -149,7 +151,7 @@ export default function Home({ onOpenEnquiry }) {
         <div className="relative z-10 max-w-5xl mx-auto px-4 flex items-center justify-center text-center select-none pointer-events-none">
           <div className="hero-cinematic-title">
             <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-black tracking-tight text-white uppercase drop-shadow-[0_8px_30px_rgba(0,0,0,0.95)] leading-tight">
-              THE OXFORD <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 bg-clip-text text-transparent drop-shadow-[0_4px_20px_rgba(245,158,11,0.5)]">SCHOOL</span>
+              THE OXFORD <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 bg-clip-text text-transparent inline-block">SCHOOL</span>
             </h1>
           </div>
         </div>
@@ -162,7 +164,7 @@ export default function Home({ onOpenEnquiry }) {
             className="btn-sync-dynamic pointer-events-auto px-6 py-2.5 sm:px-8 sm:py-3.5 text-white rounded-xl text-xs sm:text-sm font-bold shadow-2xl flex items-center gap-2.5 cursor-pointer border border-white/60 backdrop-blur-md group"
           >
             <Sparkles className="w-4 h-4 text-white" />
-            <span>Admission Enquiry 2025–26</span>
+            <span>Admission Enquiry 2026–27</span>
             <ArrowRight className="w-4 h-4 text-white group-hover:translate-x-1.5 transition-transform" />
           </button>
         </div>

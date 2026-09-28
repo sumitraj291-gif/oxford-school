@@ -1,7 +1,6 @@
 import React from 'react';
 import {
-  ShieldCheck, Award, GraduationCap, Compass, Target,
-  Heart, Sparkles, BookOpen, Users, CheckCircle2, ChevronRight
+  GraduationCap, Compass, Target, CheckCircle2
 } from 'lucide-react';
 import { SCHOOL_INFO, LEADERSHIP_MESSAGES } from '../data/schoolData';
 

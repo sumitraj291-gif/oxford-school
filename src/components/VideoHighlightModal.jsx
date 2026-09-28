@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Play, Film, Calendar, Eye, Volume2 } from 'lucide-react';
+import { X, Play, Film, Calendar, Volume2 } from 'lucide-react';
 
 export default function VideoHighlightModal({ isOpen, onClose, video }) {
   if (!isOpen || !video) return null;

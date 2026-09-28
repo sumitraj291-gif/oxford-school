@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
-  Phone, Mail, MapPin, Clock, ExternalLink, ShieldCheck,
+  Phone, Mail, MapPin, Clock, ShieldCheck,
   ArrowUpRight, Award, GraduationCap, ChevronRight
 } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';

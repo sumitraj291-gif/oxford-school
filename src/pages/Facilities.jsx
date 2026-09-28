@@ -1,7 +1,6 @@
 import React from 'react';
 import { 
-  Cpu, Microscope, BookOpen, Trophy, Bus, Monitor, 
-  CheckCircle2, ShieldCheck, HeartPulse, Sparkles, ArrowRight 
+  Bus, CheckCircle2, ShieldCheck, HeartPulse, Sparkles, ArrowRight 
 } from 'lucide-react';
 import { FACILITIES_DATA } from '../data/schoolData';
 

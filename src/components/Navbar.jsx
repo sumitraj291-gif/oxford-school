@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import {
   ChevronDown, Menu, X, ExternalLink, Sparkles
@@ -10,6 +10,7 @@ export default function Navbar({ onOpenEnquiry }) {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const prevPathRef = useRef(location.pathname);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,8 +22,11 @@ export default function Navbar({ onOpenEnquiry }) {
 
   // Close menus on route change
   useEffect(() => {
-    setMobileMenuOpen(false);
-    setActiveDropdown(null);
+    if (prevPathRef.current !== location.pathname) {
+      prevPathRef.current = location.pathname;
+      setMobileMenuOpen(false);
+      setActiveDropdown(null);
+    }
   }, [location.pathname]);
 
   const navItems = [

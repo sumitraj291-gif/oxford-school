@@ -47,7 +47,6 @@ export const getDailyBirthdays = () => {
       name: "Aarav Sharma", 
       class: "Class X-A", 
       date: formattedDate, 
-      rollNo: "10-A-14", 
       house: "Ganga House",
       photo: "/images/students/student_aarav.jpg"
     },
@@ -56,7 +55,6 @@ export const getDailyBirthdays = () => {
       name: "Ananya Chauhan", 
       class: "Class IV-B", 
       date: formattedDate, 
-      rollNo: "04-B-22", 
       house: "Yamuna House",
       photo: "/images/students/student_ananya.jpg"
     },
@@ -65,7 +63,6 @@ export const getDailyBirthdays = () => {
       name: "Reyansh Rawat", 
       class: "Class II-C", 
       date: formattedDate, 
-      rollNo: "02-C-09", 
       house: "Kaveri House",
       photo: "/images/students/student_reyansh.jpg"
     },
@@ -74,7 +71,6 @@ export const getDailyBirthdays = () => {
       name: "Prisha Semwal", 
       class: "Class XII Science", 
       date: formattedDate, 
-      rollNo: "12-S-05", 
       house: "Saraswati House",
       photo: "/images/students/student_prisha.jpg"
     }

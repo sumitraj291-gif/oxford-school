@@ -1,27 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { 
-  FileText, ShieldCheck, Download, Search, CheckCircle2, 
-  Award, Eye, Calendar, BookOpen, ExternalLink, Printer 
+  FileText, ShieldCheck, Search, 
+  Award, Eye, BookOpen, ExternalLink 
 } from 'lucide-react';
 import { SCHOOL_INFO, BOARD_RESULTS, CBSE_DISCLOSURE_DOCS } from '../data/schoolData';
 import DocumentViewerModal from '../components/DocumentViewerModal';
 
 export default function CbseDisclosure() {
   const location = useLocation();
-  const [activeTab, setActiveTab] = useState('disclosure');
+  const [selectedTabOverride, setSelectedTabOverride] = useState(null);
+  const activeTab = selectedTabOverride ?? (
+    location.hash === '#results' ? 'results' :
+    location.hash === '#curriculum' ? 'curriculum' : 'disclosure'
+  );
+  const setActiveTab = setSelectedTabOverride;
+
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedDoc, setSelectedDoc] = useState(null);
-
-  useEffect(() => {
-    if (location.hash === '#results') {
-      setActiveTab('results');
-    } else if (location.hash === '#curriculum') {
-      setActiveTab('curriculum');
-    } else if (location.hash === '#disclosure') {
-      setActiveTab('disclosure');
-    }
-  }, [location.hash]);
 
   const filteredDocs = CBSE_DISCLOSURE_DOCS.filter(doc => 
     doc.title.toLowerCase().includes(searchQuery.toLowerCase()) ||

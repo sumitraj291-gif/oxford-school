@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Phone, Mail, MapPin, Clock, Send, CheckCircle2, 
-  MessageCircle, Navigation, ExternalLink, Sparkles 
+  Navigation, ExternalLink, Sparkles 
 } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 
@@ -23,10 +23,16 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const cleanPhone = formData.phone.replace(/\D/g, '');
+    if (cleanPhone.length > 0 && !/^[6-9]\d{9}$/.test(cleanPhone)) {
+      alert('Please enter a valid 10-digit Indian mobile number starting with 6, 7, 8, or 9.');
+      return;
+    }
+
     const query = `*THE OXFORD SCHOOL, HARIDWAR - CONTACT ENQUIRY*
 ----------------------------------------
 *From:* ${formData.name}
-*Phone:* ${formData.phone}
+*Phone:* +91 ${cleanPhone || formData.phone}
 *Email:* ${formData.email || 'N/A'}
 *Subject:* ${formData.subject}
 *Message:*
@@ -35,7 +41,7 @@ ${formData.message}
 _Dispatched from Oxford School Contact Page_`;
 
     const url = `https://wa.me/${SCHOOL_INFO.whatsappNumber}?text=${encodeURIComponent(query)}`;
-    window.open(url, '_blank');
+    window.open(url, '_blank', 'noopener,noreferrer');
     setSubmitted(true);
   };
 
