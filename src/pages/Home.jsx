@@ -745,7 +745,7 @@ export default function Home({ onOpenEnquiry }) {
 
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-amber-300 font-semibold">
                   <span>Counselor Response Time:</span>
-                  <span className="bg-amber-500/20 px-2.5 py-1 rounded-md text-amber-300 border border-amber-400/30">Within 2 Working Days</span>
+                  <span className="bg-amber-500/20 px-2.5 py-1 rounded-md text-amber-300 border border-amber-400/30">2 Working Days</span>
                 </div>
               </div>
 
