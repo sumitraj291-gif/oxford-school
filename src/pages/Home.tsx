@@ -301,7 +301,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry, onOpenVideo }) => {
               Excellence in Numbers
             </h2>
             <p className="text-sm text-slate-600 mt-3">
-              Affiliated with the Central Board of Secondary Education (CBSE No. 3530514), delivering premier English-medium schooling in Roshnabad, Haridwar.
+              Affiliated with the Central Board of Secondary Education (CBSE No. {SCHOOL_INFO.affiliationNo}), delivering premier English-medium schooling in Roshnabad, Haridwar.
             </p>
           </div>
 
@@ -747,7 +747,7 @@ export const Home: React.FC<HomeProps> = ({ onOpenEnquiry, onOpenVideo }) => {
             <OxfordCrestLogo className="w-16 h-16 mx-auto" />
           </div>
           <span className="text-xs uppercase font-bold tracking-[0.35em] text-amber-400 block">
-            Admissions Open 2025–26
+            Admissions Open 2026–27
           </span>
           <h2 className="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
             Empower Your Child's Future at Oxford School

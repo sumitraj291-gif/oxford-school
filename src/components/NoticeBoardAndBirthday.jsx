@@ -518,7 +518,7 @@ Candidates must carry their original admit cards stamped by the Principal. Exter
                 </div>
                 <div className="flex items-start gap-2">
                   <span className="w-5 h-5 rounded-full bg-amber-500 text-slate-950 font-bold flex items-center justify-center text-[10px] shrink-0 mt-0.5">3</span>
-                  <span>Submit to your House English Teacher or email to <strong>theoxfordschoolhwr@gmail.com</strong>.</span>
+                  <span>Submit to your House English Teacher or email to <strong>theoxfordschoolharidwar@gmail.com</strong>.</span>
                 </div>
               </div>
 

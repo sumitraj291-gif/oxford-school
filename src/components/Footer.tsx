@@ -154,7 +154,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnquiry }) => {
             <ul className="space-y-2 text-xs">
               <li>
                 <Link to="/admissions" className="hover:text-white transition-colors flex items-center gap-1.5">
-                  <ChevronRight className="w-3 h-3 text-white/40" /> Admission Procedure 2025-26
+                  <ChevronRight className="w-3 h-3 text-white/40" /> Admission Procedure 2026-27
                 </Link>
               </li>
               <li>

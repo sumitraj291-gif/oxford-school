@@ -4,8 +4,8 @@ export const SCHOOL_INFO = {
   name: "The Oxford School, Haridwar",
   shortName: "The Oxford School",
   tagline: "CBSE Affiliated Senior Secondary School (Playgroup to Class XII)",
-  affiliationNo: "3530514",
-  schoolCode: "81734",
+  affiliationNo: "3530408",
+  schoolCode: "81632",
   affiliationStatus: "Affiliated to Central Board of Secondary Education (CBSE), New Delhi",
   curriculum: "CBSE (English Medium)",
   streams: "Science (PCM / PCB), Commerce, Humanities",
@@ -15,7 +15,7 @@ export const SCHOOL_INFO = {
   phoneNumbers: ["+91-9068885862", "+91-7060089183"],
   whatsappNumber: "917060089183",
   primaryPhone: "+91-7060089183",
-  email: "theoxfordschoolhwr@gmail.com",
+  email: "theoxfordschoolharidwar@gmail.com",
   secondaryEmail: "info@theoxfordschoolharidwar.com",
   officeHours: "Monday to Saturday: 8:00 AM – 2:30 PM",
   studentLoginUrl: "https://theoxfordschool.edunexttechnologies.com/Index",
@@ -28,7 +28,7 @@ export const SCHOOL_INFO = {
 };
 
 export const KEY_METRICS = [
-  { label: "Enrolled Students", value: "1,850+", suffix: "Scholars", description: "From Nursery to Class XII" },
+  { label: "Enrolled Students", value: "2,500+", suffix: "Scholars", description: "From Nursery to Class XII" },
   { label: "Faculty & Mentors", value: "85+", suffix: "Qualified Educators", description: "CBSE trained & certified" },
   { label: "Digital Classrooms", value: "48+", suffix: "Smart Rooms", description: "Equipped with interactive panels" },
   { label: "CBSE Pass Rate", value: "100%", suffix: "Board Record", description: "Consistently in Class X & XII" },
@@ -89,12 +89,12 @@ export const NOTICES_AND_CIRCULARS = [
   },
   {
     id: "not-2",
-    title: "Admissions Open for Session 2025-26 (Playgroup to Class XI)",
+    title: "Admissions Open for Session 2026-27 (Playgroup to Class XI)",
     date: "05 Feb 2025",
     category: "Admissions",
     badge: "New",
     fileSize: "680 KB",
-    content: "Registration forms for admission in Pre-Primary, Primary, Middle, and Senior Secondary sections for Academic Year 2025-26 are now open online and at campus."
+    content: "Registration forms for admission in Pre-Primary, Primary, Middle, and Senior Secondary sections for Academic Year 2026-27 are now open online and at campus."
   },
   {
     id: "not-3",
@@ -263,7 +263,7 @@ export const CBSE_DISCLOSURE_DOCS = [
     slNo: 1,
     title: "Affiliation / Upgradation Letter & Recent Extension",
     issuingAuthority: "Central Board of Secondary Education (CBSE), New Delhi",
-    refNumber: "CBSE/AFF/3530514/2024",
+    refNumber: "CBSE/AFF/3530408/2024",
     validTill: "Valid till 31/03/2028",
     status: "Verified",
     downloadUrl: "#"

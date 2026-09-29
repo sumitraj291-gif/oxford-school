@@ -238,7 +238,7 @@ _Dispatched from Oxford School Contact Page_`;
                     onChange={handleChange}
                     className="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002b49] bg-white"
                   >
-                    <option value="Admission Enquiry">Admission Enquiry (2025-26)</option>
+                    <option value="Admission Enquiry">Admission Enquiry (2026-27)</option>
                     <option value="Fee Structure Query">Fee Structure &amp; Schedule</option>
                     <option value="Bus Route & Transport">Bus Transport Routes</option>
                     <option value="Transfer Certificate / TC">Transfer Certificate (TC)</option>

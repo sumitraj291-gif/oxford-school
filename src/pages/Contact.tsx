@@ -163,7 +163,7 @@ Message: ${formData.message}`;
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
                     className="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-slate-900 text-xs focus:border-[#002b49] focus:bg-white focus:outline-none"
                   >
-                    <option value="Admission Inquiry">Admission Inquiry (2025-26)</option>
+                    <option value="Admission Inquiry">Admission Inquiry (2026-27)</option>
                     <option value="Fee Guidelines">Fee Guidelines & Scholarship</option>
                     <option value="Transport Routes">Transport & Bus Routes</option>
                     <option value="Career & Faculty">Faculty & Career Application</option>

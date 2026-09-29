@@ -95,7 +95,7 @@ export const About: React.FC<AboutProps> = ({ onOpenEnquiry }) => {
             About Our Institution
           </h1>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            Founded with the conviction that education must enlighten the spirit and empower the mind, The Oxford School, Haridwar is a premier CBSE affiliated institution (Affiliation No. 3530514) in Roshnabad.
+            Founded with the conviction that education must enlighten the spirit and empower the mind, The Oxford School, Haridwar is a premier CBSE affiliated institution (Affiliation No. {SCHOOL_INFO.affiliationNo}) in Roshnabad.
           </p>
         </div>
 
@@ -210,7 +210,7 @@ export const About: React.FC<AboutProps> = ({ onOpenEnquiry }) => {
               <span className="text-2xl font-mono font-bold text-[#002b49]">2018</span>
               <h4 className="text-base font-bold text-slate-900">CBSE Affiliation</h4>
               <p className="text-xs text-slate-600 leading-relaxed">
-                Awarded official affiliation by CBSE New Delhi (Affiliation No. 3530514) for Secondary Schooling.
+                Awarded official affiliation by CBSE New Delhi (Affiliation No. {SCHOOL_INFO.affiliationNo}) for Secondary Schooling.
               </p>
             </div>
 

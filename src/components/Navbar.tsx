@@ -104,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
                 O X F O R D
               </span>
               <span className="text-slate-500 text-[9px] font-medium tracking-[0.15em] uppercase hidden sm:block">
-                Haridwar • CBSE #3530514
+                Haridwar • CBSE #{SCHOOL_INFO.affiliationNo}
               </span>
             </div>
           </Link>

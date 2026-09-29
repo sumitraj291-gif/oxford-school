@@ -147,13 +147,13 @@ _Generated via Oxford School Official Portal_`;
           <div>
             <div className="mb-6">
               <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#002b49] block">
-                Academic Session 2025–26
+                Academic Session 2026–27
               </span>
               <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
                 Online Admission Enquiry
               </h2>
               <p className="text-xs text-slate-500 mt-1">
-                Playgroup to Class XII • CBSE Affiliated (No. 3530514) • Haridwar
+                Playgroup to Class XII • CBSE Affiliated (No. {SCHOOL_INFO.affiliationNo}) • Haridwar
               </p>
             </div>
 

@@ -10,7 +10,7 @@ export default function FloatingWhatsApp() {
     e.preventDefault();
     const queryText = message.trim() 
       ? `Hello The Oxford School, Haridwar! I have an enquiry: ${message.trim()}`
-      : `Hello The Oxford School, Haridwar! I would like to enquire about Admissions for Academic Session 2025-26.`;
+      : `Hello The Oxford School, Haridwar! I would like to enquire about Admissions for Academic Session 2026-27.`;
 
     const url = `https://wa.me/${SCHOOL_INFO.whatsappNumber}?text=${encodeURIComponent(queryText)}`;
     window.open(url, '_blank', 'noopener,noreferrer');

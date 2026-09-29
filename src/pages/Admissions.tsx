@@ -58,7 +58,7 @@ Notes: ${formData.notes || 'N/A'}`;
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-20 space-y-4">
           <span className="text-xs uppercase font-bold tracking-[0.25em] text-[#002b49]">
-            Academic Session 2025–26
+            Academic Session 2026–27
           </span>
           <h1 className="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900">
             Admission Guidelines & Procedure

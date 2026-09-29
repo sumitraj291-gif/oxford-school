@@ -28,7 +28,7 @@ export const CbseDisclosure: React.FC = () => {
             Mandatory Public Disclosure
           </h1>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
-            In compliance with Central Board of Secondary Education (CBSE) regulations, complete regulatory credentials, safety certifications, and academic track records for The Oxford School (Affiliation No. 3530514, School Code: 81734) are disclosed below.
+            In compliance with Central Board of Secondary Education (CBSE) regulations, complete regulatory credentials, safety certifications, and academic track records for The Oxford School (Affiliation No. {SCHOOL_INFO.affiliationNo}, School Code: {SCHOOL_INFO.schoolCode}) are disclosed below.
           </p>
         </div>
 
@@ -251,7 +251,7 @@ export const CbseDisclosure: React.FC = () => {
                   <span className="text-emerald-700 font-semibold">{selectedDoc.validTill} (Verified on CBSE SARAS Portal)</span>
                 </div>
                 <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 text-[11px] text-slate-600 leading-relaxed">
-                  The original document is archived at the administrative records section, The Oxford School, Roshnabad Haridwar, and is verified under CBSE Affiliation No. 3530514.
+                  The original document is archived at the administrative records section, The Oxford School, Roshnabad Haridwar, and is verified under CBSE Affiliation No. {SCHOOL_INFO.affiliationNo}.
                 </div>
               </div>
 

@@ -6,7 +6,7 @@ export const FloatingWhatsApp: React.FC = () => {
   const [showTooltip, setShowTooltip] = useState(false);
 
   const defaultMessage = encodeURIComponent(
-    "Hello Oxford School Haridwar! I would like to inquire about Admission for Academic Session 2025-26."
+    "Hello Oxford School Haridwar! I would like to inquire about Admission for Academic Session 2026-27."
   );
 
   return (

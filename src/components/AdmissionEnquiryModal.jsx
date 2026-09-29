@@ -98,7 +98,7 @@ _Generated via Official School Website Portal_`;
               </div>
               <div>
                 <h3 className="text-xl font-bold font-serif text-amber-400">The Oxford School, Haridwar</h3>
-                <p className="text-xs text-slate-300">Admission Enquiry • Academic Session 2025-26 (CBSE)</p>
+                <p className="text-xs text-slate-300">Admission Enquiry • Academic Session 2026-27 (CBSE)</p>
               </div>
             </div>
             <button 

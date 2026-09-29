@@ -87,7 +87,7 @@ _Dispatched via Oxford School Admissions Portal_`;
           <div className="max-w-3xl relative z-10 space-y-4">
             <span className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 px-3.5 py-1.5 rounded-full text-xs font-semibold border border-amber-400/30">
               <Sparkles className="w-4 h-4 text-amber-400" />
-              <span>Admissions Open for Session 2025-26</span>
+              <span>Admissions Open for Session 2026-27</span>
             </span>
             <h1 className="text-3xl sm:text-4xl font-serif font-bold text-white leading-tight">
               Join The Oxford School Family
@@ -152,7 +152,7 @@ _Dispatched via Oxford School Admissions Portal_`;
               CBSE Age Eligibility
             </span>
             <h2 className="text-2xl font-serif font-bold text-[#002b49] mt-3">
-              Age Criteria for Session 2025-26
+              Age Criteria for Session 2026-27
             </h2>
             <p className="text-xs sm:text-sm text-slate-600 mt-1">
               As per National Education Policy (NEP) guidelines and CBSE regulations:

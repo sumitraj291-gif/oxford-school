@@ -6,7 +6,7 @@ import {
   Bell, Calendar, Newspaper, RotateCw, Send, PhoneCall, Mail
 } from 'lucide-react';
 import { 
-  KEY_METRICS, FACILITIES_DATA, 
+  SCHOOL_INFO, KEY_METRICS, FACILITIES_DATA, 
   LEADERSHIP_MESSAGES, PARENT_TESTIMONIALS 
 } from '../data/schoolData';
 import NoticeBoardAndBirthday from '../components/NoticeBoardAndBirthday';
@@ -90,7 +90,7 @@ export default function Home({ onOpenEnquiry }) {
   const featuredNews = [
     {
       id: "news-1",
-      title: "Admissions Open for Academic Session 2025-26 (Playgroup to Class XII)",
+      title: "Admissions Open for Academic Session 2026-27 (Playgroup to Class XII)",
       date: "February 2025",
       category: "Admissions",
       badge: "Active",
@@ -200,7 +200,7 @@ export default function Home({ onOpenEnquiry }) {
                 <span>Latest News</span>
               </div>
               <div className="text-xs sm:text-sm text-slate-200 truncate">
-                <span className="text-amber-300 font-semibold">Admissions 2025–26:</span> Registration open for Playgroup to Class XII • CBSE Board Exam Guidelines Released
+                <span className="text-amber-300 font-semibold">Admissions 2026–27:</span> Registration open for Playgroup to Class XII • CBSE Board Exam Guidelines Released
               </div>
             </div>
 
@@ -697,7 +697,7 @@ export default function Home({ onOpenEnquiry }) {
           {/* Section Heading */}
           <div className="text-center max-w-3xl mx-auto mb-12">
             <span className="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/20 px-3.5 py-1 rounded-full border border-amber-400/30 inline-block mb-3">
-              Admissions Open 2025–26
+              Admissions Open 2026–27
             </span>
             <h2 className="text-2xl sm:text-4xl font-serif font-bold text-white tracking-tight">
               Admission Enquiry &amp; Prospectus Application
@@ -720,7 +720,7 @@ export default function Home({ onOpenEnquiry }) {
                   </div>
                   <div>
                     <h3 className="text-base font-bold text-white">Why Join The Oxford School?</h3>
-                    <p className="text-xs text-amber-300">CBSE Affiliation No. 3530462 • Roshnabad</p>
+                    <p className="text-xs text-amber-300">CBSE Affiliation No. {SCHOOL_INFO.affiliationNo} • School Code: {SCHOOL_INFO.schoolCode} • Roshnabad</p>
                   </div>
                 </div>
 
@@ -745,7 +745,7 @@ export default function Home({ onOpenEnquiry }) {
 
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-amber-300 font-semibold">
                   <span>Counselor Response Time:</span>
-                  <span className="bg-amber-500/20 px-2.5 py-1 rounded-md text-amber-300 border border-amber-400/30">Within 2 Hours</span>
+                  <span className="bg-amber-500/20 px-2.5 py-1 rounded-md text-amber-300 border border-amber-400/30">Within 2 Working Days</span>
                 </div>
               </div>
 
@@ -760,7 +760,7 @@ export default function Home({ onOpenEnquiry }) {
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <Mail className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>theoxfordschool2014@gmail.com</span>
+                  <span>{SCHOOL_INFO.email}</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
@@ -784,7 +784,7 @@ export default function Home({ onOpenEnquiry }) {
                       <p className="text-xs text-slate-500 mt-1">Please provide complete information. All starred (*) fields are required.</p>
                     </div>
                     <span className="hidden sm:inline-block px-3 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg border border-amber-300">
-                      Session 2025–26
+                      Session 2026–27
                     </span>
                   </div>
                 </div>
@@ -796,7 +796,7 @@ export default function Home({ onOpenEnquiry }) {
                     </div>
                     <h4 className="text-base font-bold text-emerald-900">Enquiry Submitted Successfully!</h4>
                     <p className="text-xs text-emerald-700 max-w-md mx-auto">
-                      Thank you for your interest in The Oxford School, Haridwar. Our admission counselor will review your child's application and call you within 2 working hours.
+                      Thank you for your interest in The Oxford School, Haridwar. Our admission counselor will review your child's application and call you within 2 working days.
                     </p>
                     <button
                       type="button"
@@ -922,7 +922,7 @@ export default function Home({ onOpenEnquiry }) {
                         <input
                           type="text"
                           readOnly
-                          value="2025–2026 (Upcoming)"
+                          value="2026–2027 (Upcoming)"
                           className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 bg-slate-100 text-slate-600 text-xs font-semibold"
                         />
                       </div>
@@ -988,7 +988,7 @@ export default function Home({ onOpenEnquiry }) {
                         )}
                       </button>
                       <p className="text-[11px] text-slate-500 text-center mt-2.5">
-                        🔒 Your information is secure. Our admission desk will connect with you within 2 working hours.
+                        🔒 Your information is secure. Our admission desk will connect with you within 2 working days.
                       </p>
                     </div>
                   </form>

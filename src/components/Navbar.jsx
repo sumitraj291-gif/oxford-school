@@ -256,7 +256,7 @@ export default function Navbar({ onOpenEnquiry }) {
                 className="w-full py-2.5 px-4 rounded-xl text-xs font-bold text-center text-white bg-[#002b49] hover:bg-[#003e6b] flex items-center justify-center gap-2 shadow"
               >
                 <Sparkles className="w-4 h-4 text-amber-400" />
-                <span>Submit Admission Enquiry 2025-26</span>
+                <span>Submit Admission Enquiry 2026-27</span>
               </button>
 
               <div className="pt-2 text-center text-xs text-slate-500">

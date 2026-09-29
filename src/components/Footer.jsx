@@ -80,7 +80,7 @@ export default function Footer({ onOpenEnquiry }) {
                 onClick={onOpenEnquiry}
                 className="px-3.5 py-2 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white rounded-xl text-xs font-bold transition shadow cursor-pointer"
               >
-                Admission Enquiry 2025-26
+                Admission Enquiry 2026-27
               </button>
               <a
                 href={SCHOOL_INFO.studentLoginUrl}
