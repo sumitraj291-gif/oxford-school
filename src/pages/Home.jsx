@@ -347,13 +347,31 @@ export default function Home({ onOpenEnquiry }) {
                   key={idx}
                   className="perspective-1000 h-[430px] sm:h-[460px] w-full select-none cursor-pointer group"
                   onClick={() => toggleCardFlip(idx)}
+                  style={{ perspective: '1200px' }}
                 >
-                  <div className={`relative w-full h-full duration-700 transform-style-3d transition-transform rounded-2xl ${
-                    isFlipped ? 'rotate-y-180' : ''
-                  }`}>
+                  <div 
+                    className={`relative w-full h-full duration-700 transform-style-3d transition-transform rounded-2xl ${
+                      isFlipped ? 'rotate-y-180' : ''
+                    }`}
+                    style={{
+                      transformStyle: 'preserve-3d',
+                      WebkitTransformStyle: 'preserve-3d',
+                      transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)'
+                    }}
+                  >
                     
                     {/* Front Face: Portrait Photo + Name & Designation Overlay */}
-                    <div className="absolute inset-0 w-full h-full backface-hidden rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900 flex flex-col justify-end text-left">
+                    <div 
+                      className={`absolute inset-0 w-full h-full backface-hidden rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900 flex flex-col justify-end text-left ${
+                        isFlipped ? 'pointer-events-none' : 'pointer-events-auto'
+                      }`}
+                      style={{
+                        backfaceVisibility: 'hidden',
+                        WebkitBackfaceVisibility: 'hidden',
+                        transform: 'rotateY(0deg) translateZ(1px)',
+                        zIndex: isFlipped ? 1 : 2
+                      }}
+                    >
                       <img 
                         src={msg.image} 
                         alt={msg.name} 
@@ -395,7 +413,17 @@ export default function Home({ onOpenEnquiry }) {
                     </div>
 
                     {/* Back Face: Flip reveal with mini photo avatar + quote + message */}
-                    <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180 rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-500/60 bg-white p-5 sm:p-6 flex flex-col justify-between text-left">
+                    <div 
+                      className={`absolute inset-0 w-full h-full backface-hidden rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-500/60 bg-white p-5 sm:p-6 flex flex-col justify-between text-left ${
+                        isFlipped ? 'pointer-events-auto' : 'pointer-events-none'
+                      }`}
+                      style={{
+                        backfaceVisibility: 'hidden',
+                        WebkitBackfaceVisibility: 'hidden',
+                        transform: 'rotateY(180deg) translateZ(1px)',
+                        zIndex: isFlipped ? 2 : 1
+                      }}
+                    >
                       
                       {/* Top Header with small side photo */}
                       <div className="flex items-center justify-between border-b border-slate-100 pb-3">
@@ -417,6 +445,7 @@ export default function Home({ onOpenEnquiry }) {
                         </div>
 
                         <button 
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             toggleCardFlip(idx);
@@ -429,7 +458,10 @@ export default function Home({ onOpenEnquiry }) {
                       </div>
 
                       {/* Middle Quote & Message */}
-                      <div className="my-auto py-2 space-y-2.5 overflow-y-auto max-h-[260px] pr-1">
+                      <div 
+                        className="my-auto py-2 space-y-2.5 overflow-y-auto max-h-[260px] pr-1"
+                        onClick={(e) => e.stopPropagation()}
+                      >
                         <blockquote className="text-xs sm:text-[13px] font-semibold text-slate-900 italic bg-amber-50/80 p-3 rounded-xl border border-amber-200/60 leading-relaxed text-left">
                           "{msg.quote}"
                         </blockquote>
@@ -441,6 +473,7 @@ export default function Home({ onOpenEnquiry }) {
                       {/* Bottom Controls */}
                       <div className="pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
                         <button
+                          type="button"
                           onClick={(e) => {
                             e.stopPropagation();
                             toggleCardFlip(idx);
