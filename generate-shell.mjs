@@ -1,6 +1,9 @@
 // Base helper for standard Page Shell (SEO Meta, Header, Nav, Footer, Scripts)
 function renderPageShell({ title, description, keywords, canonicalUrl, activePage, content }) {
   const currentYear = new Date().getFullYear();
+  const canonicalHref = (!canonicalUrl || canonicalUrl === 'index.html' || canonicalUrl === '/') 
+    ? 'https://theoxfordschoolharidwar.in/' 
+    : (canonicalUrl.startsWith('http') ? canonicalUrl : `https://theoxfordschoolharidwar.in/${canonicalUrl}`);
 
   return `<!doctype html>
 <html lang="en" class="scroll-smooth">
@@ -14,12 +17,12 @@ function renderPageShell({ title, description, keywords, canonicalUrl, activePag
   <title>${title}</title>
   <meta name="description" content="${description}" />
   <meta name="keywords" content="${keywords}" />
-  <link rel="canonical" href="https://theoxfordschoolharidwar.in/${canonicalUrl}" />
+  <link rel="canonical" href="${canonicalHref}" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://theoxfordschoolharidwar.in/${canonicalUrl}" />
+  <meta property="og:url" content="${canonicalHref}" />
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${description}" />
   <meta property="og:image" content="https://theoxfordschoolharidwar.in/images/campus_hero.jpg" />
@@ -192,24 +195,66 @@ function renderPageShell({ title, description, keywords, canonicalUrl, activePag
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "School",
-    "name": "The Oxford School, Haridwar",
-    "alternateName": "Oxford Senior Secondary School Roshnabad",
-    "url": "https://theoxfordschoolharidwar.in",
-    "logo": "https://theoxfordschoolharidwar.in/ox-logo.webp",
-    "image": "https://theoxfordschoolharidwar.in/images/campus_hero.jpg",
-    "description": "${description}",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Shiv Ratan City, Navodaya Nagar, Roshnabad",
-      "addressLocality": "Haridwar",
-      "addressRegion": "Uttarakhand",
-      "postalCode": "249402",
-      "addressCountry": "IN"
-    },
-    "telephone": "+91-7060089183",
-    "email": "theoxfordschoolhwr@gmail.com",
-    "motto": "Strive and Soar High"
+    "@graph": [
+      {
+        "@type": "School",
+        "@id": "https://theoxfordschoolharidwar.in/#school",
+        "name": "The Oxford School, Haridwar",
+        "alternateName": ["The Oxford School", "Oxford School Roshnabad", "Oxford Senior Secondary School Haridwar"],
+        "url": "https://theoxfordschoolharidwar.in/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://theoxfordschoolharidwar.in/ox-logo.webp",
+          "caption": "The Oxford School Logo"
+        },
+        "image": "https://theoxfordschoolharidwar.in/images/campus_hero.jpg",
+        "description": "${description}",
+        "identifier": "3530408",
+        "hasCredential": {
+          "@type": "EducationalOccupationalCredential",
+          "credentialCategory": "CBSE Affiliation (10+2)",
+          "recognizedBy": {
+            "@type": "Organization",
+            "name": "Central Board of Secondary Education (CBSE), New Delhi"
+          }
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Shivratan City, Navodaya Nagar, Rajnadesh",
+          "addressLocality": "Haridwar",
+          "addressRegion": "Uttarakhand",
+          "postalCode": "249402",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "29.9576402",
+          "longitude": "78.0864389"
+        },
+        "telephone": ["+91-9068885862", "+91-7060089183"],
+        "email": "theoxfordschoolharidwar@gmail.com",
+        "foundingDate": "2014",
+        "parentOrganization": {
+          "@type": "EducationalOrganization",
+          "name": "Shivratan Education Society"
+        },
+        "motto": "Strive and Soar High",
+        "sameAs": [
+          "https://www.facebook.com/theoxfordschoolharidwar",
+          "https://www.instagram.com/theoxfordschoolharidwar",
+          "https://www.youtube.com/@theoxfordschoolharidwar"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://theoxfordschoolharidwar.in/#website",
+        "url": "https://theoxfordschoolharidwar.in/",
+        "name": "The Oxford School, Haridwar",
+        "publisher": {
+          "@id": "https://theoxfordschoolharidwar.in/#school"
+        }
+      }
+    ]
   }
   </script>
 </head>
@@ -227,29 +272,29 @@ function renderPageShell({ title, description, keywords, canonicalUrl, activePag
           <span>CBSE AFFILIATED (10+2)</span>
         </span>
         <span class="text-white/30">•</span>
-        <span class="text-slate-300">Affiliation No. <strong class="text-white">3530514</strong></span>
+        <span class="text-slate-300">Affiliation No. <strong class="text-white">3530408</strong></span>
         <span class="text-white/30">•</span>
-        <span class="text-slate-300">School Code: <strong class="text-white">81734</strong></span>
+        <span class="text-slate-300">School Code: <strong class="text-white">81632</strong></span>
         <span class="text-white/30">•</span>
         <span class="text-amber-300/90 italic font-serif">Motto: "Strive and Soar High"</span>
       </div>
 
       <!-- Right: Helpline, Email, CBSE Disclosure, ERP Login -->
       <div class="flex items-center gap-4">
-        <a href="tel:+917060089183" class="hover:text-amber-400 flex items-center gap-1.5 transition text-slate-300">
+        <a href="tel:+919068885862" class="hover:text-amber-400 flex items-center gap-1.5 transition text-slate-300">
           <i data-lucide="phone-call" class="w-3 h-3 text-amber-400"></i>
-          <span>+91-7060089183</span>
+          <span>+91-9068885862</span>
         </a>
-        <a href="mailto:theoxfordschoolhwr@gmail.com" class="hover:text-amber-400 hidden xl:flex items-center gap-1.5 transition text-slate-300">
+        <a href="mailto:theoxfordschoolharidwar@gmail.com" class="hover:text-amber-400 hidden xl:flex items-center gap-1.5 transition text-slate-300">
           <i data-lucide="mail" class="w-3 h-3 text-amber-400"></i>
-          <span>theoxfordschoolhwr@gmail.com</span>
+          <span>theoxfordschoolharidwar@gmail.com</span>
         </a>
         <a href="cbse.html" class="text-amber-400 hover:text-amber-300 font-semibold transition flex items-center gap-1">
           <i data-lucide="file-text" class="w-3 h-3"></i>
           <span>CBSE Disclosure</span>
         </a>
         <a 
-          href="https://oxf.edunexttechnologies.com/" 
+          href="https://theoxfordschool.edunexttechnologies.com/Index" 
           target="_blank" 
           rel="noopener noreferrer" 
           class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-2.5 py-0.5 rounded text-[11px] flex items-center gap-1 shadow-sm transition"
@@ -579,7 +624,7 @@ function renderPageShell({ title, description, keywords, canonicalUrl, activePag
           </div>
           <div>
             <h5 class="text-sm font-bold text-white">CBSE Affiliated</h5>
-            <p class="text-[11px] text-slate-400">Affiliation No. 3530514 (10+2)</p>
+            <p class="text-[11px] text-slate-400">Affiliation No. 3530408 (10+2)</p>
           </div>
         </div>
         <div class="flex items-center gap-3.5">
@@ -641,7 +686,7 @@ function renderPageShell({ title, description, keywords, canonicalUrl, activePag
             <button onclick="openModal('enquiry-modal')" class="btn-gold-primary px-4 py-2 text-white rounded-xl text-xs font-bold transition shadow cursor-pointer">
               Admission Enquiry 2026–27
             </button>
-            <a href="https://oxf.edunexttechnologies.com/" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs font-medium transition flex items-center gap-1.5">
+            <a href="https://theoxfordschool.edunexttechnologies.com/Index" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs font-medium transition flex items-center gap-1.5">
               <span>ERP Portal</span>
               <i data-lucide="external-link" class="w-3.5 h-3.5"></i>
             </a>
@@ -694,15 +739,15 @@ function renderPageShell({ title, description, keywords, canonicalUrl, activePag
           <div class="space-y-3.5 text-xs text-slate-300">
             <div class="flex items-start gap-2.5">
               <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 shrink-0 mt-0.5"></i>
-              <span>Shiv Ratan City, Navodaya Nagar, Roshnabad, Haridwar, Uttarakhand – 249402</span>
+              <span>Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand – 249402</span>
             </div>
             <div class="flex items-center gap-2.5">
               <i data-lucide="phone" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>+91-7060089183, +91-9068885862</span>
+              <span>+91-9068885862, +91-7060089183</span>
             </div>
             <div class="flex items-center gap-2.5">
               <i data-lucide="mail" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>theoxfordschoolhwr@gmail.com</span>
+              <span>theoxfordschoolharidwar@gmail.com</span>
             </div>
             <div class="flex items-center gap-2.5">
               <i data-lucide="clock" class="w-4 h-4 text-amber-400 shrink-0"></i>

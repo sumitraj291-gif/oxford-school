@@ -703,7 +703,7 @@ function generateHomePage() {
               </div>
               <div>
                 <h3 class="text-base font-bold text-white">Why Join The Oxford School?</h3>
-                <p class="text-xs text-amber-300">CBSE Affiliation No. 3530514 • Roshnabad</p>
+                <p class="text-xs text-amber-300">CBSE Affiliation No. 3530408 • Haridwar</p>
               </div>
             </div>
 
@@ -880,10 +880,10 @@ function generateHomePage() {
   `;
 
   return renderPageShell({
-    title: "The Oxford School, Haridwar | CBSE Affiliated Senior Secondary School Roshnabad",
-    description: "Official website of The Oxford School, Haridwar (CBSE Affiliated No. 3530514). Premier English medium co-ed school in Roshnabad offering holistic academics, robotics lab, smart classes, and 100% board results.",
-    keywords: "The Oxford School Haridwar, CBSE school in Haridwar, Roshnabad school, admissions 2026-27 Haridwar, best school in Haridwar, top CBSE school Uttarakhand",
-    canonicalUrl: "index.html",
+    title: "The Oxford School Haridwar | CBSE Affiliated Senior Secondary School",
+    description: "The Oxford School, Haridwar is a premier CBSE Affiliated Senior Secondary School (Affiliation No. 3530408, School Code 81632) in Haridwar. Admissions open 2026-27 for Nursery to Class XII.",
+    keywords: "The Oxford School Haridwar, CBSE school in Haridwar, admissions 2026-27 Haridwar, best school in Haridwar, top CBSE school Uttarakhand",
+    canonicalUrl: "",
     activePage: "home",
     content
   });
@@ -1070,7 +1070,7 @@ function generateAdmissionsPage() {
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
       <div class="max-w-3xl">
         <span class="text-xs font-bold uppercase tracking-wider text-amber-400 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-400/30">
-          Academic Year 2025-26
+          Academic Year 2026-27
         </span>
         <h1 class="text-3xl sm:text-4xl font-serif font-extrabold text-white mt-3">
           Admissions Procedure &amp; Guidelines
@@ -1220,7 +1220,7 @@ function generateAdmissionsPage() {
       <div class="bg-white rounded-2xl shadow-md border border-slate-200 overflow-hidden">
         <div class="bg-[#002b49] text-white p-6">
           <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Direct Desk Submission</span>
-          <h2 class="text-xl sm:text-2xl font-serif font-bold mt-1">Online Admission Enquiry Form 2025-26</h2>
+          <h2 class="text-xl sm:text-2xl font-serif font-bold mt-1">Online Admission Enquiry Form 2026-27</h2>
           <p class="text-xs text-slate-300 mt-1">Fill out the details below and our admission counselor will call you within 24 hours.</p>
         </div>
         <form class="p-6 space-y-4 text-xs site-enquiry-form">
@@ -1277,9 +1277,9 @@ function generateAdmissionsPage() {
   `;
 
   return renderPageShell({
-    title: "Admissions 2025-26 | The Oxford School Haridwar - Procedure & Form",
-    description: "Official Admission procedure for Academic Session 2025-26 at The Oxford School, Haridwar. Age criteria matrix, verification documents checklist, fee transparency, and online enquiry application.",
-    keywords: "The Oxford School admissions 2025-26, Haridwar school admission form, Roshnabad school admission, age criteria CBSE school Haridwar, online admission enquiry",
+    title: "Admissions 2026-27 | The Oxford School Haridwar - Procedure & Form",
+    description: "Official Admission procedure for Academic Session 2026-27 at The Oxford School, Haridwar. Age criteria matrix, verification documents checklist, fee transparency, and online enquiry application.",
+    keywords: "The Oxford School admissions 2026-27, Haridwar school admission form, age criteria CBSE school Haridwar, online admission enquiry Haridwar",
     canonicalUrl: "admissions.html",
     activePage: "admissions",
     content
@@ -1406,15 +1406,15 @@ function generateCbsePage() {
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
             <span class="text-slate-400 block text-[11px]">CBSE AFFILIATION NUMBER</span>
-            <span class="font-bold text-[#002b49] text-sm">3530462</span>
+            <span class="font-bold text-[#002b49] text-sm">3530408</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
             <span class="text-slate-400 block text-[11px]">SCHOOL CODE</span>
-            <span class="font-bold text-[#002b49] text-sm">81689</span>
+            <span class="font-bold text-[#002b49] text-sm">81632</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
             <span class="text-slate-400 block text-[11px]">COMPLETE ADDRESS</span>
-            <span class="font-bold text-[#002b49]">Near Collectorate Office, Roshnabad, Haridwar, Uttarakhand – 249403</span>
+            <span class="font-bold text-[#002b49]">Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand – 249402</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
             <span class="text-slate-400 block text-[11px]">PRINCIPAL NAME &amp; QUALIFICATION</span>
@@ -1422,7 +1422,7 @@ function generateCbsePage() {
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
             <span class="text-slate-400 block text-[11px]">SCHOOL EMAIL &amp; CONTACT</span>
-            <span class="font-bold text-[#002b49]">theoxfordschoolhwr@gmail.com | +91-7060089183, +91-9068885862</span>
+            <span class="font-bold text-[#002b49]">theoxfordschoolharidwar@gmail.com | +91-9068885862, +91-7060089183</span>
           </div>
         </div>
       </div>
@@ -1606,9 +1606,9 @@ function generateCbsePage() {
   `;
 
   return renderPageShell({
-    title: "CBSE Mandatory Public Disclosure & Results | The Oxford School Haridwar",
-    description: "CBSE Mandatory Public Disclosure for The Oxford School Haridwar (Affiliation No. 3530462). Verified affiliation certificates, safety clearances, 100% board results, and Class XI-XII stream subjects.",
-    keywords: "CBSE mandatory disclosure Oxford School Haridwar, school code 81689, CBSE affiliation 3530462, board results Class 10 12 Haridwar, Oxford School Roshnabad disclosure",
+    title: "CBSE Mandatory Public Disclosure | The Oxford School Haridwar",
+    description: "CBSE Mandatory Public Disclosure for The Oxford School Haridwar (Affiliation No. 3530408, School Code 81632). Verified certificates, safety clearances, and board results.",
+    keywords: "CBSE mandatory disclosure Oxford School Haridwar, school code 81632, CBSE affiliation 3530408, board results Class 10 12 Haridwar, Oxford School Haridwar disclosure",
     canonicalUrl: "cbse.html",
     activePage: "cbse",
     content

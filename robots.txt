@@ -1,8 +1,41 @@
 # Robots.txt for The Oxford School, Haridwar
-# https://theoxfordschoolharidwar.in
+# Official Website: https://theoxfordschoolharidwar.in
+# CBSE Affiliation No. 3530408 | School Code: 81632
+
+User-agent: Googlebot
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /downloads/
+Allow: /*.pdf$
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+
+User-agent: Googlebot-Image
+Allow: /images/
+Allow: /ox-logo.webp
+Allow: /*.jpg$
+Allow: /*.png$
+Allow: /*.webp$
+
+User-agent: Bingbot
+Allow: /
+Allow: /downloads/
 
 User-agent: *
 Allow: /
+Disallow: /_old_jsx/
+Disallow: /_headers
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /tsconfig.json
+Disallow: /*.bak$
+Disallow: /*.mjs$
 
-# Sitemap Location
+# Canonical Host
+Host: theoxfordschoolharidwar.in
+
+# XML Sitemap
 Sitemap: https://theoxfordschoolharidwar.in/sitemap.xml

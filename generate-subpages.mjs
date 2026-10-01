@@ -694,7 +694,7 @@ export function generateHousesPage() {
 export function generateAdmissionProcedurePage() {
   const content = `
   ${renderBreadcrumb([
-    { name: 'Admissions 2025-26', url: 'admissions.html' },
+    { name: 'Admissions 2026-27', url: 'admissions.html' },
     { name: 'Admission Procedure', url: 'admission-procedure.html' }
   ])}
 
@@ -702,7 +702,7 @@ export function generateAdmissionProcedurePage() {
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="text-center max-w-3xl mx-auto space-y-3">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-700 block">Academic Session 2025-26</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-700 block">Academic Session 2026-27</span>
         <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[#002b49]">
           Step-by-Step Admission Procedure
         </h1>
@@ -828,8 +828,8 @@ export function generateAdmissionProcedurePage() {
   `;
 
   return renderPageShell({
-    title: "Admission Procedure 2025-26 | Step-by-Step Guide - The Oxford School Haridwar",
-    description: "Detailed step-by-step admission procedure for session 2025-26 at The Oxford School Haridwar. Registration, document checklist, entrance assessment, and fee schedule.",
+    title: "Admission Procedure 2026-27 | Step-by-Step Guide - The Oxford School Haridwar",
+    description: "Detailed step-by-step admission procedure for session 2026-27 at The Oxford School Haridwar. Registration, document checklist, entrance assessment, and fee schedule.",
     keywords: "Admission procedure Oxford School Haridwar, school admission steps Roshnabad, documents required admission CBSE Haridwar, Oxford School admission guidelines",
     canonicalUrl: "admission-procedure.html",
     activePage: "admission-procedure",
@@ -843,7 +843,7 @@ export function generateAdmissionProcedurePage() {
 export function generateEligibilityCriteriaPage() {
   const content = `
   ${renderBreadcrumb([
-    { name: 'Admissions 2025-26', url: 'admissions.html' },
+    { name: 'Admissions 2026-27', url: 'admissions.html' },
     { name: 'Eligibility & Age Criteria', url: 'eligibility-criteria.html' }
   ])}
 
@@ -851,7 +851,7 @@ export function generateEligibilityCriteriaPage() {
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
       
       <div class="text-center max-w-3xl mx-auto space-y-3">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-700 block">Admission Norms 2025-26</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-700 block">Admission Norms 2026-27</span>
         <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[#002b49]">
           Eligibility Norms &amp; Age Criteria
         </h1>
@@ -986,7 +986,7 @@ export function generateEligibilityCriteriaPage() {
   `;
 
   return renderPageShell({
-    title: "Eligibility & Age Criteria 2025-26 | The Oxford School Haridwar",
+    title: "Eligibility & Age Criteria 2026-27 | The Oxford School Haridwar",
     description: "Official age criteria and eligibility norms for Nursery to Class XII at The Oxford School Haridwar. Class XI Science and Commerce stream cut-offs.",
     keywords: "Age criteria Oxford School Haridwar, school admission age Uttarakhand, class 11 stream cut off Haridwar, nursery admission age CBSE",
     canonicalUrl: "eligibility-criteria.html",
@@ -1001,7 +1001,7 @@ export function generateEligibilityCriteriaPage() {
 export function generateFeeGuidelinesPage() {
   const content = `
   ${renderBreadcrumb([
-    { name: 'Admissions 2025-26', url: 'admissions.html' },
+    { name: 'Admissions 2026-27', url: 'admissions.html' },
     { name: 'Fee Guidelines', url: 'fee-guidelines.html' }
   ])}
 
@@ -1044,7 +1044,7 @@ export function generateFeeGuidelinesPage() {
 
       <!-- Payment Deadlines Schedule -->
       <div class="bg-white rounded-3xl p-8 border border-slate-200 shadow-md">
-        <h3 class="text-xl font-serif font-bold text-[#002b49] mb-4">Quarterly Payment Due Dates (Session 2025-26)</h3>
+        <h3 class="text-xl font-serif font-bold text-[#002b49] mb-4">Quarterly Payment Due Dates (Session 2026-27)</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
           
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -1103,7 +1103,7 @@ export function generateFeeGuidelinesPage() {
   `;
 
   return renderPageShell({
-    title: "Fee Guidelines & Payment Schedule 2025-26 | The Oxford School Haridwar",
+    title: "Fee Guidelines & Payment Schedule 2026-27 | The Oxford School Haridwar",
     description: "Detailed fee guidelines, quarterly payment schedule, and online payment methods for The Oxford School Haridwar. Transparent and non-commercialized CBSE fee structure.",
     keywords: "Fee structure Oxford School Haridwar, school fees Roshnabad, quarterly fee schedule, online school fee payment Edunext Oxford School",
     canonicalUrl: "fee-guidelines.html",
@@ -1118,7 +1118,7 @@ export function generateFeeGuidelinesPage() {
 export function generateOnlineEnquiryPage() {
   const content = `
   ${renderBreadcrumb([
-    { name: 'Admissions 2025-26', url: 'admissions.html' },
+    { name: 'Admissions 2026-27', url: 'admissions.html' },
     { name: 'Online Enquiry Form', url: 'online-enquiry.html' }
   ])}
 
@@ -1126,7 +1126,7 @@ export function generateOnlineEnquiryPage() {
     <div class="max-w-[1000px] mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
       
       <div class="text-center max-w-2xl mx-auto space-y-3">
-        <span class="text-xs font-bold uppercase tracking-widest text-amber-700 block">Admissions Open 2025-26</span>
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-700 block">Admissions Open 2026-27</span>
         <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[#002b49]">
           Online Admission Enquiry &amp; Registration
         </h1>
@@ -1255,9 +1255,9 @@ export function generateOnlineEnquiryPage() {
   `;
 
   return renderPageShell({
-    title: "Online Admission Enquiry Form 2025-26 | The Oxford School Haridwar",
-    description: "Submit online admission enquiry for Academic Session 2025-26 at The Oxford School Haridwar. Pre-Primary to Class XII (Science, Commerce, Humanities).",
-    keywords: "Online admission form Oxford School Haridwar, Oxford School Roshnabad registration, school admission enquiry 2025-26 Haridwar",
+    title: "Online Admission Enquiry Form 2026-27 | The Oxford School Haridwar",
+    description: "Submit online admission enquiry for Academic Session 2026-27 at The Oxford School Haridwar. Pre-Primary to Class XII (Science, Commerce, Humanities).",
+    keywords: "Online admission form Oxford School Haridwar, Oxford School Roshnabad registration, school admission enquiry 2026-27 Haridwar",
     canonicalUrl: "online-enquiry.html",
     activePage: "online-enquiry",
     content

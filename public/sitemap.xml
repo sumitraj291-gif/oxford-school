@@ -1,156 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Landing Pages -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- 1. Primary Landing & Core Pages -->
   <url>
     <loc>https://theoxfordschoolharidwar.in/</loc>
-    <lastmod>2025-02-28</lastmod>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/about</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/about/chairman</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/about/managing-director</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/about/principal</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/about/vision</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/about/houses</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://theoxfordschoolharidwar.in/images/campus_hero.jpg</image:loc>
+      <image:title>The Oxford School Campus Haridwar</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theoxfordschoolharidwar.in/ox-logo.webp</image:loc>
+      <image:title>The Oxford School Official Crest</image:title>
+    </image:image>
   </url>
 
-  <!-- Admissions Subpages -->
   <url>
-    <loc>https://theoxfordschoolharidwar.in/admissions</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>daily</changefreq>
+    <loc>https://theoxfordschoolharidwar.in/admissions.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
+
   <url>
-    <loc>https://theoxfordschoolharidwar.in/admissions/procedure</loc>
-    <lastmod>2025-02-28</lastmod>
+    <loc>https://theoxfordschoolharidwar.in/cbse.html</loc>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/admissions/criteria</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/admissions/fees</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/admissions/enquiry</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
+    <priority>0.95</priority>
   </url>
 
-  <!-- Facilities Subpages -->
   <url>
-    <loc>https://theoxfordschoolharidwar.in/facilities</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/facilities/robotics-lab</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/facilities/science-labs</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/facilities/computer-lab</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/facilities/library</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/facilities/sports-arena</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/facilities/school-transport</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- CBSE Disclosure & Academics -->
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/cbse-disclosure</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://theoxfordschoolharidwar.in/cbse-disclosure/results</loc>
-    <lastmod>2025-02-28</lastmod>
+    <loc>https://theoxfordschoolharidwar.in/about.html</loc>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
 
-  <!-- Gallery, Careers & Contact -->
   <url>
-    <loc>https://theoxfordschoolharidwar.in/gallery</loc>
-    <lastmod>2025-02-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://theoxfordschoolharidwar.in/facilities.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://theoxfordschoolharidwar.in/images/robotics_real_1.jpg</image:loc>
+      <image:title>Robotics and STEM Innovation Lab at The Oxford School</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://theoxfordschoolharidwar.in/images/sports_ground_1.jpg</image:loc>
+      <image:title>Sports Complex and Athletic Grounds</image:title>
+    </image:image>
   </url>
+
   <url>
-    <loc>https://theoxfordschoolharidwar.in/careers</loc>
-    <lastmod>2025-02-28</lastmod>
+    <loc>https://theoxfordschoolharidwar.in/results.html</loc>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.90</priority>
   </url>
+
   <url>
-    <loc>https://theoxfordschoolharidwar.in/contact</loc>
-    <lastmod>2025-02-28</lastmod>
+    <loc>https://theoxfordschoolharidwar.in/curriculum.html</loc>
+    <lastmod>2026-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/contact.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/gallery.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/careers.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- 2. Admissions Specialized Subpages -->
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/admission-procedure.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/eligibility-criteria.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/fee-guidelines.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/online-enquiry.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 3. Campus Facilities Subpages -->
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/robotics-lab.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/science-labs.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/computer-lab.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/sports-complex.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/transport.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- 4. Leadership & Institutional Subpages -->
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/chairman.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/managing-director.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/principal.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/vision-mission.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/houses.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- 5. Key Searchable PDF Documents for Google SERP Snippets -->
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/downloads/2026-27_fee_structure.pdf</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/downloads/admissionformnew.pdf</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/downloads/Oxford_Calendar.pdf</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/downloads/1748332708.pdf</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://theoxfordschoolharidwar.in/downloads/1755758124.pdf</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>
