@@ -40,7 +40,7 @@ export default function DocumentViewerModal({ doc, isOpen, onClose }) {
             {/* Watermark */}
             <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.04] rotate-[-25deg]">
               <div className="text-center">
-                <img src="/logo.svg" alt="Crest" className="w-72 h-72 mx-auto" />
+                <img src="/ox-logo.webp" alt="Crest" className="w-72 h-72 mx-auto object-contain" />
                 <span className="text-6xl font-bold font-serif text-[#002b49]">THE OXFORD SCHOOL</span>
               </div>
             </div>

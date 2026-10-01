@@ -145,7 +145,7 @@ Notes: ${formData.notes || 'N/A'}`;
                 • <strong>Merit Scholarships:</strong> Deserving academic toppers and state/national level sports champions are eligible for fee concessions on management review.
               </p>
               <p>
-                • <strong>Transport Charges:</strong> Optional school bus charges vary depending on pick-up distance across Haridwar city, Roshnabad, BHEL, and Roorkee.
+                • <strong>Transport Charges:</strong> Optional school bus charges vary depending on pick-up distance across BHEL and Haridwar.
               </p>
             </div>
           </div>
@@ -198,7 +198,7 @@ Notes: ${formData.notes || 'N/A'}`;
                 2. How are school bus routes assigned and tracked?
               </h4>
               <p className="text-xs leading-relaxed text-slate-600">
-                Our transport wing covers 18+ GPS-enabled routes across Haridwar city, Roshnabad, BHEL, Shivalik Nagar, and Roorkee. Parents receive real-time bus tracking and delay alerts via the Edunext ERP mobile app.
+                Our transport wing operates 15 buses with GPS covering BHEL and Haridwar. Parents receive real-time bus tracking and delay alerts via the Edunext ERP mobile app.
               </p>
             </div>
 

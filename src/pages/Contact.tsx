@@ -98,10 +98,17 @@ Message: ${formData.message}`;
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 text-left mb-16">
           {/* Form */}
           <div className="lg:col-span-6 bg-white p-8 sm:p-10 rounded-2xl border border-slate-200 shadow-sm">
-            <h3 className="text-2xl font-bold text-slate-900 mb-2">Send a Message</h3>
-            <p className="text-xs text-slate-500 mb-6">
-              Fill out the form below to connect instantly with our office:
-            </p>
+            <div className="flex items-center gap-3.5 mb-6 pb-4 border-b border-slate-100">
+              <div className="w-12 h-12 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+                <img src="/ox-logo.webp" alt="The Oxford School Logo" className="w-full h-full object-contain" />
+              </div>
+              <div>
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 leading-tight">Send a Message</h3>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  Fill out the form below to connect instantly with our office:
+                </p>
+              </div>
+            </div>
 
             {sent ? (
               <div className="text-center py-8 space-y-3">

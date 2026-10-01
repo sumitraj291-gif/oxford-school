@@ -50,7 +50,7 @@ export function generateChairmanPage() {
               <div class="absolute bottom-4 left-4 right-4 text-left text-white">
                 <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 block">Founder Chairman</span>
                 <h3 class="text-xl font-bold font-serif text-white">Shri Arvind Chauhan</h3>
-                <p class="text-xs text-slate-300">The Oxford Educational Society</p>
+                <p class="text-xs text-slate-300">Shivratan Education Society</p>
               </div>
             </div>
 
@@ -808,7 +808,7 @@ export function generateAdmissionProcedurePage() {
         <div class="mt-8 pt-6 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
           <div>
             <p class="text-xs text-slate-500">Need personal assistance with documents?</p>
-            <p class="text-sm font-bold text-[#002b49]">Helpline: +91 70600 89183 / +91 72480 60000</p>
+            <p class="text-sm font-bold text-[#002b49]">Helpline: +91 9068885862 / +91 7060089183</p>
           </div>
           <div class="flex items-center gap-3">
             <a href="online-enquiry.html" class="px-5 py-2.5 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white rounded-xl text-xs font-bold transition shadow">
@@ -1122,14 +1122,19 @@ export function generateOnlineEnquiryPage() {
 
       <div class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
         <div class="bg-[#002b49] text-white p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest block">Official Admissions Desk</span>
-            <h3 class="text-xl font-serif font-bold mt-1">Student &amp; Parent Information Form</h3>
-            <p class="text-xs text-slate-300 mt-1">All fields marked with an asterisk (*) are mandatory.</p>
+          <div class="flex items-center gap-3.5">
+            <div class="w-14 h-14 rounded-2xl bg-white p-1.5 border border-amber-400/40 shadow-sm flex items-center justify-center shrink-0">
+              <img src="ox-logo.webp" alt="The Oxford School Logo" class="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest block">Official Admissions Desk</span>
+              <h3 class="text-xl font-serif font-bold mt-0.5">Student &amp; Parent Information Form</h3>
+              <p class="text-xs text-slate-300 mt-1">All fields marked with an asterisk (*) are mandatory.</p>
+            </div>
           </div>
-          <div class="bg-white/10 px-4 py-2 rounded-xl border border-white/20 text-xs">
+          <div class="bg-white/10 px-4 py-2 rounded-xl border border-white/20 text-xs shrink-0">
             <span class="text-amber-300 font-semibold">Admission Helpline:</span><br/>
-            <strong class="text-white">+91 70600 89183</strong>
+            <strong class="text-white">+91 9068885862 / 7060089183</strong>
           </div>
         </div>
 
@@ -1624,13 +1629,13 @@ export function generateTransportPage() {
           </h1>
 
           <p class="text-sm sm:text-base text-slate-700 leading-relaxed">
-            The safety and comfort of our scholars during their daily commute is non-negotiable. The Oxford School operates a well-maintained fleet of 18+ yellow school buses spanning across Haridwar city and adjacent industrial belts.
+            The safety and comfort of our scholars during their daily commute is non-negotiable. The Oxford School operates a well-maintained fleet of 15 yellow school buses with GPS spanning across BHEL and Haridwar.
           </p>
 
           <div class="grid grid-cols-2 gap-3 pt-2">
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
-              <span class="text-amber-700 font-extrabold text-base block">18+ Buses</span>
-              <span class="text-xs text-slate-600">GPS &amp; Speed Governed</span>
+              <span class="text-amber-700 font-extrabold text-base block">15 Buses with GPS</span>
+              <span class="text-xs text-slate-600">Covering BHEL &amp; Haridwar</span>
             </div>
             <div class="p-3 rounded-xl bg-slate-50 border border-slate-200">
               <span class="text-amber-700 font-extrabold text-base block">Female Attendants</span>
@@ -1676,8 +1681,8 @@ export function generateTransportPage() {
             <p class="text-slate-600">Kankhal Chowk, Desh Rakshak Aushadhalaya road, Jagjeetpur, Football ground.</p>
           </div>
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-            <strong class="text-sm font-bold text-[#002b49] block mb-1">Route 6: Roorkee Link Corridor</strong>
-            <p class="text-slate-600">Roorkee highway bypass, Peeran Kaliyar corridor, connecting villages.</p>
+            <strong class="text-sm font-bold text-[#002b49] block mb-1">Route 6: Haridwar &amp; Industrial Corridor</strong>
+            <p class="text-slate-600">Shivalik Nagar, Industrial Estate, and surrounding Haridwar residential sectors.</p>
           </div>
         </div>
       </div>
@@ -1688,7 +1693,7 @@ export function generateTransportPage() {
 
   return renderPageShell({
     title: "Safe GPS Transport & Bus Routes | The Oxford School Haridwar",
-    description: "Explore the safe GPS-monitored bus transport network at The Oxford School Haridwar. Serving Roshnabad, BHEL, Haridwar, Shivalik Nagar, and Roorkee.",
+    description: "Explore the safe GPS-monitored bus transport network at The Oxford School Haridwar. 15 buses with GPS covering BHEL and Haridwar.",
     keywords: "School bus transport Oxford School Haridwar, GPS school buses Roshnabad, safe school transit Haridwar, BHEL school bus routes",
     canonicalUrl: "transport.html",
     activePage: "transport",

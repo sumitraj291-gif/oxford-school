@@ -72,7 +72,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenEnquiry }) => {
               <OxfordCrestLogo className="w-10 h-10" />
               <div>
                 <span className="text-[10px] uppercase tracking-[0.25em] text-white/60 block">
-                  The Oxford Educational Society
+                  Shivratan Education Society
                 </span>
                 <h3 className="text-base font-semibold text-white tracking-wider">
                   THE OXFORD SCHOOL

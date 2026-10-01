@@ -158,12 +158,19 @@ _Dispatched from Oxford School Contact Page_`;
           
           {/* Interactive Form - 6 cols */}
           <div className="lg:col-span-6 bg-white rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-sm">
-            <h3 className="text-xl font-bold font-serif text-[#002b49] mb-1">
-              Send an Online Message
-            </h3>
-            <p className="text-xs text-slate-500 mb-6">
-              Submissions are immediately dispatched to our school helpline via WhatsApp.
-            </p>
+            <div className="flex items-center gap-3.5 mb-6 pb-4 border-b border-slate-100">
+              <div className="w-12 h-12 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+                <img src="/ox-logo.webp" alt="The Oxford School Logo" className="w-full h-full object-contain" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold font-serif text-[#002b49]">
+                  Send an Online Message
+                </h3>
+                <p className="text-xs text-slate-500 mt-0.5">
+                  Submissions are immediately dispatched to our school helpline via WhatsApp.
+                </p>
+              </div>
+            </div>
 
             {submitted ? (
               <div className="p-6 text-center space-y-3 bg-emerald-50 rounded-xl border border-emerald-200">

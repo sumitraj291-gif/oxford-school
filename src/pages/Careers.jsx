@@ -153,14 +153,21 @@ _Dispatched via Oxford School Careers Portal_`;
       {/* Application Form */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8" id="application-form">
         <div className="bg-white rounded-3xl border-2 border-slate-200 shadow-xl overflow-hidden">
-          <div className="bg-[#002b49] p-6 sm:p-8 text-white">
-            <span className="text-xs uppercase font-bold tracking-widest text-amber-400">Recruitment Desk</span>
-            <h3 className="text-2xl font-serif font-bold text-white mt-1">
-              Job Application Form
-            </h3>
-            <p className="text-xs text-slate-300 mt-1">
-              Selected profile details will be immediately forwarded to The Oxford School HR Desk via WhatsApp.
-            </p>
+          <div className="bg-[#002b49] p-6 sm:p-8 text-white flex items-center justify-between gap-4">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+                <img src="/ox-logo.webp" alt="The Oxford School Crest" className="w-full h-full object-contain" />
+              </div>
+              <div>
+                <span className="text-xs uppercase font-bold tracking-widest text-amber-400">Recruitment Desk</span>
+                <h3 className="text-xl sm:text-2xl font-serif font-bold text-white mt-0.5">
+                  Job Application Form
+                </h3>
+                <p className="text-xs text-slate-300 mt-1">
+                  Selected profile details will be immediately forwarded to The Oxford School HR Desk via WhatsApp.
+                </p>
+              </div>
+            </div>
           </div>
 
           {submitted ? (
@@ -308,7 +315,7 @@ _Dispatched via Oxford School Careers Portal_`;
                     name="city"
                     value={formData.city}
                     onChange={handleChange}
-                    placeholder="e.g. Haridwar, Roorkee, Dehradun"
+                    placeholder="e.g. Haridwar, Rishikesh, Dehradun"
                     className="w-full px-3 py-2 text-sm border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#002b49]"
                   />
                 </div>

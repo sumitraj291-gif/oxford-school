@@ -82,7 +82,7 @@ export default function About({ onOpenEnquiry }) {
             </h2>
             <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
               <p>
-                Haridwar has historically been an esteemed center of learning, spirituality, and culture. Recognizing the pressing need for modern educational benchmarks in the region, <strong>The Oxford Educational Society</strong> instituted The Oxford School in 2014 at Roshnabad.
+                Haridwar has historically been an esteemed center of learning, spirituality, and culture. Recognizing the pressing need for modern educational benchmarks in the region, <strong>Shivratan Education Society</strong> instituted The Oxford School in 2014 at Roshnabad.
               </p>
               <p>
                 Spanning a peaceful, green campus away from urban congestion, the school combines high-end science and robotics infrastructure with disciplined CBSE academic structures. From foundational classes, we have matured into a respected Senior Secondary institution offering full-fledged Science, Commerce, and Humanities streams with consistent 100% board examination pass records.

@@ -60,7 +60,7 @@ export default function Footer({ onOpenEnquiry }) {
               </div>
               <div>
                 <span className="text-[10px] uppercase font-bold tracking-widest text-amber-400 block leading-tight">
-                  The Oxford Educational Society
+                  Shivratan Education Society
                 </span>
                 <h3 className="text-base sm:text-lg font-bold font-serif text-white tracking-tight leading-snug">
                   THE OXFORD SCHOOL

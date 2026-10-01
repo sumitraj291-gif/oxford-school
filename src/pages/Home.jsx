@@ -789,7 +789,7 @@ export default function Home({ onOpenEnquiry }) {
                 </h4>
                 <div className="flex items-center gap-3 text-slate-300">
                   <PhoneCall className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>+91 72480 60000, +91 72480 60001</span>
+                  <span>+91 9068885862, +91 7060089183</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <Mail className="w-4 h-4 text-amber-400 shrink-0" />
@@ -797,7 +797,7 @@ export default function Home({ onOpenEnquiry }) {
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <MapPin className="w-4 h-4 text-amber-400 shrink-0" />
-                  <span>Near Collectorate Office, Roshnabad, Haridwar, Uttarakhand – 249403</span>
+                  <span>Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand</span>
                 </div>
                 <div className="flex items-center gap-3 text-slate-300">
                   <Clock className="w-4 h-4 text-amber-400 shrink-0" />
@@ -811,12 +811,17 @@ export default function Home({ onOpenEnquiry }) {
             <div className="lg:col-span-7">
               <div className="bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-200 text-left">
                 <div className="border-b border-slate-200 pb-4 mb-6">
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-xl font-serif font-bold text-[#002b49]">Student Admission Enquiry Form</h3>
-                      <p className="text-xs text-slate-500 mt-1">Please provide complete information. All starred (*) fields are required.</p>
+                  <div className="flex items-center justify-between gap-3">
+                    <div className="flex items-center gap-3">
+                      <div className="w-12 h-12 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+                        <img src="/ox-logo.webp" alt="The Oxford School Logo" className="w-full h-full object-contain" />
+                      </div>
+                      <div>
+                        <h3 className="text-lg sm:text-xl font-serif font-bold text-[#002b49]">Student Admission Enquiry Form</h3>
+                        <p className="text-xs text-slate-500 mt-0.5">Please provide complete information. All starred (*) fields are required.</p>
+                      </div>
                     </div>
-                    <span className="hidden sm:inline-block px-3 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg border border-amber-300">
+                    <span className="hidden sm:inline-block px-3 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg border border-amber-300 shrink-0">
                       Session 2026–27
                     </span>
                   </div>

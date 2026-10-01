@@ -739,15 +739,15 @@ function generateHomePage() {
             </h4>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="phone-call" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>+91-7060089183, +91-7060089184</span>
+              <span>+91 9068885862, +91 7060089183</span>
             </div>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="mail" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>theoxfordschoolhwr@gmail.com</span>
+              <span>theoxfordschoolharidwar@gmail.com</span>
             </div>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="map-pin" class="w-4 h-4 text-amber-400 shrink-0"></i>
-              <span>Near Collectorate Office, Roshnabad, Haridwar, Uttarakhand – 249402</span>
+              <span>Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand</span>
             </div>
             <div class="flex items-center gap-3 text-slate-300">
               <i data-lucide="clock" class="w-4 h-4 text-amber-400 shrink-0"></i>
@@ -761,12 +761,17 @@ function generateHomePage() {
         <div class="lg:col-span-7">
           <div class="bg-white text-slate-900 rounded-2xl p-6 sm:p-8 shadow-2xl border border-slate-200 text-left">
             <div class="border-b border-slate-200 pb-4 mb-6">
-              <div class="flex items-center justify-between">
-                <div>
-                  <h3 class="text-xl font-serif font-bold text-[#002b49]">Student Admission Enquiry Form</h3>
-                  <p class="text-xs text-slate-500 mt-1">Please provide complete information. All starred (*) fields are required.</p>
+              <div class="flex items-center justify-between gap-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-12 h-12 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+                    <img src="ox-logo.webp" alt="The Oxford School Logo" class="w-full h-full object-contain" />
+                  </div>
+                  <div>
+                    <h3 class="text-lg sm:text-xl font-serif font-bold text-[#002b49]">Student Admission Enquiry Form</h3>
+                    <p class="text-xs text-slate-500 mt-0.5">Please provide complete information. All starred (*) fields are required.</p>
+                  </div>
                 </div>
-                <span class="hidden sm:inline-block px-3 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg border border-amber-300">
+                <span class="hidden sm:inline-block px-3 py-1 bg-amber-100 text-amber-900 text-xs font-bold rounded-lg border border-amber-300 shrink-0">
                   Session 2026–27
                 </span>
               </div>
@@ -904,7 +909,7 @@ function generateAboutPage() {
           Legacy of Knowledge, Integrity &amp; Discipline
         </h1>
         <p class="text-xs sm:text-sm text-slate-300 mt-2 leading-relaxed">
-          Established in 2014 under the aegis of The Oxford Educational Society, our institution stands as a beacon of values and academic excellence in Roshnabad, Haridwar.
+          Established in 2014 under the aegis of Shivratan Education Society, our institution stands as a beacon of values and academic excellence in Roshnabad, Haridwar.
         </p>
 
         <!-- Quick Jump Pills -->
@@ -1803,19 +1808,19 @@ function generateContactPage() {
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
               <i data-lucide="map-pin" class="w-5 h-5 text-amber-600 mb-2"></i>
               <h4 class="font-bold text-[#002b49] text-sm">Campus Location</h4>
-              <p class="text-slate-600 mt-1 leading-relaxed">Near Collectorate Office, Roshnabad, Haridwar, Uttarakhand – 249403</p>
+              <p class="text-slate-600 mt-1 leading-relaxed">Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
               <i data-lucide="phone" class="w-5 h-5 text-amber-600 mb-2"></i>
               <h4 class="font-bold text-[#002b49] text-sm">Phone Inquiries</h4>
-              <p class="text-slate-600 mt-1 leading-relaxed">+91 72480 60000<br/>+91 72480 60001</p>
+              <p class="text-slate-600 mt-1 leading-relaxed">+91 9068885862<br/>+91 7060089183</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
               <i data-lucide="mail" class="w-5 h-5 text-amber-600 mb-2"></i>
               <h4 class="font-bold text-[#002b49] text-sm">Official Email</h4>
-              <p class="text-slate-600 mt-1 leading-relaxed">theoxfordschool2014@gmail.com</p>
+              <p class="text-slate-600 mt-1 leading-relaxed">theoxfordschoolharidwar@gmail.com</p>
             </div>
 
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
@@ -1891,7 +1896,7 @@ function generateContactPage() {
 
   return renderPageShell({
     title: "Contact Us | The Oxford School Haridwar - Location, Phone & Email",
-    description: "Get in touch with The Oxford School, Haridwar (Roshnabad). Official address near Collectorate Office, phone numbers +91 72480 60000, email, visiting hours, and interactive map.",
+    description: "Get in touch with The Oxford School, Haridwar. Official address Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, phone numbers +91 9068885862, +91 7060089183, email, visiting hours, and interactive map.",
     keywords: "Contact Oxford School Haridwar, Oxford School Roshnabad phone number, school address Haridwar, visit The Oxford School Uttarakhand",
     canonicalUrl: "contact.html",
     activePage: "contact",
@@ -1940,7 +1945,8 @@ const pages = [
 
 console.log(`Writing ${pages.length} static HTML pages...`);
 for (const p of pages) {
-  const filePath = path.resolve('d:/UI/Oxford School', p.file);
+  const targetName = p.file === 'index.html' ? 'index.static.html' : p.file;
+  const filePath = path.resolve('d:/UI/Oxford School', targetName);
   fs.writeFileSync(filePath, p.html, 'utf8');
   
   const subFilePath = path.resolve('d:/UI/Oxford School/html', p.file);

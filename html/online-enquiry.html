@@ -593,14 +593,19 @@
 
       <div class="bg-white rounded-3xl border border-slate-200 shadow-xl overflow-hidden">
         <div class="bg-[#002b49] text-white p-6 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div>
-            <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest block">Official Admissions Desk</span>
-            <h3 class="text-xl font-serif font-bold mt-1">Student &amp; Parent Information Form</h3>
-            <p class="text-xs text-slate-300 mt-1">All fields marked with an asterisk (*) are mandatory.</p>
+          <div class="flex items-center gap-3.5">
+            <div class="w-14 h-14 rounded-2xl bg-white p-1.5 border border-amber-400/40 shadow-sm flex items-center justify-center shrink-0">
+              <img src="ox-logo.webp" alt="The Oxford School Logo" class="w-full h-full object-contain" />
+            </div>
+            <div>
+              <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest block">Official Admissions Desk</span>
+              <h3 class="text-xl font-serif font-bold mt-0.5">Student &amp; Parent Information Form</h3>
+              <p class="text-xs text-slate-300 mt-1">All fields marked with an asterisk (*) are mandatory.</p>
+            </div>
           </div>
-          <div class="bg-white/10 px-4 py-2 rounded-xl border border-white/20 text-xs">
+          <div class="bg-white/10 px-4 py-2 rounded-xl border border-white/20 text-xs shrink-0">
             <span class="text-amber-300 font-semibold">Admission Helpline:</span><br/>
-            <strong class="text-white">+91 70600 89183</strong>
+            <strong class="text-white">+91 9068885862 / 7060089183</strong>
           </div>
         </div>
 
@@ -764,7 +769,7 @@
             </div>
             <div>
               <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 block leading-tight">
-                The Oxford Educational Society
+                Shivratan Education Society
               </span>
               <h3 class="text-base sm:text-lg font-bold font-serif text-white tracking-tight leading-snug">
                 THE OXFORD SCHOOL
@@ -880,9 +885,14 @@
   <div id="enquiry-modal" class="modal fixed inset-0 z-50 items-center justify-center overflow-y-auto bg-black/60 p-4 modal-backdrop">
     <div class="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl border border-slate-200 overflow-hidden text-left" onclick="event.stopPropagation()">
       <div class="bg-[#002b49] text-white p-5 flex items-center justify-between">
-        <div>
-          <span class="text-[10px] text-amber-400 uppercase tracking-widest font-bold block">Admissions Open 2026–27</span>
-          <h3 class="text-lg font-serif font-bold">Admission Enquiry &amp; Prospectus</h3>
+        <div class="flex items-center gap-3">
+          <div class="w-11 h-11 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+            <img src="ox-logo.webp" alt="The Oxford School Logo" class="w-full h-full object-contain" />
+          </div>
+          <div>
+            <span class="text-[10px] text-amber-400 uppercase tracking-widest font-bold block">Admissions Open 2026–27</span>
+            <h3 class="text-base sm:text-lg font-serif font-bold">Admission Enquiry &amp; Prospectus</h3>
+          </div>
         </div>
         <button type="button" data-modal-close="enquiry-modal" onclick="closeModal('enquiry-modal')" class="text-white/70 hover:text-white p-1 rounded-lg" aria-label="Close Enquiry Modal">
           <i data-lucide="x" class="w-5 h-5"></i>

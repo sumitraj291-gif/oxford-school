@@ -145,16 +145,21 @@ _Generated via Oxford School Official Portal_`;
           </div>
         ) : (
           <div>
-            <div className="mb-6">
-              <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#002b49] block">
-                Academic Session 2026–27
-              </span>
-              <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-1">
-                Online Admission Enquiry
-              </h2>
-              <p className="text-xs text-slate-500 mt-1">
-                Playgroup to Class XII • CBSE Affiliated (No. {SCHOOL_INFO.affiliationNo}) • Haridwar
-              </p>
+            <div className="mb-6 flex items-center gap-3.5">
+              <div className="w-12 h-12 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+                <img src="/ox-logo.webp" alt="The Oxford School Crest" className="w-full h-full object-contain" />
+              </div>
+              <div>
+                <span className="text-[10px] uppercase font-bold tracking-[0.25em] text-[#002b49] block">
+                  Academic Session 2026–27
+                </span>
+                <h2 className="text-2xl sm:text-3xl font-bold text-slate-900 tracking-tight mt-0.5">
+                  Online Admission Enquiry
+                </h2>
+                <p className="text-xs text-slate-500">
+                  Playgroup to Class XII • CBSE Affiliated (No. {SCHOOL_INFO.affiliationNo}) • Haridwar
+                </p>
+              </div>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">

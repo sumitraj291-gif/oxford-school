@@ -93,8 +93,8 @@ _Generated via Official School Website Portal_`;
         <div className="bg-[#002b49] text-white p-6 relative">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-amber-500/20 border border-amber-400/30 flex items-center justify-center p-1.5">
-                <img src="/logo.svg" alt="School Crest" className="w-full h-full object-contain" />
+              <div className="w-12 h-12 rounded-xl bg-white border border-amber-400/40 flex items-center justify-center p-1 shadow-sm shrink-0">
+                <img src="/ox-logo.webp" alt="The Oxford School Crest" className="w-full h-full object-contain" />
               </div>
               <div>
                 <h3 className="text-xl font-bold font-serif text-amber-400">The Oxford School, Haridwar</h3>

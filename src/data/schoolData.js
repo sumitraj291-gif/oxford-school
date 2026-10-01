@@ -11,10 +11,11 @@ export const SCHOOL_INFO = {
   streams: "Science (PCM / PCB), Commerce, Humanities",
   established: "2014",
   type: "Co-Educational Day School",
-  address: "Shiv Ratan City, Navodaya Nagar, Roshnabad, Haridwar - 249402, Uttarakhand, India",
+  societyName: "Shivratan Education Society",
+  address: "Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand",
   phoneNumbers: ["+91-9068885862", "+91-7060089183"],
   whatsappNumber: "917060089183",
-  primaryPhone: "+91-7060089183",
+  primaryPhone: "+91-9068885862",
   email: "theoxfordschoolharidwar@gmail.com",
   secondaryEmail: "info@theoxfordschoolharidwar.com",
   officeHours: "Monday to Saturday: 8:00 AM – 2:30 PM",
@@ -32,7 +33,7 @@ export const KEY_METRICS = [
   { label: "Faculty & Mentors", value: "85+", suffix: "Qualified Educators", description: "CBSE trained & certified" },
   { label: "Digital Classrooms", value: "48+", suffix: "Smart Rooms", description: "Equipped with interactive panels" },
   { label: "CBSE Pass Rate", value: "100%", suffix: "Board Record", description: "Consistently in Class X & XII" },
-  { label: "Transport Routes", value: "18+", suffix: "Buses with GPS", description: "Covering Haridwar, BHEL & Roorkee" }
+  { label: "Transport Routes", value: "15", suffix: "Buses with GPS", description: "Covering BHEL and Haridwar" }
 ];
 
 // Helper to provide realistic daily birthdays with authentic student photos
@@ -185,10 +186,10 @@ export const FACILITIES_DATA = [
   {
     id: "school-transport",
     title: "Safe GPS & CCTV Transport Fleet",
-    shortDesc: "Fleet of school buses covering Haridwar city, Roshnabad, BHEL, Shivalik Nagar, and Roorkee.",
+    shortDesc: "Fleet of 15 school buses with GPS covering BHEL and Haridwar.",
     fullDesc: "Student transit safety is paramount. All school buses are fitted with GPS tracking, speed governors, interior CCTV cameras, first-aid kits, and accompanied by trained female attendants on all routes.",
     image: "/images/transport_real.jpg",
-    features: ["Live GPS tracking for parents", "Speed governors & CCTV inside buses", "Trained female bus attendants", "Comprehensive route network across Haridwar"]
+    features: ["Live GPS tracking for parents", "Speed governors & CCTV inside buses", "Trained female bus attendants", "Comprehensive route network across BHEL and Haridwar"]
   }
 ];
 
@@ -352,7 +353,7 @@ export const CBSE_DISCLOSURE_DOCS = [
   {
     slNo: 11,
     title: "List of School Management Committee (SMC) Members",
-    issuingAuthority: "The Oxford Educational Society",
+    issuingAuthority: "Shivratan Education Society",
     refNumber: "TOS/SMC/2024-26",
     validTill: "2026",
     status: "Public",

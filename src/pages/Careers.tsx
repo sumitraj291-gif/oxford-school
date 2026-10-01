@@ -68,7 +68,7 @@ Note: ${applyForm.coverNote || 'N/A'}`;
           <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2">
             <h3 className="text-base font-bold text-slate-900">Campus Transport & Safety</h3>
             <p className="text-xs text-slate-600 leading-relaxed">
-              Subsidized school bus transit across Haridwar city, Roshnabad, BHEL, and Roorkee for staff members.
+              Subsidized school bus transit across BHEL and Haridwar for staff members.
             </p>
           </div>
         </div>
@@ -160,14 +160,19 @@ Note: ${applyForm.coverNote || 'N/A'}`;
                 <X className="w-5 h-5" />
               </button>
 
-              <div className="mb-4">
-                <span className="text-[10px] uppercase font-bold tracking-wider text-[#002b49] block">
-                  Application Form
-                </span>
-                <h3 className="text-xl font-bold text-slate-900">
-                  {selectedJob.title}
-                </h3>
-                <span className="text-xs text-slate-500">{selectedJob.department}</span>
+              <div className="mb-4 flex items-center gap-3">
+                <div className="w-10 h-10 rounded-xl bg-white border border-amber-400/40 p-1 shadow-sm flex items-center justify-center shrink-0">
+                  <img src="/ox-logo.webp" alt="The Oxford School Crest" className="w-full h-full object-contain" />
+                </div>
+                <div>
+                  <span className="text-[10px] uppercase font-bold tracking-wider text-[#002b49] block">
+                    Application Form
+                  </span>
+                  <h3 className="text-xl font-bold text-slate-900 leading-tight">
+                    {selectedJob.title}
+                  </h3>
+                  <span className="text-xs text-slate-500">{selectedJob.department}</span>
+                </div>
               </div>
 
               {applied ? (
