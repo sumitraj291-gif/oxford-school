@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   CheckCircle2, FileText, Calendar, HelpCircle,
-  ArrowRight, Send, AlertCircle, ShieldCheck
+  ArrowRight, Send, AlertCircle, ShieldCheck, Download
 } from 'lucide-react';
 import { ADMISSION_STEPS, AGE_CRITERIA, SCHOOL_INFO } from '../data/schoolData';
 
@@ -66,14 +66,34 @@ Notes: ${formData.notes || 'N/A'}`;
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             Transparent, merit-guided admissions from Playgroup to Senior Secondary (Science, Commerce & Humanities) under CBSE norms.
           </p>
-          <div className="pt-2">
+          <div className="pt-2 flex flex-wrap items-center justify-center gap-3">
             <button
               type="button"
               onClick={onOpenEnquiry}
-              className="px-8 py-3.5 bg-[#002b49] text-white text-xs font-semibold uppercase tracking-wider btn-cut hover:bg-[#003e6b] cursor-pointer shadow-lg transition"
+              className="px-6 py-3.5 bg-[#002b49] text-white text-xs font-semibold uppercase tracking-wider btn-cut hover:bg-[#003e6b] cursor-pointer shadow-lg transition"
             >
               Open Instant Enquiry Wizard
             </button>
+            <a
+              href="/downloads/admissionformnew.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3.5 bg-amber-500 hover:bg-amber-600 text-slate-950 text-xs font-bold uppercase tracking-wider rounded inline-flex items-center gap-2 shadow-lg transition"
+            >
+              <Download className="w-4 h-4" />
+              <span>Download Offline Form (PDF)</span>
+            </a>
+            <a
+              href="/downloads/2026-27_fee_structure.pdf"
+              download
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3.5 bg-white border border-slate-300 hover:bg-slate-50 text-slate-800 text-xs font-bold uppercase tracking-wider rounded inline-flex items-center gap-2 shadow-sm transition"
+            >
+              <FileText className="w-4 h-4 text-[#002b49]" />
+              <span>Fee Structure (PDF)</span>
+            </a>
           </div>
         </div>
 

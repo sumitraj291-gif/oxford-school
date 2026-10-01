@@ -246,127 +246,151 @@ export const LEADERSHIP_MESSAGES = [
 
 export const BOARD_RESULTS = {
   classX: [
-    { year: "2024-25", appeared: 114, passed: 114, passPercent: "100%", above90: 38, highest: "98.4%", topper: "Aryan Bhatt (98.4%)" },
-    { year: "2023-24", appeared: 108, passed: 108, passPercent: "100%", above90: 35, highest: "98.2%", topper: "Sneha Rawat (98.2%)" },
-    { year: "2022-23", appeared: 96, passed: 96, passPercent: "100%", above90: 31, highest: "97.8%", topper: "Aditya Verma (97.8%)" },
-    { year: "2021-22", appeared: 88, passed: 88, passPercent: "100%", above90: 29, highest: "97.6%", topper: "Kavya Joshi (97.6%)" }
+    { year: "2024-25", appeared: 114, passed: 114, passPercent: "100%", above90: 38, highest: "98.4%", topper: "Aryan Bhatt (98.4%)", downloadUrl: "/downloads/Xth-Result-2024-25.pdf" },
+    { year: "2023-24", appeared: 108, passed: 108, passPercent: "100%", above90: 35, highest: "98.2%", topper: "Sneha Rawat (98.2%)", downloadUrl: "/downloads/Xth-Result-2023-24.pdf" },
+    { year: "2022-23", appeared: 96, passed: 96, passPercent: "100%", above90: 31, highest: "97.8%", topper: "Aditya Verma (97.8%)", downloadUrl: "/downloads/Xth-2022-23.pdf" },
+    { year: "2021-22", appeared: 88, passed: 88, passPercent: "100%", above90: 29, highest: "97.6%", topper: "Kavya Joshi (97.6%)", downloadUrl: "/downloads/Xth-2021-22.pdf" }
   ],
   classXII: [
-    { year: "2024-25", appeared: 82, passed: 82, passPercent: "100%", above90: 27, highest: "97.8%", topper: "Tanya Sharma (Science - 97.8%)" },
-    { year: "2023-24", appeared: 76, passed: 76, passPercent: "100%", above90: 24, highest: "97.2%", topper: "Rohan Semwal (Science - 97.2%)" },
-    { year: "2022-23", appeared: 68, passed: 68, passPercent: "100%", above90: 22, highest: "96.8%", topper: "Pooja Negi (Commerce - 96.8%)" },
-    { year: "2021-22", appeared: 62, passed: 62, passPercent: "100%", above90: 19, highest: "96.4%", topper: "Akash Singhal (Science - 96.4%)" }
+    { year: "2024-25", appeared: 82, passed: 82, passPercent: "100%", above90: 27, highest: "97.8%", topper: "Tanya Sharma (Science - 97.8%)", downloadUrl: "/downloads/XIIth-Result-2024-25-new.pdf" },
+    { year: "2023-24", appeared: 76, passed: 76, passPercent: "100%", above90: 24, highest: "97.2%", topper: "Rohan Semwal (Science - 97.2%)", downloadUrl: "/downloads/XIIth-Result-2023-24.pdf" },
+    { year: "2022-23", appeared: 68, passed: 68, passPercent: "100%", above90: 22, highest: "96.8%", topper: "Pooja Negi (Commerce - 96.8%)", downloadUrl: "/downloads/XIIth-Result-2022-23-new.pdf" },
+    { year: "2021-22", appeared: 62, passed: 62, passPercent: "100%", above90: 19, highest: "96.4%", topper: "Akash Singhal (Science - 96.4%)", downloadUrl: null }
   ]
+};
+
+export const SCHOOL_DOWNLOADS = {
+  admissionForm: "/downloads/admissionformnew.pdf",
+  feeStructure: "/downloads/2026-27_fee_structure.pdf",
+  academicCalendar: "/downloads/Oxford_Calendar.pdf"
 };
 
 export const CBSE_DISCLOSURE_DOCS = [
   {
     slNo: 1,
-    title: "Affiliation / Upgradation Letter & Recent Extension",
+    title: "CBSE Affiliation Certificate (2025-2030)",
     issuingAuthority: "Central Board of Secondary Education (CBSE), New Delhi",
-    refNumber: "CBSE/AFF/3530408/2024",
-    validTill: "Valid till 31/03/2028",
+    refNumber: "CBSE/AFF/3530408/2025-30",
+    validTill: "Valid till 31/03/2030",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1755758124.pdf"
   },
   {
     slNo: 2,
-    title: "Societies / Trust / Company Registration & Renewal Certificate",
+    title: "Society Registration Certificate",
     issuingAuthority: "Registrar of Societies, Govt. of Uttarakhand",
-    refNumber: "REG/HWR/SOC/2014-492",
+    refNumber: "Shivratan Education Society",
     validTill: "Permanent / Renewed",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/SocityNew.pdf"
   },
   {
     slNo: 3,
-    title: "No Objection Certificate (NOC) Issued by State Government",
+    title: "No Objection Certificate (NOC) from DEO / State Govt",
     issuingAuthority: "Department of School Education, Govt. of Uttarakhand",
     refNumber: "UK-EDU/NOC/3530/2015",
     validTill: "Permanent",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1719549170.pdf"
   },
   {
     slNo: 4,
-    title: "Recognition Certificate under Right to Education (RTE) Act, 2009",
+    title: "Recognition Letter Under RTE Act 2009",
     issuingAuthority: "Chief Education Officer (CEO), Haridwar",
-    refNumber: "CEO/HWR/RTE/2015-18",
+    refNumber: "CEO/HWR/RTE/2009",
     validTill: "Ongoing",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1719548975.pdf"
   },
   {
     slNo: 5,
-    title: "Building Safety Certificate as per National Building Code (NBC)",
+    title: "Building Safety Certificate as per NBC",
     issuingAuthority: "Executive Engineer, PWD Construction Division, Haridwar",
-    refNumber: "PWD/EE/SAFE/HWR/2024",
-    validTill: "Valid till 2029",
+    refNumber: "PWD/NBC/SAFE/HWR",
+    validTill: "Valid",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1755759007.pdf"
   },
   {
     slNo: 6,
-    title: "Fire Safety Certificate issued by Competent Authority",
+    title: "Fire Safety Certificate",
     issuingAuthority: "Chief Fire Officer, Fire Department, Haridwar",
-    refNumber: "CFO/FS/HWR/2024-25",
-    validTill: "Valid till 2027",
+    refNumber: "CFO/FS/HWR/CERT",
+    validTill: "Valid",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1719549369.pdf"
   },
   {
     slNo: 7,
-    title: "District Education Officer (DEO) Certificate for CBSE Affiliation",
+    title: "District Education Officer (DEO) Certificate",
     issuingAuthority: "District Education Office, Haridwar",
-    refNumber: "DEO/CBSE-AFF/HWR/049",
+    refNumber: "DEO/CBSE-AFF/HWR",
     validTill: "Valid",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1719549170.pdf"
   },
   {
     slNo: 8,
     title: "Safe Drinking Water, Health & Sanitary Condition Certificate",
     issuingAuthority: "Chief Medical Officer (CMO) & Jal Sansthan, Haridwar",
-    refNumber: "CMO/SAN/HWR/2024-118",
-    validTill: "Valid till 2026",
+    refNumber: "CMO/SAN/HWR/CERT",
+    validTill: "Valid",
     status: "Verified",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1719549304.pdf"
   },
   {
     slNo: 9,
-    title: "School Fee Structure (Session 2025-26)",
+    title: "Fees Structure (Session 2026-27)",
     issuingAuthority: "School Management Committee, The Oxford School",
-    refNumber: "TOS/FEE/2025-26",
-    validTill: "Academic Year 2025-26",
+    refNumber: "TOS/FEE/2026-27",
+    validTill: "Session 2026-27",
     status: "Public",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/2026-27_fee_structure.pdf"
   },
   {
     slNo: 10,
-    title: "Annual Academic Calendar & Holiday List 2025-26",
+    title: "Academic Calendar (2026-27)",
     issuingAuthority: "Academic Directorate, The Oxford School",
-    refNumber: "TOS/ACAD/CAL-2025",
-    validTill: "March 2026",
+    refNumber: "TOS/ACAD/CAL-2026-27",
+    validTill: "March 2027",
     status: "Public",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/Oxford_Calendar.pdf"
   },
   {
     slNo: 11,
-    title: "List of School Management Committee (SMC) Members",
-    issuingAuthority: "Shivratan Education Society",
-    refNumber: "TOS/SMC/2024-26",
-    validTill: "2026",
+    title: "Parents Teachers Association (PTA) Members List",
+    issuingAuthority: "PTA Executive Council, The Oxford School",
+    refNumber: "TOS/PTA/MEMBERS",
+    validTill: "Current Session",
     status: "Public",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1719549450.pdf"
   },
   {
     slNo: 12,
-    title: "Parents Teachers Association (PTA) Members List",
-    issuingAuthority: "PTA Executive Council, The Oxford School",
-    refNumber: "TOS/PTA/2024-25",
-    validTill: "2025",
+    title: "School Management Committee (SMC)",
+    issuingAuthority: "Shivratan Education Society",
+    refNumber: "TOS/SMC/COMMITTEE",
+    validTill: "Current Session",
     status: "Public",
-    downloadUrl: "#"
+    downloadUrl: "/downloads/1719549498.pdf"
+  },
+  {
+    slNo: 13,
+    title: "Appendix-IX Mandatory Public Disclosure",
+    issuingAuthority: "The Oxford School / CBSE Affiliation Wing",
+    refNumber: "CBSE/SARAS/APP-IX",
+    validTill: "Permanent / Verified",
+    status: "Public",
+    downloadUrl: "/downloads/1748332708.pdf"
+  },
+  {
+    slNo: 14,
+    title: "Certificate of Land",
+    issuingAuthority: "Competent Revenue Authority / Sub-Registrar",
+    refNumber: "LAND/REG/SHIVRATAN-CITY",
+    validTill: "Permanent",
+    status: "Verified",
+    downloadUrl: "/downloads/1747811973.pdf"
   }
 ];
 

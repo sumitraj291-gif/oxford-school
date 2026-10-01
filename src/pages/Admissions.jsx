@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   GraduationCap, CheckCircle2, FileText, 
-  ShieldCheck, Phone, Send, Sparkles 
+  ShieldCheck, Phone, Send, Sparkles, Download 
 } from 'lucide-react';
 import { SCHOOL_INFO, ADMISSION_STEPS, AGE_CRITERIA } from '../data/schoolData';
 
@@ -95,8 +95,30 @@ _Dispatched via Oxford School Admissions Portal_`;
             <p className="text-sm sm:text-base text-slate-200 leading-relaxed">
               We welcome applications for admission from Playgroup to Class XII (Science, Commerce, Humanities). Discover our transparent, student-centric admission process designed to help your child thrive.
             </p>
+            <div className="pt-2 flex flex-wrap items-center gap-3">
+              <a
+                href="/downloads/admissionformnew.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-bold text-xs rounded-xl inline-flex items-center gap-2 shadow-lg transition"
+              >
+                <Download className="w-4 h-4" />
+                <span>Download Offline Admission Form</span>
+              </a>
+              <a
+                href="/downloads/2026-27_fee_structure.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2.5 bg-white/10 hover:bg-white/20 text-white font-semibold text-xs rounded-xl border border-white/20 inline-flex items-center gap-2 transition"
+              >
+                <FileText className="w-4 h-4 text-amber-400" />
+                <span>Fee Structure (2026-27)</span>
+              </a>
+            </div>
             <div className="pt-2 flex items-center gap-4 text-xs text-amber-200">
-              <span>Helpline: +91-7060089183</span>
+              <span>Helpline: +91-7060089183, +91-9068885862</span>
               <span>•</span>
               <span>Office Hours: 8:00 AM – 2:30 PM</span>
             </div>
@@ -554,11 +576,21 @@ _Dispatched via Oxford School Admissions Portal_`;
               </p>
             </div>
 
-            <div className="pt-2 border-t border-slate-200">
+            <div className="pt-3 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
               <div className="flex items-center gap-2 text-xs font-semibold text-[#002b49]">
                 <Phone className="w-3.5 h-3.5 text-amber-600" />
                 <span>Accounts Desk Contact: +91-9068885862</span>
               </div>
+              <a
+                href="/downloads/2026-27_fee_structure.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-3.5 py-1.5 bg-[#002b49] hover:bg-[#003e6b] text-white rounded-lg text-xs font-semibold inline-flex items-center gap-1.5 transition"
+              >
+                <Download className="w-3.5 h-3.5 text-amber-400" />
+                <span>Download Fee PDF</span>
+              </a>
             </div>
           </div>
 

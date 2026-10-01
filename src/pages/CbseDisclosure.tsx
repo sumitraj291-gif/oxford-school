@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import {
   FileText, ShieldCheck, Download, ExternalLink,
-  Award, CheckCircle, Search, Filter
+  Award, CheckCircle, Search, Filter, Eye
 } from 'lucide-react';
 import { CBSE_DISCLOSURE_DOCS, BOARD_RESULTS, SCHOOL_INFO } from '../data/schoolData';
+import DocumentViewerModal from '../components/DocumentViewerModal';
 
 export const CbseDisclosure: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -121,14 +122,30 @@ export const CbseDisclosure: React.FC = () => {
                         </span>
                       </td>
                       <td className="py-3.5 px-4 text-right">
-                        <button
-                          type="button"
-                          onClick={() => setSelectedDoc(doc)}
-                          className="px-3 py-1 bg-[#002b49] text-white text-[11px] font-semibold btn-cut-sm hover:bg-[#003e6b] cursor-pointer inline-flex items-center gap-1 shadow-sm"
-                        >
-                          <span>Verify</span>
-                          <ExternalLink className="w-3 h-3" />
-                        </button>
+                        <div className="flex items-center justify-end gap-1.5">
+                          <button
+                            type="button"
+                            onClick={() => setSelectedDoc(doc)}
+                            className="px-2.5 py-1 bg-slate-100 text-slate-800 hover:bg-[#002b49] hover:text-white text-[11px] font-semibold rounded cursor-pointer inline-flex items-center gap-1 transition"
+                            title="View Authentic PDF"
+                          >
+                            <Eye className="w-3.5 h-3.5 text-[#002b49]" />
+                            <span>View PDF</span>
+                          </button>
+                          {doc.downloadUrl && doc.downloadUrl !== '#' && (
+                            <a
+                              href={doc.downloadUrl}
+                              download
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-2.5 py-1 bg-[#002b49] text-white hover:bg-[#003e6b] text-[11px] font-semibold rounded inline-flex items-center gap-1 shadow-sm transition"
+                              title="Download PDF"
+                            >
+                              <Download className="w-3 h-3 text-amber-400" />
+                              <span>PDF</span>
+                            </a>
+                          )}
+                        </div>
                       </td>
                     </tr>
                   ))}
@@ -165,6 +182,7 @@ export const CbseDisclosure: React.FC = () => {
                     <th className="py-2 text-center">Appeared</th>
                     <th className="py-2 text-center">Passed</th>
                     <th className="py-2 text-right">Topper Score</th>
+                    <th className="py-2 text-right">Official Gazette</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
@@ -174,6 +192,22 @@ export const CbseDisclosure: React.FC = () => {
                       <td className="py-2.5 text-center text-slate-600">{res.appeared}</td>
                       <td className="py-2.5 text-center text-slate-600">{res.passed} (100%)</td>
                       <td className="py-2.5 text-right font-bold text-[#002b49]">{res.highest}</td>
+                      <td className="py-2.5 text-right">
+                        {res.downloadUrl ? (
+                          <a
+                            href={res.downloadUrl}
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#002b49] hover:underline"
+                          >
+                            <Download className="w-3 h-3 text-amber-500" />
+                            <span>PDF</span>
+                          </a>
+                        ) : (
+                          <span className="text-slate-400 text-[11px]">—</span>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -195,6 +229,7 @@ export const CbseDisclosure: React.FC = () => {
                     <th className="py-2 text-center">Appeared</th>
                     <th className="py-2 text-center">Passed</th>
                     <th className="py-2 text-right">Topper Score</th>
+                    <th className="py-2 text-right">Official Gazette</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
@@ -204,6 +239,22 @@ export const CbseDisclosure: React.FC = () => {
                       <td className="py-2.5 text-center text-slate-600">{res.appeared}</td>
                       <td className="py-2.5 text-center text-slate-600">{res.passed} (100%)</td>
                       <td className="py-2.5 text-right font-bold text-[#002b49]">{res.highest}</td>
+                      <td className="py-2.5 text-right">
+                        {res.downloadUrl ? (
+                          <a
+                            href={res.downloadUrl}
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1 text-[11px] font-semibold text-[#002b49] hover:underline"
+                          >
+                            <Download className="w-3 h-3 text-amber-500" />
+                            <span>PDF</span>
+                          </a>
+                        ) : (
+                          <span className="text-slate-400 text-[11px]">—</span>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -212,61 +263,12 @@ export const CbseDisclosure: React.FC = () => {
           </div>
         </div>
 
-        {/* Verification Modal */}
-        {selectedDoc && (
-          <div
-            onClick={() => setSelectedDoc(null)}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm"
-          >
-            <div
-              onClick={(e) => e.stopPropagation()}
-              className="relative w-full max-w-lg bg-white border border-slate-200 p-6 rounded-2xl shadow-2xl text-left"
-            >
-              <div className="flex items-center justify-between pb-3 border-b border-slate-100">
-                <h4 className="text-base font-bold text-slate-900">Document Verification</h4>
-                <button
-                  type="button"
-                  onClick={() => setSelectedDoc(null)}
-                  className="text-slate-500 hover:text-slate-800 text-xs font-semibold cursor-pointer"
-                >
-                  Close [×]
-                </button>
-              </div>
-
-              <div className="py-4 space-y-3 text-xs">
-                <div>
-                  <span className="text-slate-500 block">Certificate:</span>
-                  <span className="font-bold text-slate-900 text-sm">{selectedDoc.title}</span>
-                </div>
-                <div>
-                  <span className="text-slate-500 block">Issuing Authority:</span>
-                  <span className="text-slate-700">{selectedDoc.issuingAuthority}</span>
-                </div>
-                <div>
-                  <span className="text-slate-500 block">Reference Identifier:</span>
-                  <span className="font-mono text-[#002b49] bg-slate-100 px-2 py-0.5 rounded font-semibold">{selectedDoc.refNumber}</span>
-                </div>
-                <div>
-                  <span className="text-slate-500 block">Status & Validity:</span>
-                  <span className="text-emerald-700 font-semibold">{selectedDoc.validTill} (Verified on CBSE SARAS Portal)</span>
-                </div>
-                <div className="p-3 bg-slate-50 rounded-lg border border-slate-200 text-[11px] text-slate-600 leading-relaxed">
-                  The original document is archived at the administrative records section, The Oxford School, Roshnabad Haridwar, and is verified under CBSE Affiliation No. {SCHOOL_INFO.affiliationNo}.
-                </div>
-              </div>
-
-              <div className="pt-2 flex justify-end">
-                <button
-                  type="button"
-                  onClick={() => setSelectedDoc(null)}
-                  className="px-5 py-2 bg-[#002b49] text-white text-xs font-semibold uppercase btn-cut hover:bg-[#003e6b]"
-                >
-                  Close
-                </button>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Real PDF Document Viewer Modal */}
+        <DocumentViewerModal
+          doc={selectedDoc}
+          isOpen={!!selectedDoc}
+          onClose={() => setSelectedDoc(null)}
+        />
       </div>
     </div>
   );

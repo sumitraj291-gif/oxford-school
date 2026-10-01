@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { 
   FileText, ShieldCheck, Search, 
-  Award, Eye, BookOpen, ExternalLink 
+  Award, Eye, BookOpen, ExternalLink, Download 
 } from 'lucide-react';
 import { SCHOOL_INFO, BOARD_RESULTS, CBSE_DISCLOSURE_DOCS } from '../data/schoolData';
 import DocumentViewerModal from '../components/DocumentViewerModal';
@@ -178,13 +178,29 @@ export default function CbseDisclosure() {
                       <td className="py-3 px-4 text-slate-600">{doc.issuingAuthority}</td>
                       <td className="py-3 px-4 font-mono text-slate-500 text-xs">{doc.refNumber}</td>
                       <td className="py-3 px-4 text-center">
-                        <button
-                          onClick={() => setSelectedDoc(doc)}
-                          className="px-3 py-1.5 bg-slate-100 hover:bg-[#002b49] hover:text-white text-[#002b49] rounded-lg text-xs font-semibold inline-flex items-center gap-1.5 transition"
-                        >
-                          <Eye className="w-3.5 h-3.5" />
-                          <span>View PDF</span>
-                        </button>
+                        <div className="flex items-center justify-center gap-1.5">
+                          <button
+                            onClick={() => setSelectedDoc(doc)}
+                            className="px-2.5 py-1.5 bg-slate-100 hover:bg-[#002b49] hover:text-white text-[#002b49] rounded-lg text-xs font-semibold inline-flex items-center gap-1 transition cursor-pointer"
+                            title="Verify Record"
+                          >
+                            <Eye className="w-3.5 h-3.5" />
+                            <span>View</span>
+                          </button>
+                          {doc.downloadUrl && doc.downloadUrl !== '#' && (
+                            <a
+                              href={doc.downloadUrl}
+                              download
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="px-2.5 py-1.5 bg-amber-500/10 hover:bg-amber-600 hover:text-white text-amber-800 rounded-lg text-xs font-semibold inline-flex items-center gap-1 transition"
+                              title="Download PDF"
+                            >
+                              <Download className="w-3.5 h-3.5" />
+                              <span>Download</span>
+                            </a>
+                          )}
+                        </div>
                       </td>
                     </tr>
                   ))}
@@ -246,6 +262,7 @@ export default function CbseDisclosure() {
                     <th className="py-3 px-4 font-semibold text-center">Pass %</th>
                     <th className="py-3 px-4 font-semibold text-center">Scored &gt; 90%</th>
                     <th className="py-3 px-4 font-semibold">School Topper</th>
+                    <th className="py-3 px-4 font-semibold text-center">Gazette / Marksheet</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-200 text-slate-700">
@@ -258,6 +275,23 @@ export default function CbseDisclosure() {
                       <td className="py-3 px-4 text-center font-bold text-emerald-600 bg-emerald-50/50">{res.passPercent}</td>
                       <td className="py-3 px-4 text-center font-semibold text-amber-800">{res.above90} Scholars</td>
                       <td className="py-3 px-4 font-semibold text-slate-900">{res.topper}</td>
+                      <td className="py-3 px-4 text-center">
+                        {res.downloadUrl ? (
+                          <a
+                            href={res.downloadUrl}
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-600 hover:text-white text-amber-800 rounded text-xs font-semibold inline-flex items-center gap-1 transition"
+                            title="Download Official Result PDF"
+                          >
+                            <Download className="w-3 h-3" />
+                            <span>PDF</span>
+                          </a>
+                        ) : (
+                          <span className="text-slate-400 text-xs">—</span>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
@@ -291,6 +325,7 @@ export default function CbseDisclosure() {
                     <th className="py-3 px-4 font-semibold text-center">Pass %</th>
                     <th className="py-3 px-4 font-semibold text-center">Scored &gt; 90%</th>
                     <th className="py-3 px-4 font-semibold">Stream Toppers</th>
+                    <th className="py-3 px-4 font-semibold text-center">Gazette / Marksheet</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-200 text-slate-700">
@@ -303,6 +338,23 @@ export default function CbseDisclosure() {
                       <td className="py-3 px-4 text-center font-bold text-emerald-600 bg-emerald-50/50">{res.passPercent}</td>
                       <td className="py-3 px-4 text-center font-semibold text-amber-800">{res.above90} Scholars</td>
                       <td className="py-3 px-4 font-semibold text-slate-900">{res.topper}</td>
+                      <td className="py-3 px-4 text-center">
+                        {res.downloadUrl ? (
+                          <a
+                            href={res.downloadUrl}
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-2.5 py-1 bg-amber-500/10 hover:bg-amber-600 hover:text-white text-amber-800 rounded text-xs font-semibold inline-flex items-center gap-1 transition"
+                            title="Download Official Result PDF"
+                          >
+                            <Download className="w-3 h-3" />
+                            <span>PDF</span>
+                          </a>
+                        ) : (
+                          <span className="text-slate-400 text-xs">—</span>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>

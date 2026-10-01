@@ -810,9 +810,13 @@ export function generateAdmissionProcedurePage() {
             <p class="text-xs text-slate-500">Need personal assistance with documents?</p>
             <p class="text-sm font-bold text-[#002b49]">Helpline: +91 9068885862 / +91 7060089183</p>
           </div>
-          <div class="flex items-center gap-3">
+          <div class="flex flex-wrap items-center gap-3">
             <a href="online-enquiry.html" class="px-5 py-2.5 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white rounded-xl text-xs font-bold transition shadow">
               Fill Online Admission Form
+            </a>
+            <a href="downloads/admissionformnew.pdf" download target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-[#002b49] hover:bg-[#003e6b] text-white rounded-xl text-xs font-bold transition shadow inline-flex items-center gap-1.5">
+              <i data-lucide="download" class="w-3.5 h-3.5 text-amber-400"></i>
+              <span>Download Offline Form (PDF)</span>
             </a>
           </div>
         </div>
@@ -1080,6 +1084,17 @@ export function generateFeeGuidelinesPage() {
             <li><strong>Bank Transfer (NEFT/RTGS):</strong> Direct bank deposit into "The Oxford School" authorized school account. (Please share UTR receipt with the accounts desk).</li>
             <li><strong>On-Campus:</strong> Point-of-Sale (POS) machine or Account Payee Demand Draft at the administrative accounts window. Cash payments above statutory limits are discouraged.</li>
           </ul>
+
+          <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
+            <div>
+              <span class="text-xs font-bold text-[#002b49] block">Official Approved Document</span>
+              <span class="text-[11px] text-slate-500">Download authorized fee schedule for session 2026-27</span>
+            </div>
+            <a href="downloads/2026-27_fee_structure.pdf" download target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-[#002b49] hover:bg-amber-600 text-white rounded-xl text-xs font-bold transition shadow inline-flex items-center gap-2">
+              <i data-lucide="download" class="w-4 h-4 text-amber-400"></i>
+              <span>Download Official Fee Structure (PDF)</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -1743,6 +1758,7 @@ export function generateResultsPage() {
                 <th class="p-4">Pass Percentage</th>
                 <th class="p-4">Scored &gt; 90%</th>
                 <th class="p-4">School Topper</th>
+                <th class="p-4 text-right">Official Gazette</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-600">
@@ -1754,6 +1770,14 @@ export function generateResultsPage() {
                   <td class="p-4 font-bold text-emerald-800">${r.passPercent}</td>
                   <td class="p-4">${r.above90} Scholars</td>
                   <td class="p-4 font-bold text-[#002b49]">${r.topper}</td>
+                  <td class="p-4 text-right">
+                    ${r.downloadUrl ? `
+                      <a href="${r.downloadUrl.replace(/^\//, '')}" download target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500/10 hover:bg-amber-600 hover:text-white text-amber-800 rounded-lg text-xs font-bold transition shadow-sm">
+                        <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                        <span>Gazette PDF</span>
+                      </a>
+                    ` : `<span class="text-slate-400 text-xs">—</span>`}
+                  </td>
                 </tr>
               `).join('')}
             </tbody>
@@ -1780,6 +1804,7 @@ export function generateResultsPage() {
                 <th class="p-4">Pass Percentage</th>
                 <th class="p-4">Scored &gt; 90%</th>
                 <th class="p-4">Stream Topper</th>
+                <th class="p-4 text-right">Official Gazette</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100 text-slate-600">
@@ -1791,6 +1816,14 @@ export function generateResultsPage() {
                   <td class="p-4 font-bold text-emerald-800">${r.passPercent}</td>
                   <td class="p-4">${r.above90} Scholars</td>
                   <td class="p-4 font-bold text-[#002b49]">${r.topper}</td>
+                  <td class="p-4 text-right">
+                    ${r.downloadUrl ? `
+                      <a href="${r.downloadUrl.replace(/^\//, '')}" download target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-500/10 hover:bg-amber-600 hover:text-white text-amber-800 rounded-lg text-xs font-bold transition shadow-sm">
+                        <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                        <span>Gazette PDF</span>
+                      </a>
+                    ` : `<span class="text-slate-400 text-xs">—</span>`}
+                  </td>
                 </tr>
               `).join('')}
             </tbody>

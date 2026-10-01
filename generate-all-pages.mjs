@@ -1436,7 +1436,7 @@ function generateCbsePage() {
               <th class="p-3.5 font-bold w-12">S.No.</th>
               <th class="p-3.5 font-bold">Document / Information Title</th>
               <th class="p-3.5 font-bold">Status</th>
-              <th class="p-3.5 font-bold text-right">Verification</th>
+              <th class="p-3.5 font-bold text-right">Official Document</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-100">
@@ -1450,7 +1450,20 @@ function generateCbsePage() {
                   </span>
                 </td>
                 <td class="p-3.5 text-right">
-                  <span class="text-xs font-bold text-amber-700">Available at Desk</span>
+                  ${doc.downloadUrl && doc.downloadUrl !== '#' ? `
+                    <div class="inline-flex items-center gap-1.5 justify-end">
+                      <a href="${doc.downloadUrl.replace(/^\//, '')}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 px-2.5 py-1.5 bg-slate-100 hover:bg-[#002b49] hover:text-white text-[#002b49] rounded-lg font-bold text-xs transition" title="View PDF">
+                        <i data-lucide="eye" class="w-3.5 h-3.5"></i>
+                        <span>View</span>
+                      </a>
+                      <a href="${doc.downloadUrl.replace(/^\//, '')}" download target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-[#002b49] hover:bg-amber-600 text-white rounded-lg font-bold text-xs shadow-sm transition" title="Download PDF">
+                        <i data-lucide="download" class="w-3.5 h-3.5 text-amber-300"></i>
+                        <span>Download</span>
+                      </a>
+                    </div>
+                  ` : `
+                    <span class="text-xs font-bold text-amber-700">Available at Desk</span>
+                  `}
                 </td>
               </tr>
             `).join('')}
@@ -1476,6 +1489,7 @@ function generateCbsePage() {
                 <th class="p-3 font-bold">Pass Percentage</th>
                 <th class="p-3 font-bold">Scored &gt; 90%</th>
                 <th class="p-3 font-bold">School Topper</th>
+                <th class="p-3 font-bold text-right">Official Gazette</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100">
@@ -1487,6 +1501,14 @@ function generateCbsePage() {
                   <td class="p-3 font-bold text-emerald-600">${r.passPercent}</td>
                   <td class="p-3 text-slate-700">${r.above90}</td>
                   <td class="p-3 font-bold text-amber-700">${r.topper}</td>
+                  <td class="p-3 text-right">
+                    ${r.downloadUrl ? `
+                      <a href="${r.downloadUrl.replace(/^\//, '')}" download target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-[#002b49] hover:text-amber-600 underline">
+                        <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                        <span>Gazette PDF</span>
+                      </a>
+                    ` : `<span class="text-slate-400">—</span>`}
+                  </td>
                 </tr>
               `).join('')}
             </tbody>
@@ -1506,6 +1528,7 @@ function generateCbsePage() {
                 <th class="p-3 font-bold">Pass Percentage</th>
                 <th class="p-3 font-bold">Scored &gt; 90%</th>
                 <th class="p-3 font-bold">School Topper</th>
+                <th class="p-3 font-bold text-right">Official Gazette</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-slate-100">
@@ -1517,6 +1540,14 @@ function generateCbsePage() {
                   <td class="p-3 font-bold text-emerald-600">${r.passPercent}</td>
                   <td class="p-3 text-slate-700">${r.above90}</td>
                   <td class="p-3 font-bold text-amber-700">${r.topper}</td>
+                  <td class="p-3 text-right">
+                    ${r.downloadUrl ? `
+                      <a href="${r.downloadUrl.replace(/^\//, '')}" download target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-bold text-[#002b49] hover:text-amber-600 underline">
+                        <i data-lucide="file-text" class="w-3.5 h-3.5 text-amber-600"></i>
+                        <span>Gazette PDF</span>
+                      </a>
+                    ` : `<span class="text-slate-400">—</span>`}
+                  </td>
                 </tr>
               `).join('')}
             </tbody>
