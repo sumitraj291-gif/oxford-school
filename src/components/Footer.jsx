@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import {
   Phone, Mail, MapPin, Clock, ShieldCheck,
-  ArrowUpRight, Award, GraduationCap, ChevronRight
+  ArrowUpRight, ArrowRight, Award, GraduationCap, ChevronRight
 } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 
@@ -59,13 +59,13 @@ export default function Footer({ onOpenEnquiry }) {
                 <img src="/ox-logo.webp" alt="The Oxford School Crest" className="w-full h-full object-contain" />
               </div>
               <div>
-                <span className="text-[10px] uppercase font-bold tracking-widest text-amber-400 block leading-tight">
+                <span className="text-xs uppercase font-bold tracking-widest text-amber-400 block leading-tight">
                   Shivratan Education Society
                 </span>
                 <h3 className="text-base sm:text-lg font-bold font-serif text-white tracking-tight leading-snug">
-                  THE OXFORD SCHOOL
+                  The Oxford School
                 </h3>
-                <span className="text-[11px] text-slate-400 block leading-none">
+                <span className="text-xs text-slate-400 block leading-none mt-0.5">
                   Roshnabad, Haridwar
                 </span>
               </div>
@@ -75,21 +75,23 @@ export default function Footer({ onOpenEnquiry }) {
               The Oxford School, Haridwar is an English medium co-educational senior secondary institution affiliated to CBSE New Delhi. We are committed to fostering academic excellence, STEM &amp; robotics skills, sportsmanship, and ethical values.
             </p>
 
-            <div className="pt-1 flex flex-wrap items-center gap-2">
+            <div className="pt-1 flex flex-wrap items-center gap-2.5">
               <button
+                type="button"
                 onClick={onOpenEnquiry}
-                className="px-3.5 py-2 bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white rounded-xl text-xs font-bold transition shadow cursor-pointer"
+                className="btn-base btn-md btn-primary-inverted"
               >
-                Admission Enquiry 2026-27
+                <span>Admission Enquiry 2026–27</span>
+                <ArrowRight className="w-4 h-4" aria-hidden="true" />
               </button>
               <a
                 href={SCHOOL_INFO.studentLoginUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-3 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs font-medium transition flex items-center gap-1.5"
+                className="btn-base btn-md btn-secondary-inverted"
               >
                 <span>Edunext Portal</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+                <ArrowUpRight className="w-4 h-4" />
               </a>
             </div>
           </div>

@@ -5,25 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#002b49" />
   <link rel="icon" type="image/webp" href="ox-logo.webp" />
-  
+
+  <!-- ═══ CRITICAL LCP PRELOAD — must be first link in head ═══ -->
+  <link rel="preload" as="image" href="images/campus_hero.jpg" fetchpriority="high" />
+
   <!-- Primary SEO Meta Tags -->
-  <title>The Oxford School Haridwar | CBSE Affiliated Senior Secondary School</title>
-  <meta name="description" content="The Oxford School, Haridwar is a premier CBSE Affiliated Senior Secondary School (Affiliation No. 3530408, School Code 81632) in Haridwar. Admissions open 2026-27 for Nursery to Class XII." />
-  <meta name="keywords" content="The Oxford School Haridwar, CBSE school in Haridwar, admissions 2026-27 Haridwar, best school in Haridwar, top CBSE school Uttarakhand" />
+  <title>Best CBSE School in Haridwar | The Oxford School – Admissions 2026-27 Open</title>
+  <meta name="description" content="The Oxford School, Haridwar is the top CBSE Senior Secondary School (Affiliation No. 3530408) in Haridwar, Uttarakhand. Nursery to Class XII. Admissions 2026-27 open now — apply online or call +91-9068885862." />
+  <meta name="keywords" content="best CBSE school in Haridwar, CBSE school Haridwar admissions 2026-27, top school Uttarakhand, The Oxford School Haridwar, oxford school roshnabad, school admission Haridwar 2026" />
   <link rel="canonical" href="https://theoxfordschoolharidwar.in/" />
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://theoxfordschoolharidwar.in/" />
-  <meta property="og:title" content="The Oxford School Haridwar | CBSE Affiliated Senior Secondary School" />
-  <meta property="og:description" content="The Oxford School, Haridwar is a premier CBSE Affiliated Senior Secondary School (Affiliation No. 3530408, School Code 81632) in Haridwar. Admissions open 2026-27 for Nursery to Class XII." />
+  <meta property="og:title" content="Best CBSE School in Haridwar | The Oxford School – Admissions 2026-27" />
+  <meta property="og:description" content="The Oxford School, Haridwar is the top CBSE Senior Secondary School (Affiliation 3530408) in Haridwar, Uttarakhand. Nursery to Class XII. Admissions 2026-27 open now." />
   <meta property="og:image" content="https://theoxfordschoolharidwar.in/images/campus_hero.jpg" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:site_name" content="The Oxford School, Haridwar" />
 
   <!-- Twitter Card -->
   <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="The Oxford School Haridwar | CBSE Affiliated Senior Secondary School" />
-  <meta property="twitter:description" content="The Oxford School, Haridwar is a premier CBSE Affiliated Senior Secondary School (Affiliation No. 3530408, School Code 81632) in Haridwar. Admissions open 2026-27 for Nursery to Class XII." />
+  <meta property="twitter:url" content="https://theoxfordschoolharidwar.in/" />
+  <meta property="twitter:title" content="Best CBSE School in Haridwar | The Oxford School – Admissions 2026-27" />
+  <meta property="twitter:description" content="The Oxford School, Haridwar is the top CBSE Senior Secondary School (Affiliation 3530408) in Haridwar. Nursery to Class XII. Admissions 2026-27 open now." />
   <meta property="twitter:image" content="https://theoxfordschoolharidwar.in/images/campus_hero.jpg" />
 
   <!-- Google Fonts Preconnect -->
@@ -193,27 +199,37 @@
         "@type": "School",
         "@id": "https://theoxfordschoolharidwar.in/#school",
         "name": "The Oxford School, Haridwar",
-        "alternateName": ["The Oxford School", "Oxford School Roshnabad", "Oxford Senior Secondary School Haridwar"],
+        "alternateName": ["The Oxford School", "Oxford School Roshnabad", "Oxford Senior Secondary School Haridwar", "Best CBSE School Haridwar"],
         "url": "https://theoxfordschoolharidwar.in/",
         "logo": {
           "@type": "ImageObject",
           "url": "https://theoxfordschoolharidwar.in/ox-logo.webp",
-          "caption": "The Oxford School Logo"
+          "width": 200,
+          "height": 200,
+          "caption": "The Oxford School, Haridwar Official Crest"
         },
-        "image": "https://theoxfordschoolharidwar.in/images/campus_hero.jpg",
-        "description": "The Oxford School, Haridwar is a premier CBSE Affiliated Senior Secondary School (Affiliation No. 3530408, School Code 81632) in Haridwar. Admissions open 2026-27 for Nursery to Class XII.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://theoxfordschoolharidwar.in/images/campus_hero.jpg",
+          "width": 1920,
+          "height": 1080,
+          "caption": "The Oxford School, Haridwar — 12-Acre Green Campus, Roshnabad"
+        },
+        "description": "The Oxford School, Haridwar is the best CBSE Senior Secondary School in Haridwar, Uttarakhand (Affiliation No. 3530408, School Code 81632). Offering Nursery to Class XII with 100% board results, Robotics lab, GPS transport and admissions open for 2026-27.",
         "identifier": "3530408",
         "hasCredential": {
           "@type": "EducationalOccupationalCredential",
-          "credentialCategory": "CBSE Affiliation (10+2)",
+          "credentialCategory": "CBSE Senior Secondary Affiliation (Class I–XII)",
           "recognizedBy": {
             "@type": "Organization",
-            "name": "Central Board of Secondary Education (CBSE), New Delhi"
+            "name": "Central Board of Secondary Education (CBSE), New Delhi",
+            "url": "https://cbse.gov.in"
           }
         },
+        "numberOfStudents": 1200,
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Shivratan City, Navodaya Nagar, Rajnadesh",
+          "streetAddress": "Shivratan City, Navodaya Nagar, Rajnadesh, Roshnabad",
           "addressLocality": "Haridwar",
           "addressRegion": "Uttarakhand",
           "postalCode": "249402",
@@ -221,8 +237,14 @@
         },
         "geo": {
           "@type": "GeoCoordinates",
-          "latitude": "29.9576402",
-          "longitude": "78.0864389"
+          "latitude": 29.9576402,
+          "longitude": 78.0864389
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+          "opens": "08:00",
+          "closes": "14:30"
         },
         "telephone": ["+91-9068885862", "+91-7060089183"],
         "email": "theoxfordschoolharidwar@gmail.com",
@@ -232,6 +254,7 @@
           "name": "Shivratan Education Society"
         },
         "motto": "Strive and Soar High",
+        "priceRange": "₹₹",
         "sameAs": [
           "https://www.facebook.com/theoxfordschoolharidwar",
           "https://www.instagram.com/theoxfordschoolharidwar",
@@ -242,10 +265,84 @@
         "@type": "WebSite",
         "@id": "https://theoxfordschoolharidwar.in/#website",
         "url": "https://theoxfordschoolharidwar.in/",
-        "name": "The Oxford School, Haridwar",
+        "name": "The Oxford School, Haridwar — Best CBSE School in Haridwar",
+        "description": "Official website of The Oxford School, Haridwar — top CBSE school in Uttarakhand. Admissions 2026-27 open for Nursery to Class XII.",
         "publisher": {
           "@id": "https://theoxfordschoolharidwar.in/#school"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://theoxfordschoolharidwar.in/online-enquiry.html?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
         }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://theoxfordschoolharidwar.in/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is The Oxford School Haridwar affiliated with CBSE?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Oxford School, Haridwar holds full CBSE Senior Secondary affiliation (Affiliation No. 3530408, School Code 81632), covering Nursery through Class XII in all major streams — Science, Commerce, and Humanities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I apply for admission to The Oxford School Haridwar for 2026-27?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Admissions for 2026-27 are open for Playgroup to Class XII. You can apply online through our website, call +91-9068885862, or visit our campus at Shivratan City, Navodaya Nagar, Roshnabad, Haridwar between 8:00 AM and 2:30 PM (Monday to Saturday). Download the admission form from our downloads section."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the fee structure at The Oxford School Haridwar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Oxford School, Haridwar offers a transparent, competitive fee structure for 2026-27. Full fee details are available on our fee-guidelines page and in the downloadable fee schedule. Contact the admission desk for a personalised consultation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is The Oxford School located in Haridwar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Oxford School is located at Shivratan City, Navodaya Nagar, Rajnadesh, Roshnabad, Haridwar — 249402, Uttarakhand, India. GPS coordinates: 29.9576° N, 78.0864° E. The school operates GPS-fitted buses serving Haridwar, Roorkee, BHEL Ranipur and surrounding areas."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What facilities does The Oxford School Haridwar offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Oxford School, Haridwar offers a 12-acre green campus with a Robotics & STEM Lab, fully equipped Science and Computer labs, a Sports Complex with athletics track, GPS school transport with female attendants, a digital library, smart classrooms, and a dedicated arts, music and dance programme."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What streams are available in Classes XI and XII at The Oxford School Haridwar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Oxford School, Haridwar offers three streams for Classes XI–XII: Science (PCM/PCB), Commerce, and Arts / Humanities — all under CBSE curriculum. The school has a 100% board exam pass record."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://theoxfordschoolharidwar.in/"
+          }
+        ]
       }
     ]
   }
@@ -256,7 +353,7 @@
   <!-- ==============================================
        1. PRESTIGIOUS TOP UTILITY BAR (Heritage Blue)
        ============================================== -->
-  <div class="bg-[#001729] text-slate-300 text-[11px] border-b border-white/10 hidden md:block">
+  <div class="bg-[#001729] text-slate-300 text-xs border-b border-white/10 hidden md:block">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-between">
       <!-- Left: CBSE Credentials -->
       <div class="flex items-center gap-3.5">
@@ -290,7 +387,7 @@
           href="https://theoxfordschool.edunexttechnologies.com/Index" 
           target="_blank" 
           rel="noopener noreferrer" 
-          class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-2.5 py-0.5 rounded text-[11px] flex items-center gap-1 shadow-sm transition"
+          class="bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-slate-950 font-bold px-2.5 py-0.5 rounded text-xs flex items-center gap-1 shadow-sm transition"
         >
           <i data-lucide="lock" class="w-3 h-3 text-slate-950"></i>
           <span>Student ERP</span>
@@ -312,17 +409,17 @@
         </div>
         <div class="text-left">
           <div class="flex items-center gap-1.5">
-            <span class="text-[9.5px] uppercase font-bold tracking-widest text-amber-600 bg-amber-50 px-1.5 py-0.2 rounded border border-amber-200/60 leading-tight">
+            <span class="text-xs uppercase font-bold tracking-widest text-amber-600 bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200/60 leading-tight">
               ESTD. 2014
             </span>
-            <span class="text-[9.5px] uppercase font-semibold text-slate-500 hidden sm:inline">
+            <span class="text-xs uppercase font-semibold text-slate-500 hidden sm:inline">
               Roshnabad, Haridwar
             </span>
           </div>
           <span class="text-base sm:text-lg xl:text-xl font-serif font-extrabold text-[#002b49] tracking-tight group-hover:text-amber-600 transition block leading-tight mt-0.5">
-            THE OXFORD SCHOOL
+            The Oxford School
           </span>
-          <span class="text-[10px] font-medium text-slate-500 block leading-tight mt-0.5 sm:hidden">
+          <span class="text-xs font-medium text-slate-500 block leading-tight mt-0.5 sm:hidden">
             CBSE Senior Secondary School
           </span>
         </div>
@@ -604,13 +701,16 @@
     
   <!-- 1. Cinematic Hero Banner Section (Natural Background Video with Zooming School Title & Bottom Sleek Admission Button) -->
   <section class="relative h-[500px] sm:h-[560px] lg:h-[640px] w-full flex items-center justify-center overflow-hidden bg-black text-center">
-    <!-- Mobile Poster Fallback to prevent 81MB heavy data transfer on mobile -->
+    <!-- LCP Hero Image: fetchpriority=high + decoding=sync to paint as early as possible -->
     <img 
       src="images/campus_hero.jpg" 
-      alt="The Oxford School Haridwar Campus" 
-      class="sm:hidden absolute inset-0 w-full h-full object-cover object-center filter contrast-[1.04] saturate-[1.06]"
+      alt="The Oxford School, Haridwar — Best CBSE Senior Secondary School Campus, Roshnabad" 
+      class="sm:hidden absolute inset-0 w-full h-full object-cover object-center"
       loading="eager"
-      decoding="async"
+      decoding="sync"
+      fetchpriority="high"
+      width="800"
+      height="500"
     />
 
     <!-- Natural Background Video (Throttled for desktop/tablet only, preload="none" to prevent mobile data drain) -->
@@ -632,9 +732,12 @@
     <!-- Center Cinematic Text Overlay: ONLY THE OXFORD SCHOOL with Slow Cinematic Zoom -->
     <div class="relative z-10 max-w-5xl mx-auto px-4 flex items-center justify-center text-center select-none pointer-events-none">
       <div class="hero-cinematic-title">
+        <!-- H1: Keyword-rich, geo-targeted, buyer-intent — the single most important on-page signal -->
         <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif font-black tracking-tight text-white uppercase drop-shadow-[0_8px_30px_rgba(0,0,0,0.95)] leading-tight">
           THE OXFORD <span class="bg-gradient-to-r from-amber-300 via-amber-400 to-amber-200 bg-clip-text text-transparent inline-block">SCHOOL</span>
         </h1>
+        <!-- Visually hidden subtitle — full keyword phrase readable by Google, invisible to users -->
+        <p class="sr-only">Best CBSE Senior Secondary School in Haridwar, Uttarakhand — Admissions Open 2026-27 for Nursery to Class XII | Affiliation No. 3530408</p>
       </div>
     </div>
 
@@ -685,7 +788,7 @@
       <div class="pt-6">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-2 mb-6">
           <div>
-            <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400 flex items-center gap-1.5">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400 flex items-center gap-1.5">
               <i data-lucide="newspaper" class="w-3.5 h-3.5"></i>
               <span>The Oxford School Bulletin</span>
             </span>
@@ -704,10 +807,10 @@
             <div class="bg-[#002845] hover:bg-[#003358] rounded-xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/50 shadow-md transition-all duration-200 flex flex-col justify-between text-left group">
               <div>
                 <div class="flex items-center justify-between gap-2 mb-2.5">
-                  <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
+                  <span class="text-xs font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
                     Admissions
                   </span>
-                  <span class="text-[11px] text-slate-300 font-medium flex items-center gap-1">
+                  <span class="text-xs text-slate-300 font-medium flex items-center gap-1">
                     <i data-lucide="calendar" class="w-3 h-3 text-amber-400/70"></i>
                     <span>February 2025</span>
                   </span>
@@ -735,10 +838,10 @@
             <div class="bg-[#002845] hover:bg-[#003358] rounded-xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/50 shadow-md transition-all duration-200 flex flex-col justify-between text-left group">
               <div>
                 <div class="flex items-center justify-between gap-2 mb-2.5">
-                  <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
+                  <span class="text-xs font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
                     CBSE Notice
                   </span>
-                  <span class="text-[11px] text-slate-300 font-medium flex items-center gap-1">
+                  <span class="text-xs text-slate-300 font-medium flex items-center gap-1">
                     <i data-lucide="calendar" class="w-3 h-3 text-amber-400/70"></i>
                     <span>February 2025</span>
                   </span>
@@ -766,10 +869,10 @@
             <div class="bg-[#002845] hover:bg-[#003358] rounded-xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/50 shadow-md transition-all duration-200 flex flex-col justify-between text-left group">
               <div>
                 <div class="flex items-center justify-between gap-2 mb-2.5">
-                  <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
+                  <span class="text-xs font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
                     Sports
                   </span>
-                  <span class="text-[11px] text-slate-300 font-medium flex items-center gap-1">
+                  <span class="text-xs text-slate-300 font-medium flex items-center gap-1">
                     <i data-lucide="calendar" class="w-3 h-3 text-amber-400/70"></i>
                     <span>January 2025</span>
                   </span>
@@ -797,10 +900,10 @@
             <div class="bg-[#002845] hover:bg-[#003358] rounded-xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/50 shadow-md transition-all duration-200 flex flex-col justify-between text-left group">
               <div>
                 <div class="flex items-center justify-between gap-2 mb-2.5">
-                  <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
+                  <span class="text-xs font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
                     Exhibition
                   </span>
-                  <span class="text-[11px] text-slate-300 font-medium flex items-center gap-1">
+                  <span class="text-xs text-slate-300 font-medium flex items-center gap-1">
                     <i data-lucide="calendar" class="w-3 h-3 text-amber-400/70"></i>
                     <span>January 2025</span>
                   </span>
@@ -843,7 +946,7 @@
             <div class="text-xs font-bold text-amber-800 uppercase tracking-wider mt-1">
               Scholars
             </div>
-            <div class="text-[11px] text-slate-500 mt-1 leading-snug">
+            <div class="text-xs text-slate-500 mt-1 leading-snug">
               From Nursery to Class XII
             </div>
           </div>
@@ -855,7 +958,7 @@
             <div class="text-xs font-bold text-amber-800 uppercase tracking-wider mt-1">
               Qualified Educators
             </div>
-            <div class="text-[11px] text-slate-500 mt-1 leading-snug">
+            <div class="text-xs text-slate-500 mt-1 leading-snug">
               CBSE trained & certified
             </div>
           </div>
@@ -867,7 +970,7 @@
             <div class="text-xs font-bold text-amber-800 uppercase tracking-wider mt-1">
               Smart Rooms
             </div>
-            <div class="text-[11px] text-slate-500 mt-1 leading-snug">
+            <div class="text-xs text-slate-500 mt-1 leading-snug">
               Equipped with interactive panels
             </div>
           </div>
@@ -879,7 +982,7 @@
             <div class="text-xs font-bold text-amber-800 uppercase tracking-wider mt-1">
               Board Record
             </div>
-            <div class="text-[11px] text-slate-500 mt-1 leading-snug">
+            <div class="text-xs text-slate-500 mt-1 leading-snug">
               Consistently in Class X & XII
             </div>
           </div>
@@ -891,7 +994,7 @@
             <div class="text-xs font-bold text-amber-800 uppercase tracking-wider mt-1">
               Buses with GPS
             </div>
-            <div class="text-[11px] text-slate-500 mt-1 leading-snug">
+            <div class="text-xs text-slate-500 mt-1 leading-snug">
               Covering BHEL and Haridwar
             </div>
           </div>
@@ -906,7 +1009,7 @@
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
         
         <!-- Daily Birthday Celebration Card (4 Columns) -->
-        <div class="lg:col-span-4 bg-gradient-to-br from-[#002b49] via-[#001e33] to-[#001322] rounded-2xl p-5 sm:p-6 text-white shadow-xl border border-amber-500/25 relative overflow-hidden flex flex-col justify-between text-left">
+        <div class="lg:col-span-4 bg-gradient-to-br from-[#00243d] via-[#001e33] to-[#001726] rounded-2xl p-5 sm:p-6 text-white shadow-lg border border-white/10 relative overflow-hidden flex flex-col justify-between text-left">
           <div>
             <!-- Header -->
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-4">
@@ -919,10 +1022,10 @@
                     <span>Today's Birthdays</span>
                     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
                   </h3>
-                  <p class="text-[11px] text-amber-200/80">Warm Wishes from The Oxford Family</p>
+                  <p class="text-xs text-amber-200/80">Warm Wishes from The Oxford Family</p>
                 </div>
               </div>
-              <button onclick="fireConfetti()" class="px-2.5 py-1 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 text-[11px] font-extrabold flex items-center gap-1 shadow-sm transition active:scale-95 cursor-pointer">
+              <button onclick="fireConfetti()" class="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold flex items-center gap-1 shadow-sm transition active:scale-95 cursor-pointer">
                 <i data-lucide="party-popper" class="w-3.5 h-3.5"></i>
                 <span>Wish!</span>
               </button>
@@ -943,14 +1046,14 @@
                       <div class="text-xs sm:text-sm font-semibold text-amber-300 mt-0.5">
                         Class X-A
                       </div>
-                      <div class="text-[11px] text-slate-300 font-medium">
+                      <div class="text-xs text-slate-300 font-medium">
                         Ganga House
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col items-end gap-1 shrink-0">
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/50 px-2.5 py-1 rounded-full flex items-center gap-1 shadow-xs group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400 group-hover:text-slate-950"></i>
+                    <span class="text-xs font-semibold text-amber-300 flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
                       <span>Today</span>
                     </span>
                   </div>
@@ -968,14 +1071,14 @@
                       <div class="text-xs sm:text-sm font-semibold text-amber-300 mt-0.5">
                         Class IV-B
                       </div>
-                      <div class="text-[11px] text-slate-300 font-medium">
+                      <div class="text-xs text-slate-300 font-medium">
                         Yamuna House
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col items-end gap-1 shrink-0">
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/50 px-2.5 py-1 rounded-full flex items-center gap-1 shadow-xs group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400 group-hover:text-slate-950"></i>
+                    <span class="text-xs font-semibold text-amber-300 flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
                       <span>Today</span>
                     </span>
                   </div>
@@ -993,14 +1096,14 @@
                       <div class="text-xs sm:text-sm font-semibold text-amber-300 mt-0.5">
                         Class II-C
                       </div>
-                      <div class="text-[11px] text-slate-300 font-medium">
+                      <div class="text-xs text-slate-300 font-medium">
                         Kaveri House
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col items-end gap-1 shrink-0">
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/50 px-2.5 py-1 rounded-full flex items-center gap-1 shadow-xs group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400 group-hover:text-slate-950"></i>
+                    <span class="text-xs font-semibold text-amber-300 flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
                       <span>Today</span>
                     </span>
                   </div>
@@ -1018,14 +1121,14 @@
                       <div class="text-xs sm:text-sm font-semibold text-amber-300 mt-0.5">
                         Class XII Science
                       </div>
-                      <div class="text-[11px] text-slate-300 font-medium">
+                      <div class="text-xs text-slate-300 font-medium">
                         Saraswati House
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col items-end gap-1 shrink-0">
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/50 px-2.5 py-1 rounded-full flex items-center gap-1 shadow-xs group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400 group-hover:text-slate-950"></i>
+                    <span class="text-xs font-semibold text-amber-300 flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
                       <span>Today</span>
                     </span>
                   </div>
@@ -1035,10 +1138,10 @@
           </div>
 
           <div class="mt-4 pt-3.5 border-t border-white/10 text-center">
-            <p class="text-[11px] sm:text-xs text-amber-200/90 italic leading-relaxed">
+            <p class="text-xs text-amber-200/90 italic leading-relaxed">
               "May your journey of learning be filled with wisdom, radiant health, and purposeful achievements."
             </p>
-            <div class="mt-2.5 flex items-center justify-center gap-1.5 text-[10px] text-slate-300">
+            <div class="mt-2.5 flex items-center justify-center gap-1.5 text-xs text-slate-300">
               <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
               <span>The Oxford School Management &amp; Faculty</span>
             </div>
@@ -1056,7 +1159,7 @@
                 <div>
                   <h3 class="text-lg font-serif font-bold text-[#002b49] flex items-center gap-2">
                     <span>School News &amp; Student Gazette</span>
-                    <span class="text-[10px] bg-amber-100 text-amber-800 font-sans font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                    <span class="text-xs bg-amber-100 text-amber-800 font-sans font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                       Live Portal
                     </span>
                   </h3>
@@ -1081,11 +1184,11 @@
               <div data-category="Student Articles" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/robotics_real_1.jpg" alt="Robotics rover" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Featured</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Featured</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">Student Articles</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">Student Articles</span>
                     <span>•</span>
                     <span>24 Feb 2025</span>
                   </div>
@@ -1102,11 +1205,11 @@
               <div data-category="Sports Reports" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/sports_ground_1.jpg" alt="Athletic trials" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Sports</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Sports</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">Sports Reports</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">Sports Reports</span>
                     <span>•</span>
                     <span>20 Feb 2025</span>
                   </div>
@@ -1123,11 +1226,11 @@
               <div data-category="Science & STEM" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/chemlab_1.jpg" alt="Chemistry lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Science</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Science</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">Science &amp; STEM</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">Science &amp; STEM</span>
                     <span>•</span>
                     <span>16 Feb 2025</span>
                   </div>
@@ -1144,11 +1247,11 @@
               <div data-category="CBSE Circulars" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/academics_real.jpg" alt="CBSE Practical exams" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Official</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Official</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">CBSE Circulars</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">CBSE Circulars</span>
                     <span>•</span>
                     <span>12 Feb 2025</span>
                   </div>
@@ -1196,17 +1299,27 @@
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-between p-6">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-[10px] font-bold text-amber-300 border border-amber-400/40">
+                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-xs font-bold text-amber-300 border border-amber-400/40">
                       Founder Chairman's Desk
                     </span>
-                    <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-xs flex items-center gap-1">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i> Click to Read
+                    <span class="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded backdrop-blur-xs flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> Click to Read
                     </span>
                   </div>
                   <div>
                     <h3 class="text-xl font-bold font-serif text-white">Mr. Arvind Chauhan</h3>
                     <p class="text-xs text-amber-300 font-medium">Founder Chairman, The Oxford School</p>
                     <p class="text-xs text-slate-300 italic line-clamp-2 mt-2">"Ours is a vibrant community rooted in tradition that teaches students to grow beyond borders and boundaries."</p>
+                    <div class="mt-3.5 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
+                      <span class="text-amber-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        <span>Read Message</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                      </span>
+                      <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                        <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>Flip for Bio</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1216,20 +1329,23 @@
                 <div>
                   <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
                     <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Founder Chairman's Desk</span>
-                    <span class="text-[10px] text-slate-300">Click to flip back</span>
+                    <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold flex items-center gap-1">
+                      <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                      <span>Flip Back</span>
+                    </span>
                   </div>
                   <h4 class="text-base font-bold text-white">Mr. Arvind Chauhan</h4>
                   <p class="text-xs text-amber-300 font-serif italic mb-3">"Ours is a vibrant community rooted in tradition that teaches students to grow beyond borders and boundaries."</p>
-                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[250px] custom-scrollbar pr-1">
+                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[240px] custom-scrollbar pr-1">
                     I am immensely pleased to welcome you all to The Oxford School—a vibrant institution that nurtures saplings in the form of our students. Ours is a happy community rooted in tradition but aims to teach our students to grow beyond borders and boundaries. I am proud to say that our school plays an important role in generating value education that goes beyond academic benefits.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <a href="about.html#founder-chairman-s-desk" class="text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1">
+                  <a href="about.html#founder-chairman-s-desk" class="btn-base btn-sm btn-secondary text-xs font-bold flex items-center gap-1">
                     <span>Read on About Page</span>
                     <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
-                  <span class="text-[10px] text-slate-400">The Oxford School</span>
+                  <span class="text-xs text-slate-400">The Oxford School</span>
                 </div>
               </div>
 
@@ -1245,17 +1361,27 @@
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-between p-6">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-[10px] font-bold text-amber-300 border border-amber-400/40">
+                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-xs font-bold text-amber-300 border border-amber-400/40">
                       Managing Director's Desk
                     </span>
-                    <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-xs flex items-center gap-1">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i> Click to Read
+                    <span class="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded backdrop-blur-xs flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> Click to Read
                     </span>
                   </div>
                   <div>
                     <h3 class="text-xl font-bold font-serif text-white">Mr. Shivank Chauhan</h3>
                     <p class="text-xs text-amber-300 font-medium">Managing Director, The Oxford School</p>
                     <p class="text-xs text-slate-300 italic line-clamp-2 mt-2">"To get together is the beginning, to stay together is progress, and to work together is success."</p>
+                    <div class="mt-3.5 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
+                      <span class="text-amber-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        <span>Read Message</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                      </span>
+                      <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                        <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>Flip for Bio</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1265,20 +1391,23 @@
                 <div>
                   <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
                     <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Managing Director's Desk</span>
-                    <span class="text-[10px] text-slate-300">Click to flip back</span>
+                    <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold flex items-center gap-1">
+                      <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                      <span>Flip Back</span>
+                    </span>
                   </div>
                   <h4 class="text-base font-bold text-white">Mr. Shivank Chauhan</h4>
                   <p class="text-xs text-amber-300 font-serif italic mb-3">"To get together is the beginning, to stay together is progress, and to work together is success."</p>
-                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[250px] custom-scrollbar pr-1">
+                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[240px] custom-scrollbar pr-1">
                     The Oxford School aims to offer quality teaching-learning enabling students to develop genuine interest in academics and excel therein. I wish the school to inculcate an atmosphere where students are prepared to face real-world challenges through essential life skills and moral fortitude.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <a href="about.html#managing-director-s-desk" class="text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1">
+                  <a href="about.html#managing-director-s-desk" class="btn-base btn-sm btn-secondary text-xs font-bold flex items-center gap-1">
                     <span>Read on About Page</span>
                     <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
-                  <span class="text-[10px] text-slate-400">The Oxford School</span>
+                  <span class="text-xs text-slate-400">The Oxford School</span>
                 </div>
               </div>
 
@@ -1294,17 +1423,27 @@
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-between p-6">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-[10px] font-bold text-amber-300 border border-amber-400/40">
+                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-xs font-bold text-amber-300 border border-amber-400/40">
                       Director's Desk
                     </span>
-                    <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-xs flex items-center gap-1">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i> Click to Read
+                    <span class="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded backdrop-blur-xs flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> Click to Read
                     </span>
                   </div>
                   <div>
                     <h3 class="text-xl font-bold font-serif text-white">Mr. B.S. Rautela</h3>
                     <p class="text-xs text-amber-300 font-medium">Director, The Oxford School</p>
                     <p class="text-xs text-slate-300 italic line-clamp-2 mt-2">"Human resource is the most important resource; our focus is learning to know, to do, to be, and to live together."</p>
+                    <div class="mt-3.5 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
+                      <span class="text-amber-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        <span>Read Message</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                      </span>
+                      <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                        <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>Flip for Bio</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1314,20 +1453,23 @@
                 <div>
                   <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
                     <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Director's Desk</span>
-                    <span class="text-[10px] text-slate-300">Click to flip back</span>
+                    <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold flex items-center gap-1">
+                      <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                      <span>Flip Back</span>
+                    </span>
                   </div>
                   <h4 class="text-base font-bold text-white">Mr. B.S. Rautela</h4>
                   <p class="text-xs text-amber-300 font-serif italic mb-3">"Human resource is the most important resource; our focus is learning to know, to do, to be, and to live together."</p>
-                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[250px] custom-scrollbar pr-1">
+                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[240px] custom-scrollbar pr-1">
                     It is an honor and privilege to serve as the Director of The Oxford School, Haridwar. I am committed to instilling all four pillars of learning: Learning to know, Learning to do, Learning to be, and Learning to live harmoniously together in a fast-evolving global society.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <a href="about.html#director-s-desk" class="text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1">
+                  <a href="about.html#director-s-desk" class="btn-base btn-sm btn-secondary text-xs font-bold flex items-center gap-1">
                     <span>Read on About Page</span>
                     <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
-                  <span class="text-[10px] text-slate-400">The Oxford School</span>
+                  <span class="text-xs text-slate-400">The Oxford School</span>
                 </div>
               </div>
 
@@ -1343,17 +1485,27 @@
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-between p-6">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-[10px] font-bold text-amber-300 border border-amber-400/40">
+                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-xs font-bold text-amber-300 border border-amber-400/40">
                       Manager's Desk
                     </span>
-                    <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-xs flex items-center gap-1">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i> Click to Read
+                    <span class="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded backdrop-blur-xs flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> Click to Read
                     </span>
                   </div>
                   <div>
                     <h3 class="text-xl font-bold font-serif text-white">Mrs. Rekha Chauhan</h3>
                     <p class="text-xs text-amber-300 font-medium">Manager, The Oxford School</p>
                     <p class="text-xs text-slate-300 italic line-clamp-2 mt-2">"Education is not merely the accumulation of facts; it is the discovery of the hidden potential within every child."</p>
+                    <div class="mt-3.5 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
+                      <span class="text-amber-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        <span>Read Message</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                      </span>
+                      <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                        <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>Flip for Bio</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1363,20 +1515,23 @@
                 <div>
                   <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
                     <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Manager's Desk</span>
-                    <span class="text-[10px] text-slate-300">Click to flip back</span>
+                    <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold flex items-center gap-1">
+                      <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                      <span>Flip Back</span>
+                    </span>
                   </div>
                   <h4 class="text-base font-bold text-white">Mrs. Rekha Chauhan</h4>
                   <p class="text-xs text-amber-300 font-serif italic mb-3">"Education is not merely the accumulation of facts; it is the discovery of the hidden potential within every child."</p>
-                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[250px] custom-scrollbar pr-1">
+                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[240px] custom-scrollbar pr-1">
                     Welcome to The Oxford School. In today's dynamic world, the role of a school is not only to pursue academic excellence but also to motivate and empower its students to be lifelong learners, critical thinkers, and productive members of society.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <a href="about.html#manager-s-desk" class="text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1">
+                  <a href="about.html#manager-s-desk" class="btn-base btn-sm btn-secondary text-xs font-bold flex items-center gap-1">
                     <span>Read on About Page</span>
                     <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
-                  <span class="text-[10px] text-slate-400">The Oxford School</span>
+                  <span class="text-xs text-slate-400">The Oxford School</span>
                 </div>
               </div>
 
@@ -1392,17 +1547,27 @@
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-between p-6">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-[10px] font-bold text-amber-300 border border-amber-400/40">
+                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-xs font-bold text-amber-300 border border-amber-400/40">
                       Principal's Desk
                     </span>
-                    <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-xs flex items-center gap-1">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i> Click to Read
+                    <span class="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded backdrop-blur-xs flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> Click to Read
                     </span>
                   </div>
                   <div>
                     <h3 class="text-xl font-bold font-serif text-white">Ms. Priya Chauhan</h3>
                     <p class="text-xs text-amber-300 font-medium">Principal, The Oxford School</p>
                     <p class="text-xs text-slate-300 italic line-clamp-2 mt-2">"The main objective of education is to meet the challenges of life with harmony between mind and purposeful action."</p>
+                    <div class="mt-3.5 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
+                      <span class="text-amber-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        <span>Read Message</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                      </span>
+                      <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                        <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>Flip for Bio</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1412,20 +1577,23 @@
                 <div>
                   <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
                     <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Principal's Desk</span>
-                    <span class="text-[10px] text-slate-300">Click to flip back</span>
+                    <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold flex items-center gap-1">
+                      <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                      <span>Flip Back</span>
+                    </span>
                   </div>
                   <h4 class="text-base font-bold text-white">Ms. Priya Chauhan</h4>
                   <p class="text-xs text-amber-300 font-serif italic mb-3">"The main objective of education is to meet the challenges of life with harmony between mind and purposeful action."</p>
-                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[250px] custom-scrollbar pr-1">
+                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[240px] custom-scrollbar pr-1">
                     We keenly support the pivotal role that an educational institution plays in the holistic development of children. Children acquire skills and knowledge effortlessly when they find their surroundings stimulating, empathetic, and purposeful.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <a href="about.html#principal-s-desk" class="text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1">
+                  <a href="about.html#principal-s-desk" class="btn-base btn-sm btn-secondary text-xs font-bold flex items-center gap-1">
                     <span>Read on About Page</span>
                     <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
-                  <span class="text-[10px] text-slate-400">The Oxford School</span>
+                  <span class="text-xs text-slate-400">The Oxford School</span>
                 </div>
               </div>
 
@@ -1441,17 +1609,27 @@
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-between p-6">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-[10px] font-bold text-amber-300 border border-amber-400/40">
+                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-xs font-bold text-amber-300 border border-amber-400/40">
                       Executive Council Member
                     </span>
-                    <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-xs flex items-center gap-1">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i> Click to Read
+                    <span class="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded backdrop-blur-xs flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> Click to Read
                     </span>
                   </div>
                   <div>
                     <h3 class="text-xl font-bold font-serif text-white">Mr. B.S. Chauhan</h3>
                     <p class="text-xs text-amber-300 font-medium">Executive Member, School Management</p>
                     <p class="text-xs text-slate-300 italic line-clamp-2 mt-2">"Dedication, integrity, and discipline build the bedrock of exceptional educational institutions."</p>
+                    <div class="mt-3.5 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
+                      <span class="text-amber-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        <span>Read Message</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                      </span>
+                      <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                        <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>Flip for Bio</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1461,20 +1639,23 @@
                 <div>
                   <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
                     <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">Executive Council Member</span>
-                    <span class="text-[10px] text-slate-300">Click to flip back</span>
+                    <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold flex items-center gap-1">
+                      <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                      <span>Flip Back</span>
+                    </span>
                   </div>
                   <h4 class="text-base font-bold text-white">Mr. B.S. Chauhan</h4>
                   <p class="text-xs text-amber-300 font-serif italic mb-3">"Dedication, integrity, and discipline build the bedrock of exceptional educational institutions."</p>
-                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[250px] custom-scrollbar pr-1">
+                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[240px] custom-scrollbar pr-1">
                     Guiding the institution towards infrastructural and administrative benchmarks ensures our students receive a safe, nurturing, and progressive educational journey every single day.
                   </p>
                 </div>
                 <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <a href="about.html#executive-council-member" class="text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1">
+                  <a href="about.html#executive-council-member" class="btn-base btn-sm btn-secondary text-xs font-bold flex items-center gap-1">
                     <span>Read on About Page</span>
                     <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
-                  <span class="text-[10px] text-slate-400">The Oxford School</span>
+                  <span class="text-xs text-slate-400">The Oxford School</span>
                 </div>
               </div>
 
@@ -1500,145 +1681,163 @@
             From hands-on robotics and composite science labs to GPS-tracked transport and lush athletic grounds, every corner is crafted for safety, curiosity, and high achievement.
           </p>
         </div>
-        <a href="facilities.html" class="self-start md:self-auto px-4 py-2 bg-[#002b49] text-white hover:bg-amber-600 rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+        <a href="facilities.html" class="btn-base btn-md btn-primary shrink-0 self-start md:self-end">
           <span>Explore All Facilities</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         
-          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition group text-left flex flex-col justify-between">
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="images/robotics_real_1.jpg" alt="Robotics, Coding & AI Innovation Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-[#002b49] group-hover:text-amber-600 transition-colors">
+          <a href="facilities.html#robotics-lab" class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="images/robotics_real_1.jpg" alt="Robotics, Coding & AI Innovation Lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                <h3 class="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                   Robotics, Coding & AI Innovation Lab
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                  Equipped with microcontrollers, Arduino, Raspberry Pi, sensor kits, and coding workstations.
-                </p>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <a href="facilities.html#robotics-lab" class="text-xs font-bold text-amber-700 hover:text-[#002b49] flex items-center gap-1">
-                  <span>View Details</span>
-                  <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Equipped with microcontrollers, Arduino, Raspberry Pi, sensor kits, and coding workstations.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="p-5 pt-3 border-t border-slate-100 flex items-center justify-between text-left">
+              <span class="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
+                <span>View details &amp; equipment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
         
-          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition group text-left flex flex-col justify-between">
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="images/chemlab_1.jpg" alt="Advanced Physics, Chemistry & Biology Labs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-[#002b49] group-hover:text-amber-600 transition-colors">
+          <a href="facilities.html#science-labs" class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="images/chemlab_1.jpg" alt="Advanced Physics, Chemistry & Biology Labs" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                <h3 class="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                   Advanced Physics, Chemistry & Biology Labs
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                  Spacious, safety-compliant laboratories designed as per CBSE Senior Secondary norms.
-                </p>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <a href="facilities.html#science-labs" class="text-xs font-bold text-amber-700 hover:text-[#002b49] flex items-center gap-1">
-                  <span>View Details</span>
-                  <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Spacious, safety-compliant laboratories designed as per CBSE Senior Secondary norms.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="p-5 pt-3 border-t border-slate-100 flex items-center justify-between text-left">
+              <span class="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
+                <span>View details &amp; equipment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
         
-          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition group text-left flex flex-col justify-between">
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="images/library_real.jpg" alt="Central Library & Resource Centre" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-[#002b49] group-hover:text-amber-600 transition-colors">
+          <a href="facilities.html#library" class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="images/library_real.jpg" alt="Central Library & Resource Centre" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                <h3 class="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                   Central Library & Resource Centre
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                  Over 12,000 reference volumes, CBSE question banks, periodicals, and quiet reading alcoves.
-                </p>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <a href="facilities.html#library" class="text-xs font-bold text-amber-700 hover:text-[#002b49] flex items-center gap-1">
-                  <span>View Details</span>
-                  <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Over 12,000 reference volumes, CBSE question banks, periodicals, and quiet reading alcoves.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="p-5 pt-3 border-t border-slate-100 flex items-center justify-between text-left">
+              <span class="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
+                <span>View details &amp; equipment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
         
-          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition group text-left flex flex-col justify-between">
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="images/computer_lab.jpg" alt="Computer Science & IT Workstations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-[#002b49] group-hover:text-amber-600 transition-colors">
+          <a href="facilities.html#computer-lab" class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="images/computer_lab.jpg" alt="Computer Science & IT Workstations" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                <h3 class="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                   Computer Science & IT Workstations
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                  High-speed internet workstations with modern software suites and cyber-safety protocols.
-                </p>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <a href="facilities.html#computer-lab" class="text-xs font-bold text-amber-700 hover:text-[#002b49] flex items-center gap-1">
-                  <span>View Details</span>
-                  <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    High-speed internet workstations with modern software suites and cyber-safety protocols.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="p-5 pt-3 border-t border-slate-100 flex items-center justify-between text-left">
+              <span class="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
+                <span>View details &amp; equipment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
         
-          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition group text-left flex flex-col justify-between">
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="images/sports_ground_1.jpg" alt="Sports Complex & Athletic Grounds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-[#002b49] group-hover:text-amber-600 transition-colors">
+          <a href="facilities.html#sports-arena" class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="images/sports_ground_1.jpg" alt="Sports Complex & Athletic Grounds" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                <h3 class="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                   Sports Complex & Athletic Grounds
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                  Multi-sport facilities for cricket, football, basketball, badminton, yoga, and martial arts.
-                </p>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <a href="facilities.html#sports-arena" class="text-xs font-bold text-amber-700 hover:text-[#002b49] flex items-center gap-1">
-                  <span>View Details</span>
-                  <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Multi-sport facilities for cricket, football, basketball, badminton, yoga, and martial arts.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="p-5 pt-3 border-t border-slate-100 flex items-center justify-between text-left">
+              <span class="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
+                <span>View details &amp; equipment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
         
-          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition group text-left flex flex-col justify-between">
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="images/karate.webp" alt="Martial Arts & Self-Defense Training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-[#002b49] group-hover:text-amber-600 transition-colors">
+          <a href="facilities.html#karate-martial-arts" class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="images/karate.webp" alt="Martial Arts & Self-Defense Training" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                <h3 class="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                   Martial Arts & Self-Defense Training
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                  Professional Karate and self-defense coaching fostering physical agility, confidence, and discipline.
-                </p>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <a href="facilities.html#karate-martial-arts" class="text-xs font-bold text-amber-700 hover:text-[#002b49] flex items-center gap-1">
-                  <span>View Details</span>
-                  <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Professional Karate and self-defense coaching fostering physical agility, confidence, and discipline.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="p-5 pt-3 border-t border-slate-100 flex items-center justify-between text-left">
+              <span class="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
+                <span>View details &amp; equipment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
         
       </div>
     </div>
@@ -1671,44 +1870,44 @@
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2024-25 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Aryan Bhatt (98.4%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Aryan Bhatt (98.4%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">98.4%</span>
-                  <span class="text-[10px] text-slate-300">38 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">38 scored &gt;90%</span>
                 </div>
               </div>
             
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2023-24 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Sneha Rawat (98.2%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Sneha Rawat (98.2%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">98.2%</span>
-                  <span class="text-[10px] text-slate-300">35 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">35 scored &gt;90%</span>
                 </div>
               </div>
             
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2022-23 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Aditya Verma (97.8%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Aditya Verma (97.8%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">97.8%</span>
-                  <span class="text-[10px] text-slate-300">31 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">31 scored &gt;90%</span>
                 </div>
               </div>
             
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2021-22 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Kavya Joshi (97.6%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Kavya Joshi (97.6%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">97.6%</span>
-                  <span class="text-[10px] text-slate-300">29 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">29 scored &gt;90%</span>
                 </div>
               </div>
             
@@ -1726,44 +1925,44 @@
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2024-25 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Tanya Sharma (Science - 97.8%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Tanya Sharma (Science - 97.8%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">97.8%</span>
-                  <span class="text-[10px] text-slate-300">27 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">27 scored &gt;90%</span>
                 </div>
               </div>
             
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2023-24 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Rohan Semwal (Science - 97.2%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Rohan Semwal (Science - 97.2%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">97.2%</span>
-                  <span class="text-[10px] text-slate-300">24 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">24 scored &gt;90%</span>
                 </div>
               </div>
             
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2022-23 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Pooja Negi (Commerce - 96.8%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Pooja Negi (Commerce - 96.8%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">96.8%</span>
-                  <span class="text-[10px] text-slate-300">22 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">22 scored &gt;90%</span>
                 </div>
               </div>
             
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">2021-22 Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: Akash Singhal (Science - 96.4%)</span>
+                  <span class="text-slate-400 text-xs">Topper: Akash Singhal (Science - 96.4%)</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">96.4%</span>
-                  <span class="text-[10px] text-slate-300">19 scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">19 scored &gt;90%</span>
                 </div>
               </div>
             
@@ -1811,9 +2010,9 @@
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-200/60">
-              <h4 class="text-sm font-bold text-[#002b49]">Er. Vivek Chauhan</h4>
-              <p class="text-[11px] text-amber-700 font-semibold">Father of Divyansh Chauhan (Class VIII)</p>
-              <p class="text-[10px] text-slate-400">Senior Engineer, BHEL Haridwar</p>
+              <h3 class="text-sm font-bold text-[#002b49]">Er. Vivek Chauhan</h3>
+              <p class="text-xs text-amber-700 font-semibold">Father of Divyansh Chauhan (Class VIII)</p>
+              <p class="text-xs text-slate-500">Senior Engineer, BHEL Haridwar</p>
             </div>
           </div>
         
@@ -1831,9 +2030,9 @@
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-200/60">
-              <h4 class="text-sm font-bold text-[#002b49]">Dr. Sunita Pant</h4>
-              <p class="text-[11px] text-amber-700 font-semibold">Mother of Tanya Pant (Class XI Science)</p>
-              <p class="text-[10px] text-slate-400">Physician, District Hospital Haridwar</p>
+              <h3 class="text-sm font-bold text-[#002b49]">Dr. Sunita Pant</h3>
+              <p class="text-xs text-amber-700 font-semibold">Mother of Tanya Pant (Class XI Science)</p>
+              <p class="text-xs text-slate-500">Physician, District Hospital Haridwar</p>
             </div>
           </div>
         
@@ -1851,9 +2050,9 @@
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-200/60">
-              <h4 class="text-sm font-bold text-[#002b49]">Shri Rajesh Kashyap</h4>
-              <p class="text-[11px] text-amber-700 font-semibold">Father of Ananya Kashyap (Class X)</p>
-              <p class="text-[10px] text-slate-400">Businessman, Jwalapur</p>
+              <h3 class="text-sm font-bold text-[#002b49]">Shri Rajesh Kashyap</h3>
+              <p class="text-xs text-amber-700 font-semibold">Father of Ananya Kashyap (Class X)</p>
+              <p class="text-xs text-slate-500">Businessman, Jwalapur</p>
             </div>
           </div>
         
@@ -1917,16 +2116,11 @@
                 <span><strong class="text-white">Safe GPS Transport &amp; Sports:</strong> Full athletic complex with cricket pitch, badminton, basketball, karate, and yoga.</span>
               </li>
             </ul>
-
-            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-amber-300 font-semibold">
-              <span>Counselor Response Time:</span>
-              <span class="bg-amber-500/20 px-2.5 py-1 rounded-md text-amber-300 border border-amber-400/30">Within 2 Hours</span>
-            </div>
           </div>
 
           <!-- Direct Admissions Contact Card -->
           <div class="bg-white/5 rounded-2xl p-6 border border-white/10 space-y-3.5 text-xs">
-            <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-white/10 pb-2">
+            <h4 class="text-sm font-bold text-white tracking-wide border-b border-white/10 pb-2">
               Direct Admission Helplines
             </h4>
             <div class="flex items-center gap-3 text-slate-300">
@@ -1970,6 +2164,7 @@
             </div>
 
             <form class="space-y-4 text-xs site-enquiry-form">
+              <input type="hidden" name="session" value="2026-2027" />
               
               <!-- Row 1: Student Full Name & Grade Applying For -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -2021,16 +2216,10 @@
                 </div>
               </div>
 
-              <!-- Row 4: Email Address & Academic Session -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block font-bold text-slate-700 mb-1.5">Email Address</label>
-                  <input type="email" placeholder="parent@example.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs" />
-                </div>
-                <div>
-                  <label class="block font-bold text-slate-700 mb-1.5">Academic Session</label>
-                  <input type="text" readonly value="2026–2027 (Upcoming)" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 bg-slate-100 text-slate-600 text-xs font-semibold" />
-                </div>
+              <!-- Row 4: Email Address -->
+              <div>
+                <label class="block font-bold text-slate-700 mb-1.5">Email Address</label>
+                <input type="email" placeholder="parent@example.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs" />
               </div>
 
               <!-- Row 5: Residential Address & Previous School -->
@@ -2051,13 +2240,17 @@
                 <textarea rows="3" placeholder="Tell us about your child's interests, transport requirements, or questions..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs"></textarea>
               </div>
 
-              <!-- Submit Button -->
+              <!-- Counselor Response Time & Submit Button -->
               <div class="pt-2">
+                <div class="mb-3 flex items-center justify-between text-xs text-slate-600 bg-amber-50/80 px-3.5 py-2 rounded-lg border border-amber-200/60">
+                  <span class="font-medium text-slate-700">Counselor Response Time:</span>
+                  <span class="font-bold text-amber-800">Within 2 Working Hours</span>
+                </div>
                 <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-700 hover:to-amber-600 text-white font-bold text-sm shadow-xl transition-all cursor-pointer flex items-center justify-center gap-2">
                   <i data-lucide="send" class="w-4 h-4"></i>
                   <span>Submit Complete Admission Enquiry</span>
                 </button>
-                <p class="text-[11px] text-slate-500 text-center mt-2.5">
+                <p class="text-xs text-slate-500 text-center mt-2.5">
                   🔒 Your information is secure. Our admission desk will connect with you within 2 working hours.
                 </p>
               </div>
@@ -2069,7 +2262,121 @@
 
     </div>
   </section>
-  
+
+  <!-- ══════════════════════════════════════════
+       FAQ SECTION — targets buyer questions,
+       feeds FAQPage schema, wins rich snippets
+       ══════════════════════════════════════════ -->
+  <section id="faq" class="py-14 sm:py-20 bg-white border-t border-slate-100 text-left" aria-labelledby="faq-heading">
+    <div class="max-w-[1100px] mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center mb-10">
+        <span class="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-amber-600 bg-amber-50 border border-amber-200 px-3 py-1 rounded-full mb-3">
+          Frequently Asked Questions
+        </span>
+        <h2 id="faq-heading" class="text-2xl sm:text-3xl font-serif font-bold text-[#002b49]">
+          Admissions &amp; School Information
+        </h2>
+        <p class="text-sm text-slate-500 mt-2 max-w-xl mx-auto">
+          Everything parents ask before choosing The Oxford School, Haridwar.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4" id="faq-grid">
+
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex items-center justify-between gap-3 bg-white hover:bg-amber-50 transition" aria-expanded="false">
+            <span class="font-semibold text-sm text-[#002b49] leading-snug">Is The Oxford School, Haridwar affiliated with CBSE?</span>
+            <svg class="faq-arrow w-4 h-4 text-amber-600 shrink-0 transition-transform" fill="none" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-body hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Yes. We hold full CBSE Senior Secondary affiliation — <strong>Affiliation No. 3530408, School Code 81632</strong> — covering Nursery through Class XII in Science, Commerce, and Humanities streams.
+          </div>
+        </div>
+
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex items-center justify-between gap-3 bg-white hover:bg-amber-50 transition" aria-expanded="false">
+            <span class="font-semibold text-sm text-[#002b49] leading-snug">How do I apply for admission in 2026-27?</span>
+            <svg class="faq-arrow w-4 h-4 text-amber-600 shrink-0 transition-transform" fill="none" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-body hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Admissions are open for <strong>Playgroup to Class XII</strong>. Apply online at this website, call <strong>+91-9068885862</strong>, or visit the campus at Shivratan City, Roshnabad, Haridwar — Mon to Sat, 8:00 AM–2:30 PM. Download the form from the <a href="downloads/admissionformnew.pdf" class="text-amber-600 underline font-medium">downloads page</a>.
+          </div>
+        </div>
+
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex items-center justify-between gap-3 bg-white hover:bg-amber-50 transition" aria-expanded="false">
+            <span class="font-semibold text-sm text-[#002b49] leading-snug">Where is The Oxford School located in Haridwar?</span>
+            <svg class="faq-arrow w-4 h-4 text-amber-600 shrink-0 transition-transform" fill="none" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-body hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            The school is at <strong>Shivratan City, Navodaya Nagar, Rajnadesh, Roshnabad, Haridwar 249402, Uttarakhand</strong>. GPS buses cover Haridwar city, BHEL Ranipur, Roorkee, and nearby areas. <a href="https://maps.google.com/?q=The+Oxford+School+Roshnabad+Haridwar" target="_blank" rel="noopener" class="text-amber-600 underline font-medium">Open in Google Maps →</a>
+          </div>
+        </div>
+
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex items-center justify-between gap-3 bg-white hover:bg-amber-50 transition" aria-expanded="false">
+            <span class="font-semibold text-sm text-[#002b49] leading-snug">What is the fee structure for 2026-27?</span>
+            <svg class="faq-arrow w-4 h-4 text-amber-600 shrink-0 transition-transform" fill="none" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-body hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Full fee details are published on our <a href="fee-guidelines.html" class="text-amber-600 underline font-medium">fee guidelines page</a> and available as a <a href="downloads/2026-27_fee_structure.pdf" class="text-amber-600 underline font-medium">downloadable PDF</a>. We maintain complete fee transparency as required by CBSE disclosure norms.
+          </div>
+        </div>
+
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex items-center justify-between gap-3 bg-white hover:bg-amber-50 transition" aria-expanded="false">
+            <span class="font-semibold text-sm text-[#002b49] leading-snug">What facilities does the school offer?</span>
+            <svg class="faq-arrow w-4 h-4 text-amber-600 shrink-0 transition-transform" fill="none" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-body hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            Our 12-acre campus includes: <strong>Robotics &amp; STEM Lab</strong>, Physics/Chemistry/Biology science labs, Computer IT lab, Sports complex with athletics track, smart classrooms, digital library, arts &amp; music rooms, GPS school buses with CCTV and female attendants.
+          </div>
+        </div>
+
+        <div class="faq-item border border-slate-200 rounded-2xl overflow-hidden">
+          <button class="faq-btn w-full text-left px-5 py-4 flex items-center justify-between gap-3 bg-white hover:bg-amber-50 transition" aria-expanded="false">
+            <span class="font-semibold text-sm text-[#002b49] leading-snug">Which streams are offered in Class XI–XII?</span>
+            <svg class="faq-arrow w-4 h-4 text-amber-600 shrink-0 transition-transform" fill="none" viewBox="0 0 16 16"><path d="M4 6l4 4 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="faq-body hidden px-5 pb-5 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
+            We offer three CBSE streams for Classes XI &amp; XII: <strong>Science</strong> (PCM &amp; PCB), <strong>Commerce</strong>, and <strong>Arts / Humanities</strong>. The school has an outstanding 100% board examination pass record.
+          </div>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-8">
+        <a href="admissions.html" class="inline-flex items-center gap-2 bg-[#002b49] hover:bg-[#003a60] text-white font-bold px-6 py-3 rounded-xl text-sm transition shadow-md">
+          View Full Admissions Guide
+          <svg width="16" height="16" fill="none" viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    /* FAQ accordion — inline so it needs no module bundler */
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const body = btn.nextElementSibling;
+        const arrow = btn.querySelector('.faq-arrow');
+        const isOpen = !body.classList.contains('hidden');
+        /* Close all */
+        document.querySelectorAll('.faq-body').forEach(b => b.classList.add('hidden'));
+        document.querySelectorAll('.faq-arrow').forEach(a => a.style.transform = '');
+        document.querySelectorAll('.faq-btn').forEach(b => b.setAttribute('aria-expanded','false'));
+        /* Open clicked (toggle) */
+        if (!isOpen) {
+          body.classList.remove('hidden');
+          arrow.style.transform = 'rotate(180deg)';
+          btn.setAttribute('aria-expanded','true');
+        }
+      });
+    });
+  </script>
+
   </main>
 
   <!-- ==============================================
@@ -2085,7 +2392,7 @@
           </div>
           <div>
             <h5 class="text-sm font-bold text-white">CBSE Affiliated</h5>
-            <p class="text-[11px] text-slate-400">Affiliation No. 3530408 (10+2)</p>
+            <p class="text-xs text-slate-400">Affiliation No. 3530408 (10+2)</p>
           </div>
         </div>
         <div class="flex items-center gap-3.5">
@@ -2094,7 +2401,7 @@
           </div>
           <div>
             <h5 class="text-sm font-bold text-white">12+ Acres Green Campus</h5>
-            <p class="text-[11px] text-slate-400">Lush, serene, pollution-free space</p>
+            <p class="text-xs text-slate-400">Lush, serene, pollution-free space</p>
           </div>
         </div>
         <div class="flex items-center gap-3.5">
@@ -2103,7 +2410,7 @@
           </div>
           <div>
             <h5 class="text-sm font-bold text-white">GPS Fleet Transport</h5>
-            <p class="text-[11px] text-slate-400">CCTV &amp; trained female attendants</p>
+            <p class="text-xs text-slate-400">CCTV &amp; trained female attendants</p>
           </div>
         </div>
         <div class="flex items-center gap-3.5">
@@ -2112,7 +2419,7 @@
           </div>
           <div>
             <h5 class="text-sm font-bold text-white">100% Board Results</h5>
-            <p class="text-[11px] text-slate-400">Exemplary academic record</p>
+            <p class="text-xs text-slate-400">Exemplary academic record</p>
           </div>
         </div>
       </div>
@@ -2129,13 +2436,13 @@
               <img src="ox-logo.webp" alt="The Oxford School Crest" class="w-full h-full object-contain" />
             </div>
             <div>
-              <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 block leading-tight">
+              <span class="text-xs uppercase font-bold tracking-widest text-amber-400 block leading-tight">
                 Shivratan Education Society
               </span>
               <h3 class="text-base sm:text-lg font-bold font-serif text-white tracking-tight leading-snug">
-                THE OXFORD SCHOOL
+                The Oxford School
               </h3>
-              <span class="text-[11px] text-slate-400 block leading-none">
+              <span class="text-xs text-slate-400 block leading-none">
                 Roshnabad, Haridwar • Estd. 2014
               </span>
             </div>
@@ -2144,8 +2451,9 @@
             A premier English-medium co-educational senior secondary institution affiliated to CBSE New Delhi. Dedicated to academic rigour, STEM &amp; robotics, sportsmanship, and ethical values.
           </p>
           <div class="pt-2 flex flex-wrap items-center gap-2">
-            <button onclick="openModal('enquiry-modal')" class="btn-gold-primary px-4 py-2 text-white rounded-xl text-xs font-bold transition shadow cursor-pointer">
-              Admission Enquiry 2026–27
+            <button onclick="openModal('enquiry-modal')" class="btn-base btn-md btn-primary-inverted transition flex items-center gap-2">
+              <span>Admission Enquiry 2026–27</span>
+              <i data-lucide="arrow-right" class="w-4 h-4"></i>
             </button>
             <a href="https://theoxfordschool.edunexttechnologies.com/Index" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 bg-white/10 hover:bg-white/20 text-white rounded-xl text-xs font-medium transition flex items-center gap-1.5">
               <span>ERP Portal</span>
@@ -2232,7 +2540,7 @@
       <!-- Bottom Copyright Bar -->
       <div class="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
         <p>© 2026 The Oxford School, Haridwar. All Rights Reserved.</p>
-        <p class="text-[11px] text-slate-400">CBSE Affiliated English Medium Senior Secondary Co-Educational School</p>
+        <p class="text-xs text-slate-400">CBSE Affiliated English Medium Senior Secondary Co-Educational School</p>
       </div>
     </div>
   </footer>
@@ -2251,7 +2559,7 @@
             <img src="ox-logo.webp" alt="The Oxford School Logo" class="w-full h-full object-contain" />
           </div>
           <div>
-            <span class="text-[10px] text-amber-400 uppercase tracking-widest font-bold block">Admissions Open 2026–27</span>
+            <span class="text-xs text-amber-400 uppercase tracking-widest font-bold block">Admissions Open 2026–27</span>
             <h3 class="text-base sm:text-lg font-serif font-bold">Admission Enquiry &amp; Prospectus</h3>
           </div>
         </div>

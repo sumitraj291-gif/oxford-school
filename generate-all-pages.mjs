@@ -165,7 +165,7 @@ function generateHomePage() {
       <div class="pt-6">
         <div class="flex flex-col md:flex-row md:items-end justify-between gap-2 mb-6">
           <div>
-            <span class="text-[11px] font-bold uppercase tracking-widest text-amber-400 flex items-center gap-1.5">
+            <span class="text-xs font-bold uppercase tracking-widest text-amber-400 flex items-center gap-1.5">
               <i data-lucide="newspaper" class="w-3.5 h-3.5"></i>
               <span>The Oxford School Bulletin</span>
             </span>
@@ -184,10 +184,10 @@ function generateHomePage() {
             <div class="bg-[#002845] hover:bg-[#003358] rounded-xl p-4 sm:p-5 border border-white/10 hover:border-amber-400/50 shadow-md transition-all duration-200 flex flex-col justify-between text-left group">
               <div>
                 <div class="flex items-center justify-between gap-2 mb-2.5">
-                  <span class="text-[10px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
+                  <span class="text-xs font-extrabold uppercase tracking-wider px-2 py-0.5 rounded bg-amber-400/15 text-amber-300 border border-amber-400/30">
                     ${news.category}
                   </span>
-                  <span class="text-[11px] text-slate-300 font-medium flex items-center gap-1">
+                  <span class="text-xs text-slate-300 font-medium flex items-center gap-1">
                     <i data-lucide="calendar" class="w-3 h-3 text-amber-400/70"></i>
                     <span>${news.date}</span>
                   </span>
@@ -235,7 +235,7 @@ function generateHomePage() {
             <div class="text-xs font-bold text-amber-800 uppercase tracking-wider mt-1">
               ${metric.suffix}
             </div>
-            <div class="text-[11px] text-slate-500 mt-1 leading-snug">
+            <div class="text-xs text-slate-500 mt-1 leading-snug">
               ${metric.description}
             </div>
           </div>
@@ -250,7 +250,7 @@ function generateHomePage() {
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
         
         <!-- Daily Birthday Celebration Card (4 Columns) -->
-        <div class="lg:col-span-4 bg-gradient-to-br from-[#002b49] via-[#001e33] to-[#001322] rounded-2xl p-5 sm:p-6 text-white shadow-xl border border-amber-500/25 relative overflow-hidden flex flex-col justify-between text-left">
+        <div class="lg:col-span-4 bg-gradient-to-br from-[#00243d] via-[#001e33] to-[#001726] rounded-2xl p-5 sm:p-6 text-white shadow-lg border border-white/10 relative overflow-hidden flex flex-col justify-between text-left">
           <div>
             <!-- Header -->
             <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-4">
@@ -263,10 +263,10 @@ function generateHomePage() {
                     <span>Today's Birthdays</span>
                     <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
                   </h3>
-                  <p class="text-[11px] text-amber-200/80">Warm Wishes from The Oxford Family</p>
+                  <p class="text-xs text-amber-200/80">Warm Wishes from The Oxford Family</p>
                 </div>
               </div>
-              <button onclick="fireConfetti()" class="px-2.5 py-1 rounded-full bg-amber-500 hover:bg-amber-400 text-slate-950 text-[11px] font-extrabold flex items-center gap-1 shadow-sm transition active:scale-95 cursor-pointer">
+              <button onclick="fireConfetti()" class="px-3 py-1.5 rounded-lg bg-amber-500 hover:bg-amber-400 text-slate-950 text-xs font-bold flex items-center gap-1 shadow-sm transition active:scale-95 cursor-pointer">
                 <i data-lucide="party-popper" class="w-3.5 h-3.5"></i>
                 <span>Wish!</span>
               </button>
@@ -287,14 +287,14 @@ function generateHomePage() {
                       <div class="text-xs sm:text-sm font-semibold text-amber-300 mt-0.5">
                         ${s.class}
                       </div>
-                      <div class="text-[11px] text-slate-300 font-medium">
+                      <div class="text-xs text-slate-300 font-medium">
                         ${s.house}
                       </div>
                     </div>
                   </div>
                   <div class="flex flex-col items-end gap-1 shrink-0">
-                    <span class="text-[10px] sm:text-xs font-bold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-400/50 px-2.5 py-1 rounded-full flex items-center gap-1 shadow-xs group-hover:bg-amber-500 group-hover:text-slate-950 transition-colors">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400 group-hover:text-slate-950"></i>
+                    <span class="text-xs font-semibold text-amber-300 flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i>
                       <span>Today</span>
                     </span>
                   </div>
@@ -304,10 +304,10 @@ function generateHomePage() {
           </div>
 
           <div class="mt-4 pt-3.5 border-t border-white/10 text-center">
-            <p class="text-[11px] sm:text-xs text-amber-200/90 italic leading-relaxed">
+            <p class="text-xs text-amber-200/90 italic leading-relaxed">
               "May your journey of learning be filled with wisdom, radiant health, and purposeful achievements."
             </p>
-            <div class="mt-2.5 flex items-center justify-center gap-1.5 text-[10px] text-slate-300">
+            <div class="mt-2.5 flex items-center justify-center gap-1.5 text-xs text-slate-300">
               <i data-lucide="award" class="w-3.5 h-3.5 text-amber-400"></i>
               <span>The Oxford School Management &amp; Faculty</span>
             </div>
@@ -325,7 +325,7 @@ function generateHomePage() {
                 <div>
                   <h3 class="text-lg font-serif font-bold text-[#002b49] flex items-center gap-2">
                     <span>School News &amp; Student Gazette</span>
-                    <span class="text-[10px] bg-amber-100 text-amber-800 font-sans font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
+                    <span class="text-xs bg-amber-100 text-amber-800 font-sans font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">
                       Live Portal
                     </span>
                   </h3>
@@ -350,11 +350,11 @@ function generateHomePage() {
               <div data-category="Student Articles" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/robotics_real_1.jpg" alt="Robotics rover" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Featured</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Featured</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">Student Articles</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">Student Articles</span>
                     <span>•</span>
                     <span>24 Feb 2025</span>
                   </div>
@@ -371,11 +371,11 @@ function generateHomePage() {
               <div data-category="Sports Reports" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/sports_ground_1.jpg" alt="Athletic trials" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Sports</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Sports</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">Sports Reports</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">Sports Reports</span>
                     <span>•</span>
                     <span>20 Feb 2025</span>
                   </div>
@@ -392,11 +392,11 @@ function generateHomePage() {
               <div data-category="Science & STEM" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/chemlab_1.jpg" alt="Chemistry lab" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Science</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Science</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">Science &amp; STEM</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">Science &amp; STEM</span>
                     <span>•</span>
                     <span>16 Feb 2025</span>
                   </div>
@@ -413,11 +413,11 @@ function generateHomePage() {
               <div data-category="CBSE Circulars" class="news-item p-3 rounded-xl border border-slate-200/90 hover:border-[#002b49] hover:bg-slate-50 transition flex flex-col sm:flex-row gap-3.5 items-start sm:items-center justify-between group text-left">
                 <div class="relative w-full sm:w-28 sm:h-20 h-36 rounded-lg overflow-hidden shrink-0 bg-slate-100">
                   <img src="images/academics_real.jpg" alt="CBSE Practical exams" class="w-full h-full object-cover group-hover:scale-105 transition-transform" />
-                  <span class="absolute top-1 left-1 text-[9px] font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Official</span>
+                  <span class="absolute top-1 left-1 text-xs font-bold px-1.5 py-0.5 rounded bg-black/60 text-white">Official</span>
                 </div>
                 <div class="flex-1 min-w-0 text-left">
-                  <div class="flex items-center gap-2 text-[11px] text-slate-400 mb-1">
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-[10px]">CBSE Circulars</span>
+                  <div class="flex items-center gap-2 text-xs text-slate-400 mb-1">
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2 py-0.5 rounded text-xs">CBSE Circulars</span>
                     <span>•</span>
                     <span>12 Feb 2025</span>
                   </div>
@@ -465,17 +465,27 @@ function generateHomePage() {
                 
                 <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent flex flex-col justify-between p-6">
                   <div class="flex items-center justify-between">
-                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-[10px] font-bold text-amber-300 border border-amber-400/40">
+                    <span class="px-2.5 py-1 rounded bg-[#002b49]/90 text-xs font-bold text-amber-300 border border-amber-400/40">
                       ${leader.role}
                     </span>
-                    <span class="text-[10px] font-bold bg-white/20 text-white px-2 py-0.5 rounded backdrop-blur-xs flex items-center gap-1">
-                      <i data-lucide="sparkles" class="w-3 h-3 text-amber-400"></i> Click to Read
+                    <span class="text-xs font-bold bg-white/20 text-white px-2.5 py-1 rounded backdrop-blur-xs flex items-center gap-1">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-400"></i> Click to Read
                     </span>
                   </div>
                   <div>
                     <h3 class="text-xl font-bold font-serif text-white">${leader.name}</h3>
                     <p class="text-xs text-amber-300 font-medium">${leader.qualification}</p>
                     <p class="text-xs text-slate-300 italic line-clamp-2 mt-2">"${leader.quote}"</p>
+                    <div class="mt-3.5 pt-3 border-t border-white/20 flex items-center justify-between text-xs">
+                      <span class="text-amber-400 font-bold flex items-center gap-1 group-hover:translate-x-1 transition-transform">
+                        <span>Read Message</span>
+                        <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                      </span>
+                      <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                        <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                        <span>Flip for Bio</span>
+                      </span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -485,20 +495,23 @@ function generateHomePage() {
                 <div>
                   <div class="flex items-center justify-between border-b border-white/10 pb-3 mb-3">
                     <span class="text-xs uppercase font-bold text-amber-400 tracking-wider">${leader.role}</span>
-                    <span class="text-[10px] text-slate-300">Click to flip back</span>
+                    <span class="btn-base btn-sm btn-ghost-dark text-white font-semibold flex items-center gap-1">
+                      <i data-lucide="rotate-cw" class="w-3.5 h-3.5 text-amber-400"></i>
+                      <span>Flip Back</span>
+                    </span>
                   </div>
                   <h4 class="text-base font-bold text-white">${leader.name}</h4>
                   <p class="text-xs text-amber-300 font-serif italic mb-3">"${leader.quote}"</p>
-                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[250px] custom-scrollbar pr-1">
+                  <p class="text-xs text-slate-200 leading-relaxed overflow-y-auto max-h-[240px] custom-scrollbar pr-1">
                     ${leader.message}
                   </p>
                 </div>
                 <div class="pt-3 border-t border-white/10 flex items-center justify-between">
-                  <a href="about.html#${leader.role.toLowerCase().replace(/[^a-z0-9]/g, '-')}" class="text-xs font-bold text-amber-400 hover:text-white flex items-center gap-1">
+                  <a href="about.html#${leader.role.toLowerCase().replace(/[^a-z0-9]/g, '-')}" class="btn-base btn-sm btn-secondary text-xs font-bold flex items-center gap-1">
                     <span>Read on About Page</span>
                     <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
                   </a>
-                  <span class="text-[10px] text-slate-400">The Oxford School</span>
+                  <span class="text-xs text-slate-400">The Oxford School</span>
                 </div>
               </div>
 
@@ -524,35 +537,38 @@ function generateHomePage() {
             From hands-on robotics and composite science labs to GPS-tracked transport and lush athletic grounds, every corner is crafted for safety, curiosity, and high achievement.
           </p>
         </div>
-        <a href="facilities.html" class="self-start md:self-auto px-4 py-2 bg-[#002b49] text-white hover:bg-amber-600 rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-sm">
+        <a href="facilities.html" class="btn-base btn-md btn-primary shrink-0 self-start md:self-end">
           <span>Explore All Facilities</span>
-          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
         </a>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
         ${FACILITIES_DATA.slice(0, 6).map(fac => `
-          <div class="bg-white rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm hover:shadow-md transition group text-left flex flex-col justify-between">
-            <div class="relative h-48 overflow-hidden bg-slate-100">
-              <img src="${fac.image.replace(/^\//, '')}" alt="${fac.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div class="p-5 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="text-base font-bold text-[#002b49] group-hover:text-amber-600 transition-colors">
+          <a href="facilities.html#${fac.id}" class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left">
+            <div>
+              <div class="relative h-48 overflow-hidden bg-slate-100">
+                <img src="${fac.image.replace(/^\//, '')}" alt="${fac.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                <h3 class="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                   ${fac.title}
                 </h3>
-                <p class="text-xs text-slate-600 mt-2 leading-relaxed">
-                  ${fac.shortDesc}
-                </p>
               </div>
-              <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
-                <a href="facilities.html#${fac.id}" class="text-xs font-bold text-amber-700 hover:text-[#002b49] flex items-center gap-1">
-                  <span>View Details</span>
-                  <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
-                </a>
+              <div class="p-5 flex-1 flex flex-col justify-between">
+                <div>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    ${fac.shortDesc}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
+            <div class="p-5 pt-3 border-t border-slate-100 flex items-center justify-between text-left">
+              <span class="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
+                <span>View details &amp; equipment</span>
+                <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </span>
+            </div>
+          </a>
         `).join('')}
       </div>
     </div>
@@ -585,11 +601,11 @@ function generateHomePage() {
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">${r.year} Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: ${r.topper}</span>
+                  <span class="text-slate-400 text-xs">Topper: ${r.topper}</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">${r.highest}</span>
-                  <span class="text-[10px] text-slate-300">${r.above90} scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">${r.above90} scored &gt;90%</span>
                 </div>
               </div>
             `).join('')}
@@ -607,11 +623,11 @@ function generateHomePage() {
               <div class="flex items-center justify-between p-2.5 rounded-lg bg-white/5 border border-white/5">
                 <div>
                   <span class="font-bold text-white block">${r.year} Session</span>
-                  <span class="text-slate-400 text-[11px]">Topper: ${r.topper}</span>
+                  <span class="text-slate-400 text-xs">Topper: ${r.topper}</span>
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">${r.highest}</span>
-                  <span class="text-[10px] text-slate-300">${r.above90} scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">${r.above90} scored &gt;90%</span>
                 </div>
               </div>
             `).join('')}
@@ -659,9 +675,9 @@ function generateHomePage() {
               </p>
             </div>
             <div class="mt-6 pt-4 border-t border-slate-200/60">
-              <h4 class="text-sm font-bold text-[#002b49]">${t.parentName}</h4>
-              <p class="text-[11px] text-amber-700 font-semibold">${t.childInfo}</p>
-              <p class="text-[10px] text-slate-400">${t.profession}</p>
+              <h3 class="text-sm font-bold text-[#002b49]">${t.parentName}</h3>
+              <p class="text-xs text-amber-700 font-semibold">${t.childInfo}</p>
+              <p class="text-xs text-slate-500">${t.profession}</p>
             </div>
           </div>
         `).join('')}
@@ -725,16 +741,11 @@ function generateHomePage() {
                 <span><strong class="text-white">Safe GPS Transport &amp; Sports:</strong> Full athletic complex with cricket pitch, badminton, basketball, karate, and yoga.</span>
               </li>
             </ul>
-
-            <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-amber-300 font-semibold">
-              <span>Counselor Response Time:</span>
-              <span class="bg-amber-500/20 px-2.5 py-1 rounded-md text-amber-300 border border-amber-400/30">Within 2 Hours</span>
-            </div>
           </div>
 
           <!-- Direct Admissions Contact Card -->
           <div class="bg-white/5 rounded-2xl p-6 border border-white/10 space-y-3.5 text-xs">
-            <h4 class="text-xs font-bold text-white uppercase tracking-wider border-b border-white/10 pb-2">
+            <h4 class="text-sm font-bold text-white tracking-wide border-b border-white/10 pb-2">
               Direct Admission Helplines
             </h4>
             <div class="flex items-center gap-3 text-slate-300">
@@ -778,6 +789,7 @@ function generateHomePage() {
             </div>
 
             <form class="space-y-4 text-xs site-enquiry-form">
+              <input type="hidden" name="session" value="2026-2027" />
               
               <!-- Row 1: Student Full Name & Grade Applying For -->
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -829,16 +841,10 @@ function generateHomePage() {
                 </div>
               </div>
 
-              <!-- Row 4: Email Address & Academic Session -->
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div>
-                  <label class="block font-bold text-slate-700 mb-1.5">Email Address</label>
-                  <input type="email" placeholder="parent@example.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs" />
-                </div>
-                <div>
-                  <label class="block font-bold text-slate-700 mb-1.5">Academic Session</label>
-                  <input type="text" readonly value="2026–2027 (Upcoming)" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 bg-slate-100 text-slate-600 text-xs font-semibold" />
-                </div>
+              <!-- Row 4: Email Address -->
+              <div>
+                <label class="block font-bold text-slate-700 mb-1.5">Email Address</label>
+                <input type="email" placeholder="parent@example.com" class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs" />
               </div>
 
               <!-- Row 5: Residential Address & Previous School -->
@@ -859,13 +865,17 @@ function generateHomePage() {
                 <textarea rows="3" placeholder="Tell us about your child's interests, transport requirements, or questions..." class="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs"></textarea>
               </div>
 
-              <!-- Submit Button -->
+              <!-- Counselor Response Time & Submit Button -->
               <div class="pt-2">
+                <div class="mb-3 flex items-center justify-between text-xs text-slate-600 bg-amber-50/80 px-3.5 py-2 rounded-lg border border-amber-200/60">
+                  <span class="font-medium text-slate-700">Counselor Response Time:</span>
+                  <span class="font-bold text-amber-800">Within 2 Working Hours</span>
+                </div>
                 <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-700 hover:to-amber-600 text-white font-bold text-sm shadow-xl transition-all cursor-pointer flex items-center justify-center gap-2">
                   <i data-lucide="send" class="w-4 h-4"></i>
                   <span>Submit Complete Admission Enquiry</span>
                 </button>
-                <p class="text-[11px] text-slate-500 text-center mt-2.5">
+                <p class="text-xs text-slate-500 text-center mt-2.5">
                   🔒 Your information is secure. Our admission desk will connect with you within 2 working hours.
                 </p>
               </div>
@@ -984,7 +994,7 @@ function generateAboutPage() {
             </div>
             <h3 class="text-base font-bold text-[#002b49] mt-3">${leader.name}</h3>
             <p class="text-xs text-amber-700 font-semibold">${leader.role}</p>
-            <p class="text-[11px] text-slate-500">${leader.qualification}</p>
+            <p class="text-xs text-slate-500">${leader.qualification}</p>
           </div>
           <div class="flex-1 text-left">
             <div class="border-l-4 border-amber-400 pl-4 py-1 mb-4 bg-amber-50/50 rounded-r-lg">
@@ -1167,7 +1177,7 @@ function generateAdmissionsPage() {
           <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
           <div>
             <h4 class="text-xs font-bold text-[#002b49]">Birth Certificate</h4>
-            <p class="text-[11px] text-slate-500">Self-attested copy of municipal birth certificate.</p>
+            <p class="text-xs text-slate-500">Self-attested copy of municipal birth certificate.</p>
           </div>
         </div>
 
@@ -1175,7 +1185,7 @@ function generateAdmissionsPage() {
           <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
           <div>
             <h4 class="text-xs font-bold text-[#002b49]">Transfer Certificate (TC)</h4>
-            <p class="text-[11px] text-slate-500">Original counter-signed TC from previous recognized school (Class II onwards).</p>
+            <p class="text-xs text-slate-500">Original counter-signed TC from previous recognized school (Class II onwards).</p>
           </div>
         </div>
 
@@ -1183,7 +1193,7 @@ function generateAdmissionsPage() {
           <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
           <div>
             <h4 class="text-xs font-bold text-[#002b49]">Previous Report Card</h4>
-            <p class="text-[11px] text-slate-500">Photocopy of mark statement / report card of qualifying class.</p>
+            <p class="text-xs text-slate-500">Photocopy of mark statement / report card of qualifying class.</p>
           </div>
         </div>
 
@@ -1191,7 +1201,7 @@ function generateAdmissionsPage() {
           <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
           <div>
             <h4 class="text-xs font-bold text-[#002b49]">Student &amp; Parent Photos</h4>
-            <p class="text-[11px] text-slate-500">4 recent passport size photographs of the student and 2 of each parent.</p>
+            <p class="text-xs text-slate-500">4 recent passport size photographs of the student and 2 of each parent.</p>
           </div>
         </div>
 
@@ -1199,7 +1209,7 @@ function generateAdmissionsPage() {
           <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
           <div>
             <h4 class="text-xs font-bold text-[#002b49]">Aadhaar Card Copies</h4>
-            <p class="text-[11px] text-slate-500">Photocopy of Aadhaar Card of student and parents.</p>
+            <p class="text-xs text-slate-500">Photocopy of Aadhaar Card of student and parents.</p>
           </div>
         </div>
 
@@ -1207,7 +1217,7 @@ function generateAdmissionsPage() {
           <i data-lucide="check-circle" class="w-5 h-5 text-emerald-600 shrink-0 mt-0.5"></i>
           <div>
             <h4 class="text-xs font-bold text-[#002b49]">Medical Fitness Record</h4>
-            <p class="text-[11px] text-slate-500">Blood group certificate and basic immunization history.</p>
+            <p class="text-xs text-slate-500">Blood group certificate and basic immunization history.</p>
           </div>
         </div>
       </div>
@@ -1401,27 +1411,27 @@ function generateCbsePage() {
         <h3 class="text-base font-bold text-[#002b49] mb-4">A: General Information</h3>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-xs">
           <div class="p-3 bg-white rounded-lg border border-slate-200">
-            <span class="text-slate-400 block text-[11px]">NAME OF THE SCHOOL</span>
+            <span class="text-slate-400 block text-xs">NAME OF THE SCHOOL</span>
             <span class="font-bold text-[#002b49] text-sm">THE OXFORD SCHOOL</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
-            <span class="text-slate-400 block text-[11px]">CBSE AFFILIATION NUMBER</span>
+            <span class="text-slate-400 block text-xs">CBSE AFFILIATION NUMBER</span>
             <span class="font-bold text-[#002b49] text-sm">3530408</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
-            <span class="text-slate-400 block text-[11px]">SCHOOL CODE</span>
+            <span class="text-slate-400 block text-xs">SCHOOL CODE</span>
             <span class="font-bold text-[#002b49] text-sm">81632</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
-            <span class="text-slate-400 block text-[11px]">COMPLETE ADDRESS</span>
+            <span class="text-slate-400 block text-xs">COMPLETE ADDRESS</span>
             <span class="font-bold text-[#002b49]">Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand – 249402</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
-            <span class="text-slate-400 block text-[11px]">PRINCIPAL NAME &amp; QUALIFICATION</span>
+            <span class="text-slate-400 block text-xs">PRINCIPAL NAME &amp; QUALIFICATION</span>
             <span class="font-bold text-[#002b49]">Ms. Priya Chauhan (M.A., B.Ed.)</span>
           </div>
           <div class="p-3 bg-white rounded-lg border border-slate-200">
-            <span class="text-slate-400 block text-[11px]">SCHOOL EMAIL &amp; CONTACT</span>
+            <span class="text-slate-400 block text-xs">SCHOOL EMAIL &amp; CONTACT</span>
             <span class="font-bold text-[#002b49]">theoxfordschoolharidwar@gmail.com | +91-9068885862, +91-7060089183</span>
           </div>
         </div>
@@ -1665,7 +1675,7 @@ function generateGalleryPage() {
           <div data-category="${item.category}" class="gallery-item rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group text-left">
             <div class="relative h-64 overflow-hidden bg-slate-100">
               <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-              <span class="absolute top-2 left-2 text-[10px] font-bold px-2 py-0.5 rounded bg-black/70 text-white backdrop-blur-xs">
+              <span class="absolute top-2 left-2 text-xs font-bold px-2 py-0.5 rounded bg-black/70 text-white backdrop-blur-xs">
                 ${item.category}
               </span>
             </div>
@@ -1728,7 +1738,7 @@ function generateCareersPage() {
                   <h3 class="text-base font-bold text-[#002b49]">${job.title}</h3>
                   <span class="text-xs font-semibold text-amber-700">${job.department} • ${job.type}</span>
                 </div>
-                <span class="text-[10px] font-bold bg-amber-100 text-amber-900 px-2 py-0.5 rounded-full shrink-0">
+                <span class="text-xs font-bold bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full shrink-0">
                   ${job.vacancies} ${job.vacancies > 1 ? 'Vacancies' : 'Vacancy'}
                 </span>
               </div>

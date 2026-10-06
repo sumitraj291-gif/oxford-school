@@ -216,10 +216,10 @@ Candidates must carry their original admit cards stamped by the Principal. Exter
                 <button
                   type="button"
                   onClick={fireBirthdayPopper}
-                  className="px-3 py-1 rounded-full bg-amber-400 hover:bg-amber-300 text-slate-950 text-xs font-extrabold flex items-center gap-1 shadow-md transition transform active:scale-95 cursor-pointer"
+                  className="btn-base btn-sm btn-accent"
                   title="Click to celebrate with Party Popper!"
                 >
-                  <PartyPopper className="w-3.5 h-3.5" />
+                  <PartyPopper className="w-3.5 h-3.5" aria-hidden="true" />
                   <span>Wish!</span>
                 </button>
               </div>

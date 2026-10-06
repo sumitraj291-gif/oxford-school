@@ -267,22 +267,23 @@ export default function Home({ onOpenEnquiry }) {
                     </p>
                   </div>
 
-                  <div className="pt-3 mt-3 border-t border-white/10">
+                  <div className="pt-4 mt-4 border-t border-white/10">
                     {news.isEnquiry ? (
                       <button
+                        type="button"
                         onClick={onOpenEnquiry}
-                        className="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1 transition cursor-pointer"
+                        className="btn-base btn-sm btn-accent"
                       >
                         <span>{news.actionText}</span>
-                        <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                        <ArrowRight className="w-3.5 h-3.5" />
                       </button>
                     ) : (
                       <Link
                         to="/cbse-disclosure"
-                        className="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1 transition"
+                        className="btn-base btn-sm btn-secondary-inverted"
                       >
                         <span>{news.actionText}</span>
-                        <ChevronRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
+                        <ChevronRight className="w-3.5 h-3.5" />
                       </Link>
                     )}
                   </div>
@@ -381,11 +382,6 @@ export default function Home({ onOpenEnquiry }) {
                       {/* Natural gradient overlay to ensure text readability */}
                       <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
 
-                      {/* Top Corner Flip Prompt Badge */}
-                      <div className="absolute top-3.5 right-3.5 bg-black/50 backdrop-blur-md border border-white/20 text-white text-[11px] font-semibold px-2.5 py-1 rounded-full flex items-center gap-1.5 shadow-sm group-hover:bg-amber-500 group-hover:text-slate-950 group-hover:border-amber-400 transition-colors">
-                        <RotateCw className="w-3 h-3 group-hover:rotate-180 transition-transform duration-500" />
-                        <span>Tap to Flip</span>
-                      </div>
 
                       {/* Overlaid Info at Bottom */}
                       <div className="relative z-10 p-5 text-left text-white">
@@ -404,9 +400,9 @@ export default function Home({ onOpenEnquiry }) {
                             <span>Read Message &amp; Guidance</span>
                             <ArrowRight className="w-3.5 h-3.5" />
                           </span>
-                          <span className="text-[11px] text-slate-300 flex items-center gap-1">
-                            <RotateCw className="w-3 h-3 text-amber-400" />
-                            <span>Flip</span>
+                          <span className="btn-base btn-sm btn-ghost-dark text-white font-semibold">
+                            <RotateCw className="w-3.5 h-3.5 text-amber-400" />
+                            <span>Flip for Bio</span>
                           </span>
                         </div>
                       </div>
@@ -432,29 +428,17 @@ export default function Home({ onOpenEnquiry }) {
                             <img src={msg.image} alt={msg.name} className="w-full h-full object-cover object-top" />
                           </div>
                           <div>
-                            <span className="text-[10px] font-extrabold uppercase tracking-wider text-amber-700 block">
+                            <span className="text-xs font-bold uppercase tracking-wider text-amber-700 block">
                               {msg.role}
                             </span>
                             <h4 className="text-sm sm:text-base font-bold text-[#002b49] leading-tight">
                               {msg.name}
                             </h4>
-                            <span className="text-[10px] text-slate-500 block">
+                            <span className="text-xs text-slate-500 block">
                               The Oxford School, Haridwar
                             </span>
                           </div>
                         </div>
-
-                        <button 
-                          type="button"
-                          onClick={(e) => {
-                            e.stopPropagation();
-                            toggleCardFlip(idx);
-                          }}
-                          className="w-8 h-8 rounded-full bg-slate-100 hover:bg-amber-100 hover:text-amber-800 text-slate-500 flex items-center justify-center transition shadow-xs cursor-pointer shrink-0"
-                          title="Flip back to portrait"
-                        >
-                          <RotateCw className="w-3.5 h-3.5" />
-                        </button>
                       </div>
 
                       {/* Middle Quote & Message */}
@@ -478,15 +462,15 @@ export default function Home({ onOpenEnquiry }) {
                             e.stopPropagation();
                             toggleCardFlip(idx);
                           }}
-                          className="text-amber-700 hover:text-amber-800 font-bold inline-flex items-center gap-1.5 transition cursor-pointer"
+                          className="btn-base btn-sm btn-ghost text-amber-800 font-semibold"
                         >
                           <RotateCw className="w-3.5 h-3.5" />
-                          <span>View Portrait Photo</span>
+                          <span>Flip Back</span>
                         </button>
                         <Link 
                           to="/about"
                           onClick={(e) => e.stopPropagation()}
-                          className="text-[#002b49] hover:text-amber-600 font-bold flex items-center gap-1 transition"
+                          className="btn-base btn-sm btn-secondary"
                         >
                           <span>About School</span>
                           <ChevronRight className="w-3.5 h-3.5" />
@@ -508,12 +492,12 @@ export default function Home({ onOpenEnquiry }) {
       <section className="py-16 bg-slate-50 border-t border-slate-200">
         <div className="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
           
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 text-left">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 text-left">
             <div>
               <span className="text-xs uppercase font-bold tracking-widest text-amber-700 bg-amber-100/60 px-3 py-1 rounded-full border border-amber-200 inline-block">
                 Learning Infrastructure
               </span>
-              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#002b49] mt-3">
+              <h2 className="text-2xl sm:text-3xl font-serif font-bold text-[#002b49] mt-2">
                 Facilities Designed for Hands-On Learning
               </h2>
               <p className="text-sm text-slate-600 mt-2 max-w-xl">
@@ -523,18 +507,19 @@ export default function Home({ onOpenEnquiry }) {
 
             <Link
               to="/facilities"
-              className="px-4 py-2 bg-[#002b49] hover:bg-[#003b63] text-white rounded-xl text-xs font-semibold inline-flex items-center gap-2 self-start md:self-auto transition shadow-sm"
+              className="btn-base btn-md btn-primary shrink-0 self-start md:self-end"
             >
               <span>Explore All Facilities</span>
-              <ArrowRight className="w-3.5 h-3.5 text-amber-400" />
+              <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-stretch">
             {FACILITIES_DATA.slice(0, 6).map((fac) => (
-              <div 
+              <Link 
                 key={fac.id}
-                className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left"
+                to={`/facilities#${fac.id}`}
+                className="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-md transition group flex flex-col justify-between text-left focus-visible:ring-2 focus-visible:ring-[#002b49]"
               >
                 <div>
                   <div className="relative h-48 overflow-hidden bg-slate-100">
@@ -543,8 +528,8 @@ export default function Home({ onOpenEnquiry }) {
                       alt={fac.title} 
                       className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-transparent to-transparent"></div>
-                    <h3 className="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-sm text-left">
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/45 to-transparent"></div>
+                    <h3 className="absolute bottom-3 left-4 right-4 text-base font-bold text-white leading-snug drop-shadow-md text-left">
                       {fac.title}
                     </h3>
                   </div>
@@ -565,16 +550,13 @@ export default function Home({ onOpenEnquiry }) {
                   </div>
                 </div>
 
-                <div className="px-5 pb-5 pt-2 border-t border-slate-100 text-left">
-                  <Link
-                    to="/facilities"
-                    className="text-xs font-bold text-[#002b49] hover:text-amber-600 inline-flex items-center gap-1 transition"
-                  >
+                <div className="p-5 pt-3 border-t border-slate-100 text-left">
+                  <span className="text-xs font-bold text-[#002b49] group-hover:text-amber-600 inline-flex items-center gap-1 transition">
                     <span>View details &amp; equipment</span>
                     <ChevronRight className="w-3.5 h-3.5" />
-                  </Link>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
@@ -702,9 +684,9 @@ export default function Home({ onOpenEnquiry }) {
                 </div>
 
                 <div className="pt-5 mt-4 border-t border-slate-200 text-left">
-                  <h4 className="text-sm font-bold text-[#002b49]">
+                  <h3 className="text-sm font-bold text-[#002b49]">
                     {t.parentName}
-                  </h4>
+                  </h3>
                   <p className="text-xs text-amber-800 font-medium">
                     {t.childInfo}
                   </p>
@@ -775,16 +757,11 @@ export default function Home({ onOpenEnquiry }) {
                     <span><strong className="text-white">Safe GPS Transport &amp; Sports:</strong> Full athletic complex with cricket pitch, badminton, basketball, karate, and yoga.</span>
                   </li>
                 </ul>
-
-                <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between text-xs text-amber-300 font-semibold">
-                  <span>Counselor Response Time:</span>
-                  <span className="bg-amber-500/20 px-2.5 py-1 rounded-md text-amber-300 border border-amber-400/30">2 Working Days</span>
-                </div>
               </div>
 
               {/* Direct Admissions Contact Card */}
               <div className="bg-white/5 rounded-2xl p-6 border border-white/10 space-y-3.5 text-xs">
-                <h4 className="text-xs font-bold text-white uppercase tracking-wider border-b border-white/10 pb-2">
+                <h4 className="text-sm font-bold text-white tracking-wide border-b border-white/10 pb-2">
                   Direct Admission Helplines
                 </h4>
                 <div className="flex items-center gap-3 text-slate-300">
@@ -817,7 +794,7 @@ export default function Home({ onOpenEnquiry }) {
                         <img src="/ox-logo.webp" alt="The Oxford School Logo" className="w-full h-full object-contain" />
                       </div>
                       <div>
-                        <h3 className="text-lg sm:text-xl font-serif font-bold text-[#002b49]">Student Admission Enquiry Form</h3>
+                        <h3 className="text-lg sm:text-xl font-serif font-bold text-[#002b49] leading-tight">Student Admission Enquiry Form</h3>
                         <p className="text-xs text-slate-500 mt-0.5">Please provide complete information. All starred (*) fields are required.</p>
                       </div>
                     </div>
@@ -943,27 +920,17 @@ export default function Home({ onOpenEnquiry }) {
                       </div>
                     </div>
 
-                    {/* Row 4: Email Address & Academic Session */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                      <div>
-                        <label className="block font-bold text-slate-700 mb-1.5">Email Address</label>
-                        <input
-                          type="email"
-                          value={bottomFormData.email}
-                          onChange={(e) => setBottomFormData({ ...bottomFormData, email: e.target.value })}
-                          placeholder="parent@example.com"
-                          className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs"
-                        />
-                      </div>
-                      <div>
-                        <label className="block font-bold text-slate-700 mb-1.5">Academic Session</label>
-                        <input
-                          type="text"
-                          readOnly
-                          value="2026–2027 (Upcoming)"
-                          className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 bg-slate-100 text-slate-600 text-xs font-semibold"
-                        />
-                      </div>
+                    {/* Row 4: Email Address */}
+                    <div>
+                      <label className="block font-bold text-slate-700 mb-1.5">Email Address</label>
+                      <input
+                        type="email"
+                        value={bottomFormData.email}
+                        onChange={(e) => setBottomFormData({ ...bottomFormData, email: e.target.value })}
+                        placeholder="parent@example.com"
+                        className="w-full px-3.5 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:border-[#002b49] focus:ring-1 focus:ring-[#002b49] text-xs"
+                      />
+                      <input type="hidden" name="academicSession" value="2026-2027" />
                     </div>
 
                     {/* Row 5: Residential Address & Previous School */}
@@ -1003,12 +970,19 @@ export default function Home({ onOpenEnquiry }) {
                       />
                     </div>
 
-                    {/* Submit Button */}
+                    {/* Submit Button & Counselor Info */}
                     <div className="pt-2">
+                      <div className="flex flex-col sm:flex-row items-center justify-between text-xs text-slate-600 mb-3 gap-1">
+                        <span className="flex items-center gap-1.5">
+                          <Clock className="w-3.5 h-3.5 text-amber-600" />
+                          <span>Counselor response time: <strong>Within 2 working days</strong></span>
+                        </span>
+                        <span className="text-slate-400">Target Session: 2026–2027</span>
+                      </div>
                       <button
                         type="submit"
                         disabled={enquiryStatus.submitting}
-                        className="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-700 hover:to-amber-600 text-white font-bold text-sm shadow-xl transition-all cursor-pointer flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                        className="btn-base btn-lg btn-primary w-full justify-center shadow-xl"
                       >
                         {enquiryStatus.submitting ? (
                           <>
@@ -1025,8 +999,8 @@ export default function Home({ onOpenEnquiry }) {
                           </>
                         )}
                       </button>
-                      <p className="text-[11px] text-slate-500 text-center mt-2.5">
-                        🔒 Your information is secure. Our admission desk will connect with you within 2 working days.
+                      <p className="text-xs text-slate-500 text-center mt-2.5">
+                        🔒 Your information is confidential and used solely for admission communication.
                       </p>
                     </div>
                   </form>

@@ -137,7 +137,7 @@ _Generated via Oxford School Official Portal_`;
               <button
                 type="button"
                 onClick={handleReset}
-                className="px-6 py-2.5 bg-[#002b49] text-white text-xs font-semibold uppercase tracking-wider btn-cut cursor-pointer hover:bg-[#003e6b]"
+                className="btn-base btn-md btn-primary"
               >
                 Close Window
               </button>
@@ -349,13 +349,13 @@ _Generated via Oxford School Official Portal_`;
                 <button
                   type="button"
                   onClick={onClose}
-                  className="px-5 py-2.5 text-xs text-slate-600 hover:text-slate-900 transition"
+                  className="btn-base btn-md btn-ghost"
                 >
                   Cancel
                 </button>
                 <button
                   type="submit"
-                  className="px-6 py-2.5 bg-[#002b49] text-white text-xs font-semibold uppercase tracking-wider btn-cut hover:bg-[#003e6b] cursor-pointer flex items-center gap-2 shadow-sm"
+                  className="btn-base btn-md btn-primary"
                 >
                   <span>Submit & Connect on WhatsApp</span>
                   <Send className="w-3.5 h-3.5" />
