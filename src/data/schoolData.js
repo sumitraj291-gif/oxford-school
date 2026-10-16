@@ -12,7 +12,7 @@ export const SCHOOL_INFO = {
   established: "2014",
   type: "Co-Educational Day School",
   societyName: "Shivratan Education Society",
-  address: "Shivratan City, Navodaya Nagar, Rajnadesh, Haridwar, Uttarakhand",
+  address: "Shivratan City, Navodaya Nagar, Roshnabad, Haridwar, Uttarakhand",
   phoneNumbers: ["+91-9068885862", "+91-7060089183"],
   whatsappNumber: "917060089183",
   primaryPhone: "+91-9068885862",

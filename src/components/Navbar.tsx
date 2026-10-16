@@ -103,7 +103,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
               <span className="text-[#002b49] text-xs md:text-sm font-bold tracking-[0.25em] uppercase">
                 O X F O R D
               </span>
-              <span className="text-slate-500 text-[9px] font-medium tracking-[0.15em] uppercase hidden sm:block">
+              <span className="text-slate-500 text-xs font-medium tracking-wider uppercase hidden sm:block">
                 Haridwar • CBSE #{SCHOOL_INFO.affiliationNo}
               </span>
             </div>
@@ -165,18 +165,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
           </nav>
 
           {/* Nav Buttons (Desktop) */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2.5">
             <Link
               to="/admissions"
-              className="px-4 py-2 text-[#002b49] text-xs font-semibold tracking-wider uppercase hover:bg-slate-100 btn-cut-border cursor-pointer transition-colors"
+              className="btn-base btn-md btn-secondary"
             >
-              <span>Admissions</span>
+              Admissions
             </Link>
 
             <button
               type="button"
               onClick={onOpenEnquiry}
-              className="px-4 py-2 bg-[#002b49] text-white text-xs font-semibold tracking-wider uppercase hover:bg-[#003e6b] btn-cut cursor-pointer transition-colors shadow-sm"
+              className="btn-base btn-md btn-primary"
             >
               Apply Now
             </button>
@@ -187,14 +187,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
             <button
               type="button"
               onClick={onOpenEnquiry}
-              className="md:hidden px-3 py-1.5 bg-[#002b49] text-white text-[11px] font-semibold tracking-wider uppercase btn-cut"
+              className="md:hidden btn-base btn-sm btn-primary"
             >
               Apply
             </button>
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-slate-700 hover:text-slate-900 hover:bg-slate-100 rounded-lg transition"
+              className="btn-base btn-sm btn-ghost p-2 text-slate-700 hover:text-slate-900"
               aria-label="Toggle Navigation Menu"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -237,9 +237,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
               <Link
                 to="/admissions"
                 onClick={() => setMobileMenuOpen(false)}
-                className="w-full py-2.5 text-center text-[#002b49] text-xs font-semibold uppercase tracking-wider btn-cut-border"
+                className="w-full btn-base btn-md btn-secondary justify-center text-center"
               >
-                <span>Explore Admissions</span>
+                Explore Admissions
               </Link>
               <button
                 type="button"
@@ -247,7 +247,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
                   setMobileMenuOpen(false);
                   onOpenEnquiry();
                 }}
-                className="w-full py-2.5 text-center bg-[#002b49] text-white text-xs font-semibold uppercase tracking-wider btn-cut cursor-pointer shadow-sm"
+                className="w-full btn-base btn-md btn-primary justify-center text-center"
               >
                 Apply Online Now
               </button>

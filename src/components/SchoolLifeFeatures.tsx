@@ -121,10 +121,10 @@ export const SchoolLifeFeatures: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveTab('houses')}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl transition cursor-pointer flex items-center gap-2 ${
+              className={`btn-base btn-md ${
                 activeTab === 'houses'
-                  ? 'bg-[#002b49] text-white shadow-md'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'btn-primary'
+                  : 'btn-ghost bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
               <Trophy className="w-3.5 h-3.5" />
@@ -134,10 +134,10 @@ export const SchoolLifeFeatures: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveTab('schedule')}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl transition cursor-pointer flex items-center gap-2 ${
+              className={`btn-base btn-md ${
                 activeTab === 'schedule'
-                  ? 'bg-[#002b49] text-white shadow-md'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'btn-primary'
+                  : 'btn-ghost bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
               <Clock className="w-3.5 h-3.5" />
@@ -147,10 +147,10 @@ export const SchoolLifeFeatures: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveTab('streams')}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl transition cursor-pointer flex items-center gap-2 ${
+              className={`btn-base btn-md ${
                 activeTab === 'streams'
-                  ? 'bg-[#002b49] text-white shadow-md'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'btn-primary'
+                  : 'btn-ghost bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
               <BookOpen className="w-3.5 h-3.5" />
@@ -160,10 +160,10 @@ export const SchoolLifeFeatures: React.FC = () => {
             <button
               type="button"
               onClick={() => setActiveTab('clubs')}
-              className={`px-4 py-2 text-xs font-bold uppercase tracking-wider rounded-xl transition cursor-pointer flex items-center gap-2 ${
+              className={`btn-base btn-md ${
                 activeTab === 'clubs'
-                  ? 'bg-[#002b49] text-white shadow-md'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? 'btn-primary'
+                  : 'btn-ghost bg-slate-100 text-slate-700 hover:bg-slate-200'
               }`}
             >
               <Sparkles className="w-3.5 h-3.5" />

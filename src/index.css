@@ -238,3 +238,121 @@ img, video, iframe, svg {
   transform: rotateY(180deg) translateZ(1px);
   -webkit-transform: rotateY(180deg) translateZ(1px);
 }
+
+/* ==========================================================================
+   UNIFIED BUTTON SYSTEM (Standardized into 4 cohesive variants)
+   ========================================================================== */
+.btn-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.8125rem;
+  letter-spacing: 0.025em;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+  text-decoration: none;
+}
+.btn-base:focus-visible {
+  outline: 2px solid #002b49;
+  outline-offset: 2px;
+}
+
+/* Button Sizing */
+.btn-sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.btn-md {
+  padding: 0.5rem 1.125rem;
+  font-size: 0.8125rem;
+  line-height: 1.25rem;
+}
+.btn-lg {
+  padding: 0.75rem 1.625rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+/* 1. Primary: Solid Oxford Navy (or Inverted solid white on dark) */
+.btn-primary {
+  background-color: #002b49;
+  color: #ffffff !important;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.btn-primary:hover {
+  background-color: #003e6b;
+  color: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 43, 73, 0.15);
+}
+.btn-primary-inverted {
+  background-color: #ffffff;
+  color: #002b49 !important;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+.btn-primary-inverted:hover {
+  background-color: #f8fafc;
+  color: #001a2e !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* 2. Secondary: Clean Outline */
+.btn-secondary {
+  background-color: transparent;
+  color: #002b49 !important;
+  border: 1.5px solid #002b49;
+}
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+  color: #001a2e !important;
+}
+.btn-secondary-inverted {
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.75);
+}
+.btn-secondary-inverted:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: #ffffff;
+  color: #ffffff !important;
+}
+
+/* 3. Accent: Oxford Amber */
+.btn-accent {
+  background-color: #f59e0b;
+  color: #0f172a !important;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px rgba(245, 158, 11, 0.3);
+}
+.btn-accent:hover {
+  background-color: #d97706;
+  color: #ffffff !important;
+}
+
+/* 4. Ghost / Tertiary: Muted Utility */
+.btn-ghost {
+  background-color: transparent;
+  color: #475569;
+  border: 1px solid transparent;
+}
+.btn-ghost:hover {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+.btn-ghost-dark {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #f8fafc !important;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+}
+.btn-ghost-dark:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  color: #ffffff !important;
+}

@@ -48,7 +48,7 @@ export function generateChairmanPage() {
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#001f35] via-transparent to-transparent opacity-80"></div>
               <div class="absolute bottom-4 left-4 right-4 text-left text-white">
-                <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 block">Founder Chairman</span>
+                <span class="text-xs uppercase font-bold tracking-widest text-amber-400 block">Founder Chairman</span>
                 <h3 class="text-xl font-bold font-serif text-white">Shri Arvind Chauhan</h3>
                 <p class="text-xs text-slate-300">Shivratan Education Society</p>
               </div>
@@ -187,7 +187,7 @@ export function generateManagingDirectorPage() {
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#001f35] via-transparent to-transparent opacity-80"></div>
               <div class="absolute bottom-4 left-4 right-4 text-left text-white">
-                <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 block">Managing Director</span>
+                <span class="text-xs uppercase font-bold tracking-widest text-amber-400 block">Managing Director</span>
                 <h3 class="text-xl font-bold font-serif text-white">Shri Shivank Chauhan</h3>
                 <p class="text-xs text-slate-300">The Oxford School, Haridwar</p>
               </div>
@@ -299,7 +299,7 @@ export function generatePrincipalPage() {
               />
               <div class="absolute inset-0 bg-gradient-to-t from-[#001f35] via-transparent to-transparent opacity-80"></div>
               <div class="absolute bottom-4 left-4 right-4 text-left text-white">
-                <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400 block">Principal</span>
+                <span class="text-xs uppercase font-bold tracking-widest text-amber-400 block">Principal</span>
                 <h3 class="text-xl font-bold font-serif text-white">Ms. Priya Chauhan</h3>
                 <p class="text-xs text-slate-300">The Oxford School, Haridwar</p>
               </div>
@@ -722,7 +722,7 @@ export function generateAdmissionProcedurePage() {
           <p class="text-xs text-slate-600 leading-relaxed mb-4">
             Submit the online admission enquiry form or visit the school administrative desk at Roshnabad to collect the official admission registration kit.
           </p>
-          <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md">Online or On-Campus</span>
+          <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md">Online or On-Campus</span>
         </div>
 
         <div class="bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-amber-400 transition shadow-sm">
@@ -733,7 +733,7 @@ export function generateAdmissionProcedurePage() {
           <p class="text-xs text-slate-600 leading-relaxed mb-4">
             Friendly, stress-free interaction for Pre-Primary children; diagnostic assessment in foundational English &amp; Maths for Classes I to XII to identify strengths.
           </p>
-          <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Diagnostic, Not Eliminatory</span>
+          <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Diagnostic, Not Eliminatory</span>
         </div>
 
         <div class="bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-amber-400 transition shadow-sm">
@@ -744,7 +744,7 @@ export function generateAdmissionProcedurePage() {
           <p class="text-xs text-slate-600 leading-relaxed mb-4">
             Submission of essential verification documents: Birth Certificate, previous report card, Transfer Certificate (TC), Aadhaar card, and passport-size photographs.
           </p>
-          <span class="text-[11px] font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Desk Verification</span>
+          <span class="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-md">Desk Verification</span>
         </div>
 
         <div class="bg-white rounded-3xl p-6 border-2 border-slate-200 hover:border-amber-400 transition shadow-sm">
@@ -755,7 +755,7 @@ export function generateAdmissionProcedurePage() {
           <p class="text-xs text-slate-600 leading-relaxed mb-4">
             Completion of fee formalities, issuance of official Scholar Register number, allocation of bus route, and invitation to the Parent Orientation Program.
           </p>
-          <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md">Welcome to Oxford!</span>
+          <span class="text-xs font-bold text-amber-700 bg-amber-50 px-2.5 py-1 rounded-md">Welcome to Oxford!</span>
         </div>
 
       </div>
@@ -869,7 +869,7 @@ export function generateEligibilityCriteriaPage() {
         
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs sm:text-sm">
-            <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold uppercase text-[11px]">
+            <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold uppercase text-xs">
               <tr>
                 <th class="p-4">Grade / Class</th>
                 <th class="p-4">Minimum Age Requirement</th>
@@ -1048,31 +1048,31 @@ export function generateFeeGuidelinesPage() {
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
           
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-            <span class="text-[10px] uppercase font-bold text-amber-700 block">Quarter 1</span>
+            <span class="text-xs uppercase font-bold text-amber-700 block">Quarter 1</span>
             <h4 class="font-bold text-sm text-[#002b49] mt-0.5">April – June</h4>
             <p class="text-slate-600 mt-1">Due Date: <strong>1st to 15th April 2025</strong></p>
-            <p class="text-[11px] text-slate-500 mt-2">Includes Annual composite fee + Q1 Tuition.</p>
+            <p class="text-xs text-slate-500 mt-2">Includes Annual composite fee + Q1 Tuition.</p>
           </div>
 
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-            <span class="text-[10px] uppercase font-bold text-amber-700 block">Quarter 2</span>
+            <span class="text-xs uppercase font-bold text-amber-700 block">Quarter 2</span>
             <h4 class="font-bold text-sm text-[#002b49] mt-0.5">July – September</h4>
             <p class="text-slate-600 mt-1">Due Date: <strong>1st to 15th July 2025</strong></p>
-            <p class="text-[11px] text-slate-500 mt-2">Includes Q2 Tuition + Transport (if opted).</p>
+            <p class="text-xs text-slate-500 mt-2">Includes Q2 Tuition + Transport (if opted).</p>
           </div>
 
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-            <span class="text-[10px] uppercase font-bold text-amber-700 block">Quarter 3</span>
+            <span class="text-xs uppercase font-bold text-amber-700 block">Quarter 3</span>
             <h4 class="font-bold text-sm text-[#002b49] mt-0.5">October – December</h4>
             <p class="text-slate-600 mt-1">Due Date: <strong>1st to 15th October 2025</strong></p>
-            <p class="text-[11px] text-slate-500 mt-2">Includes Q3 Tuition + CBSE Examination dues.</p>
+            <p class="text-xs text-slate-500 mt-2">Includes Q3 Tuition + CBSE Examination dues.</p>
           </div>
 
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200">
-            <span class="text-[10px] uppercase font-bold text-amber-700 block">Quarter 4</span>
+            <span class="text-xs uppercase font-bold text-amber-700 block">Quarter 4</span>
             <h4 class="font-bold text-sm text-[#002b49] mt-0.5">January – March</h4>
             <p class="text-slate-600 mt-1">Due Date: <strong>1st to 15th January 2026</strong></p>
-            <p class="text-[11px] text-slate-500 mt-2">Final settlement before annual report release.</p>
+            <p class="text-xs text-slate-500 mt-2">Final settlement before annual report release.</p>
           </div>
 
         </div>
@@ -1088,7 +1088,7 @@ export function generateFeeGuidelinesPage() {
           <div class="mt-6 pt-4 border-t border-slate-200 flex flex-wrap items-center justify-between gap-4">
             <div>
               <span class="text-xs font-bold text-[#002b49] block">Official Approved Document</span>
-              <span class="text-[11px] text-slate-500">Download authorized fee schedule for session 2026-27</span>
+              <span class="text-xs text-slate-500">Download authorized fee schedule for session 2026-27</span>
             </div>
             <a href="downloads/2026-27_fee_structure.pdf" download target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-[#002b49] hover:bg-amber-600 text-white rounded-xl text-xs font-bold transition shadow inline-flex items-center gap-2">
               <i data-lucide="download" class="w-4 h-4 text-amber-400"></i>
@@ -1142,7 +1142,7 @@ export function generateOnlineEnquiryPage() {
               <img src="ox-logo.webp" alt="The Oxford School Logo" class="w-full h-full object-contain" />
             </div>
             <div>
-              <span class="text-[10px] text-amber-400 font-bold uppercase tracking-widest block">Official Admissions Desk</span>
+              <span class="text-xs text-amber-400 font-bold uppercase tracking-widest block">Official Admissions Desk</span>
               <h3 class="text-xl font-serif font-bold mt-0.5">Student &amp; Parent Information Form</h3>
               <p class="text-xs text-slate-300 mt-1">All fields marked with an asterisk (*) are mandatory.</p>
             </div>
@@ -1241,7 +1241,7 @@ export function generateOnlineEnquiryPage() {
             <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-amber-600 via-amber-500 to-amber-600 hover:from-amber-700 hover:to-amber-600 text-white font-bold text-sm shadow-xl transition cursor-pointer">
               Submit Enquiry to Admission Office
             </button>
-            <p class="text-[11px] text-center text-slate-500 mt-2">
+            <p class="text-xs text-center text-slate-500 mt-2">
               🔒 Your contact information is kept confidential and used strictly for academic correspondence.
             </p>
           </div>
@@ -1318,7 +1318,7 @@ export function generateRoboticsLabPage() {
             />
             <div class="absolute bottom-4 left-4 right-4 p-4 rounded-2xl bg-black/75 backdrop-blur-md text-white text-xs">
               <p class="font-bold text-amber-400">Autonomous Obstacle-Avoiding Rover Project</p>
-              <p class="text-[11px] text-slate-300">Designed and programmed by Oxford middle school scholars in the STEM Lab.</p>
+              <p class="text-xs text-slate-300">Designed and programmed by Oxford middle school scholars in the STEM Lab.</p>
             </div>
           </div>
         </div>
@@ -1750,7 +1750,7 @@ export function generateResultsPage() {
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs sm:text-sm">
-            <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold uppercase text-[11px]">
+            <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold uppercase text-xs">
               <tr>
                 <th class="p-4">Academic Session</th>
                 <th class="p-4">Students Appeared</th>
@@ -1796,7 +1796,7 @@ export function generateResultsPage() {
         </div>
         <div class="overflow-x-auto">
           <table class="w-full text-left text-xs sm:text-sm">
-            <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold uppercase text-[11px]">
+            <thead class="bg-slate-100 border-b border-slate-200 text-slate-700 font-bold uppercase text-xs">
               <tr>
                 <th class="p-4">Academic Session</th>
                 <th class="p-4">Students Appeared</th>

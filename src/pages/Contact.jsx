@@ -101,7 +101,7 @@ _Dispatched from Oxford School Contact Page_`;
                 </div>
                 <div>
                   <a href={`tel:${SCHOOL_INFO.phoneNumbers[1]}`} className="hover:text-amber-600 font-medium">
-                    {SCHOOL_INFO.phoneNumbers[1]} (Helpline)
+                    {SCHOOL_INFO.phoneNumbers[1]}
                   </a>
                 </div>
               </div>
