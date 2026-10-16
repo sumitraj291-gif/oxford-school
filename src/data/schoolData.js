@@ -16,8 +16,8 @@ export const SCHOOL_INFO = {
   phoneNumbers: ["+91-9068885862", "+91-7060089183"],
   whatsappNumber: "917060089183",
   primaryPhone: "+91-9068885862",
-  email: "theoxfordschoolharidwar@gmail.com",
-  secondaryEmail: "info@theoxfordschoolharidwar.com",
+  email: "theoxfordschoolinfo@gmail.com",
+  secondaryEmail: "theoxfordschoolinfo@gmail.com",
   officeHours: "Monday to Saturday: 8:00 AM – 2:30 PM",
   studentLoginUrl: "https://theoxfordschool.edunexttechnologies.com/Index",
   googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13838.288229562706!2d78.0864389!3d29.9576402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390947702fa10291%3A0x6a218d6e3cfb4009!2sRoshnabad%2C%20Haridwar%2C%20Uttarakhand!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
@@ -246,12 +246,14 @@ export const LEADERSHIP_MESSAGES = [
 
 export const BOARD_RESULTS = {
   classX: [
+    { year: "2025-26", appeared: 194, passed: 193, passPercent: "99.5%", above90: "—", highest: "97.5%", topper: "Nisha Dhaila (97.5%)", downloadUrl: null },
     { year: "2024-25", appeared: 114, passed: 114, passPercent: "100%", above90: 38, highest: "98.4%", topper: "Aryan Bhatt (98.4%)", downloadUrl: "/downloads/Xth-Result-2024-25.pdf" },
     { year: "2023-24", appeared: 108, passed: 108, passPercent: "100%", above90: 35, highest: "98.2%", topper: "Sneha Rawat (98.2%)", downloadUrl: "/downloads/Xth-Result-2023-24.pdf" },
     { year: "2022-23", appeared: 96, passed: 96, passPercent: "100%", above90: 31, highest: "97.8%", topper: "Aditya Verma (97.8%)", downloadUrl: "/downloads/Xth-2022-23.pdf" },
     { year: "2021-22", appeared: 88, passed: 88, passPercent: "100%", above90: 29, highest: "97.6%", topper: "Kavya Joshi (97.6%)", downloadUrl: "/downloads/Xth-2021-22.pdf" }
   ],
   classXII: [
+    { year: "2025-26", appeared: 152, passed: 135, passPercent: "88.8%", above90: "—", highest: "94.0%", topper: "Pragyan Nautiyal (94.0%)", downloadUrl: null },
     { year: "2024-25", appeared: 82, passed: 82, passPercent: "100%", above90: 27, highest: "97.8%", topper: "Tanya Sharma (Science - 97.8%)", downloadUrl: "/downloads/XIIth-Result-2024-25-new.pdf" },
     { year: "2023-24", appeared: 76, passed: 76, passPercent: "100%", above90: 24, highest: "97.2%", topper: "Rohan Semwal (Science - 97.2%)", downloadUrl: "/downloads/XIIth-Result-2023-24.pdf" },
     { year: "2022-23", appeared: 68, passed: 68, passPercent: "100%", above90: 22, highest: "96.8%", topper: "Pooja Negi (Commerce - 96.8%)", downloadUrl: "/downloads/XIIth-Result-2022-23-new.pdf" },

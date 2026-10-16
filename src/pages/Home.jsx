@@ -17,9 +17,18 @@ export default function Home({ onOpenEnquiry }) {
   const [flippedCards, setFlippedCards] = useState({});
   const videoRef = useRef(null);
   const [mobileVideoFailed, setMobileVideoFailed] = useState(false);
-  const [isMobile, setIsMobile] = useState(() =>
-    typeof window !== 'undefined' && window.matchMedia('(max-width: 639px)').matches
-  );
+  const [isMobile, setIsMobile] = useState(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+      return false;
+    }
+    return window.matchMedia('(max-width: 639px)').matches;
+  });
+
+  const handleOpenEnquiry = () => {
+    if (typeof onOpenEnquiry === 'function') {
+      onOpenEnquiry();
+    }
+  };
 
   const toggleCardFlip = (idx) => {
     setFlippedCards(prev => ({ ...prev, [idx]: !prev[idx] }));
@@ -41,7 +50,7 @@ export default function Home({ onOpenEnquiry }) {
 
   const handleBottomEnquirySubmit = (e) => {
     e.preventDefault();
-    const cleanPhone = bottomFormData.phone.replace(/\D/g, '');
+    const cleanPhone = (bottomFormData.phone || '').replace(/\D/g, '');
     if (!/^[6-9]\d{9}$/.test(cleanPhone)) {
       setEnquiryStatus(prev => ({ ...prev, error: 'Please enter a valid 10-digit Indian mobile number.' }));
       return;
@@ -71,10 +80,20 @@ export default function Home({ onOpenEnquiry }) {
 
   // Screen size badalne par (rotate / resize) mobile ya desktop video choose karo
   useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') {
+      return undefined;
+    }
+
     const mq = window.matchMedia('(max-width: 639px)');
     const onChange = (e) => setIsMobile(e.matches);
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
+
+    if (typeof mq.addEventListener === 'function') {
+      mq.addEventListener('change', onChange);
+      return () => mq.removeEventListener('change', onChange);
+    }
+
+    mq.addListener(onChange);
+    return () => mq.removeListener(onChange);
   }, []);
 
   // Mobile browsers me autoplay ke liye muted DOM property me set honi chahiye
@@ -178,7 +197,7 @@ export default function Home({ onOpenEnquiry }) {
         <div className="absolute bottom-6 sm:bottom-8 inset-x-0 z-20 flex items-center justify-center pointer-events-none">
           <button
             type="button"
-            onClick={onOpenEnquiry}
+            onClick={handleOpenEnquiry}
             className="btn-sync-dynamic pointer-events-auto px-6 py-2.5 sm:px-8 sm:py-3.5 text-white rounded-xl text-xs sm:text-sm font-bold shadow-2xl flex items-center gap-2.5 cursor-pointer border border-white/60 backdrop-blur-md group"
           >
             <Sparkles className="w-4 h-4 text-white" />
@@ -214,7 +233,7 @@ export default function Home({ onOpenEnquiry }) {
               </Link>
               <span className="text-white/20">|</span>
               <button
-                onClick={onOpenEnquiry}
+                onClick={handleOpenEnquiry}
                 className="text-white hover:text-amber-300 font-semibold flex items-center gap-1 cursor-pointer transition"
               >
                 <span>Admission Desk</span>
@@ -270,7 +289,7 @@ export default function Home({ onOpenEnquiry }) {
                   <div className="pt-3 mt-3 border-t border-white/10">
                     {news.isEnquiry ? (
                       <button
-                        onClick={onOpenEnquiry}
+                        onClick={handleOpenEnquiry}
                         className="text-xs font-bold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1 transition cursor-pointer"
                       >
                         <span>{news.actionText}</span>
@@ -319,7 +338,7 @@ export default function Home({ onOpenEnquiry }) {
       </section>
 
       {/* 4. Daily Birthday Widget & Notice Board */}
-      <NoticeBoardAndBirthday onOpenEnquiry={onOpenEnquiry} />
+      <NoticeBoardAndBirthday onOpenEnquiry={handleOpenEnquiry} />
 
       {/* 5. Leadership & School Vision Section */}
       <section className="py-16 bg-white">

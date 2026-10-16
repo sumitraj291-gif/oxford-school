@@ -70,7 +70,7 @@ export default function CbseDisclosure() {
             }`}
           >
             <Award className="w-4 h-4" />
-            <span>Class X &amp; XII Board Results (2021-25)</span>
+            <span>Class X &amp; XII Board Results (2021-26)</span>
           </button>
 
           <button
@@ -244,10 +244,10 @@ export default function CbseDisclosure() {
                   <Award className="w-5 h-5 text-amber-500" />
                   <span>Class X (All India Secondary School Examination - AISSE)</span>
                 </h3>
-                <p className="text-xs text-slate-500">Consecutive 100% Pass Performance across all sessions</p>
+                <p className="text-xs text-slate-500">Official CBSE summary from the school gazette and result records</p>
               </div>
-              <span className="text-xs font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">
-                100% Pass Rate Record
+              <span className="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded-full">
+                Official CBSE Gazette Summary
               </span>
             </div>
 
@@ -309,8 +309,8 @@ export default function CbseDisclosure() {
                 </h3>
                 <p className="text-xs text-slate-500">Science, Commerce &amp; Humanities Streams</p>
               </div>
-              <span className="text-xs font-bold bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full">
-                100% Pass Rate Record
+              <span className="text-xs font-bold bg-amber-100 text-amber-800 px-3 py-1 rounded-full">
+                Official CBSE Gazette Summary
               </span>
             </div>
 
