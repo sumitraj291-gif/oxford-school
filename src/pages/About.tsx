@@ -49,36 +49,36 @@ export const About: React.FC<AboutProps> = ({ onOpenEnquiry }) => {
 
   const houses = [
     {
-      name: "Ganga House",
-      color: "Blue",
-      badgeColor: "border-sky-300 text-sky-800 bg-sky-50",
-      motto: "Purity of Purpose, Flow of Excellence",
-      virtue: "Integrity & Tenacity",
-      desc: "Inspired by the sacred river that flows through Haridwar, Ganga House embodies relentless flow towards success, calm discipline, and moral integrity."
-    },
-    {
-      name: "Yamuna House",
-      color: "Yellow / Gold",
+      name: "Dayanand House",
+      color: "Yellow",
       badgeColor: "border-amber-300 text-amber-800 bg-amber-50",
-      motto: "Resilience in Action, Radiant in Character",
-      virtue: "Adaptability & Radiance",
-      desc: "Characterized by boundless energy, creativity, and the warmth of collective spirit, Yamuna House scholars stand out in academics and performing arts."
+      motto: "Truth & Righteousness",
+      virtue: "Discipline & Moral Courage",
+      desc: "Inspired by Swami Dayanand Saraswati, championing Vedic wisdom, fearless pursuit of truth, moral uprightness, and dedicated self-discipline."
     },
     {
-      name: "Kaveri House",
+      name: "Kalam House",
       color: "Green",
       badgeColor: "border-emerald-300 text-emerald-800 bg-emerald-50",
-      motto: "Nurturing Growth, Grounded in Values",
-      virtue: "Compassion & Stewardship",
-      desc: "Symbolizing perpetual rejuvenation and fertile intellect, Kaveri House champions environmental consciousness, athletics, and community leadership."
+      motto: "Dream, Innovate & Inspire",
+      virtue: "Scientific Temper & Vision",
+      desc: "Inspired by Dr. A.P.J. Abdul Kalam, dedicated to scientific curiosity, technological ingenuity, humble service to the nation, and relentless innovation."
     },
     {
-      name: "Saraswati House",
-      color: "Red / Crimson",
+      name: "Tagore House",
+      color: "Blue",
+      badgeColor: "border-sky-300 text-sky-800 bg-sky-50",
+      motto: "Mind Without Fear",
+      virtue: "Creativity & Universal Harmony",
+      desc: "Inspired by Gurudev Rabindranath Tagore, celebrating artistic expression, eloquence, boundless imagination, and universal harmony."
+    },
+    {
+      name: "Vivekanand House",
+      color: "Red",
       badgeColor: "border-rose-300 text-rose-800 bg-rose-50",
-      motto: "Seeker of Wisdom, Torchbearer of Truth",
-      virtue: "Wisdom & Innovation",
-      desc: "Dedicated to the deity of knowledge and fine arts, Saraswati House scholars continually excel in scientific inquiry, debates, and literature."
+      motto: "Arise, Awake & Achieve",
+      virtue: "Strength & Leadership",
+      desc: "Inspired by Swami Vivekananda, fostering fearlessness, mental fortitude, energetic youth leadership, and steadfast devotion to duty."
     }
   ];
 

@@ -269,11 +269,13 @@ export default function CbseDisclosure() {
                   {BOARD_RESULTS.classX.map((res, idx) => (
                     <tr key={idx} className="hover:bg-slate-50 transition">
                       <td className="py-3 px-4 font-bold text-[#002b49]">{res.year}</td>
-                      <td className="py-3 px-4 text-center">{res.appeared}</td>
+                      <td className="py-3 px-4 text-center">{res.registered ?? res.appeared}</td>
                       <td className="py-3 px-4 text-center">{res.appeared}</td>
                       <td className="py-3 px-4 text-center font-bold text-emerald-700">{res.passed}</td>
                       <td className="py-3 px-4 text-center font-bold text-emerald-600 bg-emerald-50/50">{res.passPercent}</td>
-                      <td className="py-3 px-4 text-center font-semibold text-amber-800">{res.above90} Scholars</td>
+                      <td className="py-3 px-4 text-center font-semibold text-amber-800">
+                        {res.above90 && res.above90 !== '—' ? `${res.above90} Scholars` : '—'}
+                      </td>
                       <td className="py-3 px-4 font-semibold text-slate-900">{res.topper}</td>
                       <td className="py-3 px-4 text-center">
                         {res.downloadUrl ? (
@@ -332,11 +334,13 @@ export default function CbseDisclosure() {
                   {BOARD_RESULTS.classXII.map((res, idx) => (
                     <tr key={idx} className="hover:bg-slate-50 transition">
                       <td className="py-3 px-4 font-bold text-[#002b49]">{res.year}</td>
-                      <td className="py-3 px-4 text-center">{res.appeared}</td>
+                      <td className="py-3 px-4 text-center">{res.registered ?? res.appeared}</td>
                       <td className="py-3 px-4 text-center">{res.appeared}</td>
                       <td className="py-3 px-4 text-center font-bold text-emerald-700">{res.passed}</td>
                       <td className="py-3 px-4 text-center font-bold text-emerald-600 bg-emerald-50/50">{res.passPercent}</td>
-                      <td className="py-3 px-4 text-center font-semibold text-amber-800">{res.above90} Scholars</td>
+                      <td className="py-3 px-4 text-center font-semibold text-amber-800">
+                        {res.above90 && res.above90 !== '—' ? `${res.above90} Scholars` : '—'}
+                      </td>
                       <td className="py-3 px-4 font-semibold text-slate-900">{res.topper}</td>
                       <td className="py-3 px-4 text-center">
                         {res.downloadUrl ? (
@@ -381,50 +385,50 @@ export default function CbseDisclosure() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
               {/* Stream 1 */}
-              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-3">
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-3 text-left">
                 <div className="text-xs font-bold uppercase tracking-wider text-blue-700 bg-blue-100 px-2.5 py-1 rounded inline-block">
                   Science Stream (Medical / Non-Medical)
                 </div>
                 <h4 className="text-base font-bold text-[#002b49]">PCM / PCB Combinations</h4>
                 <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
-                  <li>English Core (Compulsory)</li>
-                  <li>Physics (Theory &amp; Practical)</li>
-                  <li>Chemistry (Theory &amp; Practical)</li>
-                  <li>Mathematics / Applied Mathematics</li>
-                  <li>Biology / Biotechnology</li>
-                  <li>Computer Science (Python) / Physical Education (Optional)</li>
+                  <li>English Core</li>
+                  <li>Physics</li>
+                  <li>Chemistry</li>
+                  <li>Mathematics or Biology</li>
+                  <li>Physical Education / Informatics Practice</li>
+                  <li>Painting</li>
                 </ul>
               </div>
 
               {/* Stream 2 */}
-              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-3">
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-3 text-left">
                 <div className="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-100 px-2.5 py-1 rounded inline-block">
                   Commerce Stream
                 </div>
                 <h4 className="text-base font-bold text-[#002b49]">Commerce with / without Maths</h4>
                 <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
-                  <li>English Core (Compulsory)</li>
+                  <li>English Core</li>
                   <li>Accountancy</li>
                   <li>Business Studies</li>
                   <li>Economics</li>
-                  <li>Applied Mathematics / Informatics Practices</li>
-                  <li>Physical Education / Hindi Core (Optional)</li>
+                  <li>Mathematics / Physical Education / Informatics Practice</li>
+                  <li>Painting</li>
                 </ul>
               </div>
 
               {/* Stream 3 */}
-              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-3">
+              <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 space-y-3 text-left">
                 <div className="text-xs font-bold uppercase tracking-wider text-purple-700 bg-purple-100 px-2.5 py-1 rounded inline-block">
                   Humanities Stream
                 </div>
                 <h4 className="text-base font-bold text-[#002b49]">Arts &amp; Social Sciences</h4>
                 <ul className="text-xs text-slate-700 space-y-1.5 list-disc pl-4">
-                  <li>English Core (Compulsory)</li>
+                  <li>English</li>
+                  <li>Hindi</li>
                   <li>History</li>
-                  <li>Political Science</li>
-                  <li>Geography / Psychology</li>
-                  <li>Economics / Hindi Core</li>
-                  <li>Physical Education / Painting (Optional)</li>
+                  <li>Economics</li>
+                  <li>Physical Education / Political Science</li>
+                  <li>Painting</li>
                 </ul>
               </div>
             </div>

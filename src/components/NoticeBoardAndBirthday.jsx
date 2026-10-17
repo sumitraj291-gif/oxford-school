@@ -133,7 +133,7 @@ Students prepared bio-indicators using beetroot, turmeric, and hibiscus petals t
     },
     {
       id: "news-cbse-4",
-      title: "CBSE AISSE & AISSCE Board Practical Schedule & Guidelines Released",
+      title: "CBSE & AISSCE Practical Schedule & Guidelines Released",
       category: "CBSE Circulars",
       date: "12 Feb 2025",
       readTime: "2 min read",

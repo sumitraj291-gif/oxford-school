@@ -135,7 +135,7 @@ export default function Home({ onOpenEnquiry }) {
       date: "January 2025",
       category: "Sports",
       badge: "Event",
-      summary: "Inter-House athletic track & field trials commence for Ganga, Yamuna, Kaveri, and Saraswati houses at the campus sports complex.",
+      summary: "Inter-House athletic track & field trials commence for Dayanand, Kalam, Tagore, and Vivekanand houses at the campus sports complex.",
       actionText: "View Schedule",
       isEnquiry: false
     },

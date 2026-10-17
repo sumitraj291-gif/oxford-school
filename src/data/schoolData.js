@@ -29,7 +29,7 @@ export const SCHOOL_INFO = {
 };
 
 export const KEY_METRICS = [
-  { label: "Enrolled Students", value: "2,500+", suffix: "Scholars", description: "From Nursery to Class XII" },
+  { label: "Enrolled Students", value: "2,500+", suffix: "Scholars", description: "From Pre-Nursery to Class XII" },
   { label: "Faculty & Mentors", value: "85+", suffix: "Qualified Educators", description: "CBSE trained & certified" },
   { label: "Digital Classrooms", value: "48+", suffix: "Smart Rooms", description: "Equipped with interactive panels" },
   { label: "CBSE Pass Rate", value: "100%", suffix: "Board Record", description: "Consistently in Class X & XII" },
@@ -48,7 +48,7 @@ export const getDailyBirthdays = () => {
       name: "Aarav Sharma", 
       class: "Class X-A", 
       date: formattedDate, 
-      house: "Ganga House",
+      house: "Tagore House",
       photo: "/images/students/student_aarav.jpg"
     },
     { 
@@ -56,7 +56,7 @@ export const getDailyBirthdays = () => {
       name: "Ananya Chauhan", 
       class: "Class IV-B", 
       date: formattedDate, 
-      house: "Yamuna House",
+      house: "Dayanand House",
       photo: "/images/students/student_ananya.jpg"
     },
     { 
@@ -64,7 +64,7 @@ export const getDailyBirthdays = () => {
       name: "Reyansh Rawat", 
       class: "Class II-C", 
       date: formattedDate, 
-      house: "Kaveri House",
+      house: "Kalam House",
       photo: "/images/students/student_reyansh.jpg"
     },
     { 
@@ -72,7 +72,7 @@ export const getDailyBirthdays = () => {
       name: "Prisha Semwal", 
       class: "Class XII Science", 
       date: formattedDate, 
-      house: "Saraswati House",
+      house: "Vivekanand House",
       photo: "/images/students/student_prisha.jpg"
     }
   ];
@@ -246,18 +246,18 @@ export const LEADERSHIP_MESSAGES = [
 
 export const BOARD_RESULTS = {
   classX: [
-    { year: "2025-26", appeared: 194, passed: 193, passPercent: "99.5%", above90: "—", highest: "97.5%", topper: "Nisha Dhaila (97.5%)", downloadUrl: null },
-    { year: "2024-25", appeared: 114, passed: 114, passPercent: "100%", above90: 38, highest: "98.4%", topper: "Aryan Bhatt (98.4%)", downloadUrl: "/downloads/Xth-Result-2024-25.pdf" },
-    { year: "2023-24", appeared: 108, passed: 108, passPercent: "100%", above90: 35, highest: "98.2%", topper: "Sneha Rawat (98.2%)", downloadUrl: "/downloads/Xth-Result-2023-24.pdf" },
-    { year: "2022-23", appeared: 96, passed: 96, passPercent: "100%", above90: 31, highest: "97.8%", topper: "Aditya Verma (97.8%)", downloadUrl: "/downloads/Xth-2022-23.pdf" },
-    { year: "2021-22", appeared: 88, passed: 88, passPercent: "100%", above90: 29, highest: "97.6%", topper: "Kavya Joshi (97.6%)", downloadUrl: "/downloads/Xth-2021-22.pdf" }
+    { year: "2025-26", registered: 194, appeared: 193, passed: 193, passPercent: "100%", above90: 28, highest: "97.5%", topper: "Nisha Dhaila (97.5%)", downloadUrl: "/downloads/Xth-Result-2025-26.pdf" },
+    { year: "2024-25", registered: 114, appeared: 114, passed: 114, passPercent: "100%", above90: 38, highest: "98.4%", topper: "Aryan Bhatt (98.4%)", downloadUrl: "/downloads/Xth-Result-2024-25.pdf" },
+    { year: "2023-24", registered: 108, appeared: 108, passed: 108, passPercent: "100%", above90: 35, highest: "98.2%", topper: "Sneha Rawat (98.2%)", downloadUrl: "/downloads/Xth-Result-2023-24.pdf" },
+    { year: "2022-23", registered: 96, appeared: 96, passed: 96, passPercent: "100%", above90: 31, highest: "97.8%", topper: "Aditya Verma (97.8%)", downloadUrl: "/downloads/Xth-2022-23.pdf" },
+    { year: "2021-22", registered: 88, appeared: 88, passed: 88, passPercent: "100%", above90: 29, highest: "97.6%", topper: "Kavya Joshi (97.6%)", downloadUrl: "/downloads/Xth-2021-22.pdf" }
   ],
   classXII: [
-    { year: "2025-26", appeared: 152, passed: 135, passPercent: "88.8%", above90: "—", highest: "94.0%", topper: "Pragyan Nautiyal (94.0%)", downloadUrl: null },
-    { year: "2024-25", appeared: 82, passed: 82, passPercent: "100%", above90: 27, highest: "97.8%", topper: "Tanya Sharma (Science - 97.8%)", downloadUrl: "/downloads/XIIth-Result-2024-25-new.pdf" },
-    { year: "2023-24", appeared: 76, passed: 76, passPercent: "100%", above90: 24, highest: "97.2%", topper: "Rohan Semwal (Science - 97.2%)", downloadUrl: "/downloads/XIIth-Result-2023-24.pdf" },
-    { year: "2022-23", appeared: 68, passed: 68, passPercent: "100%", above90: 22, highest: "96.8%", topper: "Pooja Negi (Commerce - 96.8%)", downloadUrl: "/downloads/XIIth-Result-2022-23-new.pdf" },
-    { year: "2021-22", appeared: 62, passed: 62, passPercent: "100%", above90: 19, highest: "96.4%", topper: "Akash Singhal (Science - 96.4%)", downloadUrl: null }
+    { year: "2025-26", registered: 152, appeared: 150, passed: 135, passPercent: "90.0%", above90: 4, highest: "94.0%", topper: "Pragyan Nautiyal (Science - 94.0%)", downloadUrl: "/downloads/XIIth-Result-2025-26.pdf" },
+    { year: "2024-25", registered: 82, appeared: 82, passed: 82, passPercent: "100%", above90: 27, highest: "97.8%", topper: "Tanya Sharma (Science - 97.8%)", downloadUrl: "/downloads/XIIth-Result-2024-25-new.pdf" },
+    { year: "2023-24", registered: 76, appeared: 76, passed: 76, passPercent: "100%", above90: 24, highest: "97.2%", topper: "Rohan Semwal (Science - 97.2%)", downloadUrl: "/downloads/XIIth-Result-2023-24.pdf" },
+    { year: "2022-23", registered: 68, appeared: 68, passed: 68, passPercent: "100%", above90: 22, highest: "96.8%", topper: "Pooja Negi (Commerce - 96.8%)", downloadUrl: "/downloads/XIIth-Result-2022-23-new.pdf" },
+    { year: "2021-22", registered: 62, appeared: 62, passed: 62, passPercent: "100%", above90: 19, highest: "96.4%", topper: "Akash Singhal (Science - 96.4%)", downloadUrl: null }
   ]
 };
 
@@ -411,7 +411,7 @@ export const GALLERY_ITEMS = [
     category: "Sports",
     date: "Sports Day",
     image: "/images/sports_ground_2.jpg",
-    description: "High-spirited scholars representing Ganga, Yamuna, Kaveri, and Saraswati houses in track events."
+    description: "High-spirited scholars representing Dayanand, Kalam, Tagore, and Vivekanand houses in track events."
   },
   {
     id: "gal-3",

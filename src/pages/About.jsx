@@ -7,36 +7,44 @@ import { SCHOOL_INFO, LEADERSHIP_MESSAGES } from '../data/schoolData';
 export default function About({ onOpenEnquiry }) {
   const houses = [
     {
-      name: "Ganga House",
-      color: "bg-blue-600",
-      textColor: "text-blue-700",
-      borderColor: "border-blue-200",
-      motto: "Purity & Perseverance",
-      significance: "Symbolizing the eternal sacred flow of wisdom and continuous perseverance."
+      name: "Dayanand House",
+      colorName: "Yellow",
+      color: "bg-amber-500",
+      textColor: "text-amber-800",
+      borderColor: "border-amber-300",
+      badgeBg: "bg-amber-100/80",
+      motto: "Truth & Righteousness",
+      significance: "Inspired by Swami Dayanand Saraswati, championing Vedic wisdom, fearless pursuit of truth, moral uprightness, and dedicated self-discipline."
     },
     {
-      name: "Yamuna House",
-      color: "bg-amber-600",
-      textColor: "text-amber-700",
-      borderColor: "border-amber-200",
-      motto: "Courage & Devotion",
-      significance: "Inspiring selfless dedication, inner resilience, and radiant pursuit of truth."
-    },
-    {
-      name: "Kaveri House",
+      name: "Kalam House",
+      colorName: "Green",
       color: "bg-emerald-600",
-      textColor: "text-emerald-700",
-      borderColor: "border-emerald-200",
-      motto: "Harmony & Growth",
-      significance: "Cultivating collaboration, ecological stewardship, and continuous intellectual flourishing."
+      textColor: "text-emerald-800",
+      borderColor: "border-emerald-300",
+      badgeBg: "bg-emerald-100/80",
+      motto: "Dream, Innovate & Inspire",
+      significance: "Inspired by Dr. A.P.J. Abdul Kalam, dedicated to scientific curiosity, technological ingenuity, humble service to the nation, and relentless innovation."
     },
     {
-      name: "Saraswati House",
-      color: "bg-purple-600",
-      textColor: "text-purple-700",
-      borderColor: "border-purple-200",
-      motto: "Wisdom & Creativity",
-      significance: "Dedicated to the fine arts, scientific inquiry, eloquent speech, and profound knowledge."
+      name: "Tagore House",
+      colorName: "Blue",
+      color: "bg-blue-600",
+      textColor: "text-blue-800",
+      borderColor: "border-blue-300",
+      badgeBg: "bg-blue-100/80",
+      motto: "Mind Without Fear",
+      significance: "Inspired by Gurudev Rabindranath Tagore, celebrating artistic expression, eloquence, boundless imagination, and universal harmony."
+    },
+    {
+      name: "Vivekanand House",
+      colorName: "Red",
+      color: "bg-rose-600",
+      textColor: "text-rose-800",
+      borderColor: "border-rose-300",
+      badgeBg: "bg-rose-100/80",
+      motto: "Arise, Awake & Achieve",
+      significance: "Inspired by Swami Vivekananda, fostering fearlessness, mental fortitude, energetic youth leadership, and steadfast devotion to duty."
     }
   ];
 
@@ -103,7 +111,7 @@ export default function About({ onOpenEnquiry }) {
               </div>
               <div className="flex items-center gap-1.5 bg-slate-100 px-3 py-1.5 rounded-lg border border-slate-200">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-                <span>English Medium Co-Ed (Nursery to XII)</span>
+                <span>English Medium Co-Ed (Pre-Nursery to XII)</span>
               </div>
             </div>
           </div>
@@ -327,8 +335,13 @@ export default function About({ onOpenEnquiry }) {
               className={`bg-white rounded-2xl p-6 border-2 ${house.borderColor} shadow-sm flex flex-col justify-between text-left`}
             >
               <div>
-                <div className={`w-10 h-10 rounded-xl ${house.color} text-white flex items-center justify-center font-bold text-sm mb-4 shrink-0`}>
-                  {house.name[0]}
+                <div className="flex items-center justify-between mb-4">
+                  <div className={`w-10 h-10 rounded-xl ${house.color} text-white flex items-center justify-center font-bold text-sm shadow-sm shrink-0`}>
+                    {house.name[0]}
+                  </div>
+                  <span className={`text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${house.badgeBg} ${house.textColor} border ${house.borderColor}`}>
+                    {house.colorName} House
+                  </span>
                 </div>
                 <h4 className={`text-lg font-bold font-serif ${house.textColor}`}>
                   {house.name}

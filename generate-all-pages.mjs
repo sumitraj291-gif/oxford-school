@@ -605,7 +605,7 @@ function generateHomePage() {
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">${r.highest}</span>
-                  <span class="text-xs text-slate-300">${r.above90} scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">${r.above90 && r.above90 !== '—' ? `${r.above90} scored &gt;90%` : '—'}</span>
                 </div>
               </div>
             `).join('')}
@@ -627,7 +627,7 @@ function generateHomePage() {
                 </div>
                 <div class="text-right">
                   <span class="text-amber-400 font-extrabold text-sm block">${r.highest}</span>
-                  <span class="text-xs text-slate-300">${r.above90} scored &gt;90%</span>
+                  <span class="text-xs text-slate-300">${r.above90 && r.above90 !== '—' ? `${r.above90} scored &gt;90%` : '—'}</span>
                 </div>
               </div>
             `).join('')}
@@ -1577,43 +1577,68 @@ function generateCbsePage() {
   <!-- Panel 3: Senior Secondary Streams & Curriculum -->
   <section id="tab-curriculum" class="disclosure-panel hidden py-16 bg-white text-left">
     <div class="max-w-[1360px] mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         
         <!-- Science Stream -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-left">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-xl bg-[#002b49] text-amber-400 flex items-center justify-center">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-left space-y-3">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-xl bg-[#002b49] text-amber-400 flex items-center justify-center shrink-0">
               <i data-lucide="atom" class="w-5 h-5"></i>
             </div>
             <div>
-              <h3 class="text-base font-bold text-[#002b49]">Senior Secondary Science Stream</h3>
-              <p class="text-xs text-slate-500">Medical &amp; Non-Medical Combinations</p>
+              <h3 class="text-base font-bold text-[#002b49]">Science Stream</h3>
+              <p class="text-xs text-slate-500">Medical / Non-Medical</p>
             </div>
           </div>
-          <ul class="space-y-2 text-xs text-slate-700">
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Physics &amp; Chemistry (Compulsory)</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Mathematics / Biology</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Computer Science (Python &amp; SQL) / Informatics Practices</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> English Core &amp; Physical Education</li>
+          <ul class="space-y-1.5 text-xs text-slate-700 pl-4 list-disc">
+            <li>English Core</li>
+            <li>Physics</li>
+            <li>Chemistry</li>
+            <li>Mathematics or Biology</li>
+            <li>Physical Education / Informatics Practice</li>
+            <li>Painting</li>
           </ul>
         </div>
 
         <!-- Commerce Stream -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-left">
-          <div class="flex items-center gap-3 mb-4">
-            <div class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center">
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-left space-y-3">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-xl bg-amber-500 text-slate-950 flex items-center justify-center shrink-0">
               <i data-lucide="trending-up" class="w-5 h-5"></i>
             </div>
             <div>
-              <h3 class="text-base font-bold text-[#002b49]">Senior Secondary Commerce Stream</h3>
-              <p class="text-xs text-slate-500">Finance, Business &amp; Analytical Studies</p>
+              <h3 class="text-base font-bold text-[#002b49]">Commerce Stream</h3>
+              <p class="text-xs text-slate-500">With / Without Maths</p>
             </div>
           </div>
-          <ul class="space-y-2 text-xs text-slate-700">
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Accountancy (Compulsory)</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Business Studies &amp; Economics</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> Applied Mathematics / Informatics Practices</li>
-            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-600"></i> English Core &amp; Physical Education</li>
+          <ul class="space-y-1.5 text-xs text-slate-700 pl-4 list-disc">
+            <li>English Core</li>
+            <li>Accountancy</li>
+            <li>Business Studies</li>
+            <li>Economics</li>
+            <li>Mathematics / Physical Education / Informatics Practice</li>
+            <li>Painting</li>
+          </ul>
+        </div>
+
+        <!-- Humanities Stream -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200 text-left space-y-3">
+          <div class="flex items-center gap-3 mb-2">
+            <div class="w-10 h-10 rounded-xl bg-purple-700 text-white flex items-center justify-center shrink-0">
+              <i data-lucide="book-open" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="text-base font-bold text-[#002b49]">Humanities Stream</h3>
+              <p class="text-xs text-slate-500">Arts &amp; Social Sciences</p>
+            </div>
+          </div>
+          <ul class="space-y-1.5 text-xs text-slate-700 pl-4 list-disc">
+            <li>English</li>
+            <li>Hindi</li>
+            <li>History</li>
+            <li>Economics</li>
+            <li>Physical Education / Political Science</li>
+            <li>Painting</li>
           </ul>
         </div>
 
@@ -2001,6 +2026,16 @@ for (const p of pages) {
   fs.writeFileSync(subFilePath, p.html, 'utf8');
   
   console.log(`✓ Generated ${p.file} (${p.html.length} bytes)`);
+}
+
+// Ensure html/js/site.js exists for static browsing
+const htmlJsDir = path.resolve('d:/UI/Oxford School/html/js');
+if (!fs.existsSync(htmlJsDir)) {
+  fs.mkdirSync(htmlJsDir, { recursive: true });
+}
+const srcSiteJs = path.resolve('d:/UI/Oxford School/js/site.js');
+if (fs.existsSync(srcSiteJs)) {
+  fs.copyFileSync(srcSiteJs, path.resolve(htmlJsDir, 'site.js'));
 }
 
 console.log(`\nAll ${pages.length} static HTML pages generated successfully!`);

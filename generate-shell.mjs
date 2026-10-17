@@ -875,7 +875,7 @@ function renderPageShell({ title, description, keywords, canonicalUrl, activePag
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js" integrity="sha384-JSZXO0kKYHTylAsDYTb+7Kg2eUyalm19b8Pydcdf8sQ1cCKYZr9lLahoKT9+LFY5" crossorigin="anonymous"></script>
   
   <!-- Standalone Security & UX Enhanced Site JavaScript -->
-  <script type="module" src="js/site.js"></script>
+  <script defer src="/js/site.js"></script>
 </body>
 </html>`;
 }
